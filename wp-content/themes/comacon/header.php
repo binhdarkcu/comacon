@@ -92,23 +92,36 @@
 	<div class="container">
 		<div class="navigation">
 			<div class="collapse  navbar-collapse" id="buildpress-navbar-collapse">
-				<ul id="menu-main-menu" class="navigation--main"><li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-13"><a href="https://demo.proteusthemes.com/buildpress/">HOME</a></li>
-					<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="https://demo.proteusthemes.com/buildpress/projects/">PROJECTS</a></li>
-					<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-51"><a href="https://demo.proteusthemes.com/buildpress/our-services/">OUR SERVICES</a>
+				<ul id="menu-main-menu" class="navigation--main">
+					<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-13">
+						<a href="https://demo.proteusthemes.com/buildpress/">HOME</a>
+					</li>
+					<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
+						<a href="https://demo.proteusthemes.com/buildpress/projects/">OVER COMACON</a>
+					</li>
+					<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-51">
+						<a href="https://demo.proteusthemes.com/buildpress/our-services/">DIENSTEN</a>
 						<ul class="sub-menu">
-							<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="https://demo.proteusthemes.com/buildpress/our-services/construction-management/">Construction Management</a></li>
+							<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65">
+								<a href="https://demo.proteusthemes.com/buildpress/our-services/construction-management/">Construction Management</a>
+							</li>
 							<li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="https://demo.proteusthemes.com/buildpress/our-services/design-and-build/">Design and Build</a></li>
 							<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://demo.proteusthemes.com/buildpress/our-services/kitchen-remodeling/">Kitchen Remodeling</a></li>
-							<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="https://demo.proteusthemes.com/buildpress/our-services/tiling-and-painting/">Tiling and Painting</a></li>
-							<li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="https://demo.proteusthemes.com/buildpress/our-services/condo-remodeling/">Condo Remodeling</a></li>
-							<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://demo.proteusthemes.com/buildpress/our-services/hardwood-flooring/">Hardwood Flooring</a></li>
-							<li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224"><a href="https://demo.proteusthemes.com/buildpress/our-services/">All Services</a></li>
 						</ul>
 					</li>
-					<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a href="https://demo.proteusthemes.com/buildpress/about-us/">ABOUT US</a></li>
-					<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="https://demo.proteusthemes.com/buildpress/blog/">BLOG</a></li>
-					<li id="menu-item-414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-414"><a href="https://demo.proteusthemes.com/buildpress/shop/">SHOP</a></li>
-					<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://demo.proteusthemes.com/buildpress/contact-us/">CONTACT</a></li>
+					<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-176">
+						<a href="https://demo.proteusthemes.com/buildpress/about-us/">REFERENTIES</a>
+						<ul class="sub-menu">
+							<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65">
+								<a href="https://demo.proteusthemes.com/buildpress/our-services/construction-management/">Construction Management</a>
+							</li>
+							<li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="https://demo.proteusthemes.com/buildpress/our-services/design-and-build/">Design and Build</a></li>
+							<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://demo.proteusthemes.com/buildpress/our-services/kitchen-remodeling/">Kitchen Remodeling</a></li>
+						</ul>
+					</li>
+					<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+						<a href="https://demo.proteusthemes.com/buildpress/blog/">CONTACTEER ONS</a>
+					</li>
 				</ul>	
 			</div>
 		</div>

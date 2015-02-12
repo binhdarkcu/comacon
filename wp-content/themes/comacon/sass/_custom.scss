@@ -1,0 +1,170 @@
+.top {
+	background: #4a4a4a linear-gradient(to bottom, #4a4a4a, #484848)
+}
+.top {
+	border-bottom-color: #4d4d4d
+}
+.top, .top a {
+	color: #999
+}
+.navigation--top>.menu-item-has-children>a::after {
+	border-top-color: #999
+}
+.header {
+	background-color: #FFF
+}
+.header {
+	background-image: url()
+}
+.icon-box__title, .widget-icon-box .icon-box:hover .fa {
+	color: #ddd
+}
+.icon-box__subtitle, .widget-icon-box .icon-box, .textwidget {
+	color: #989898
+}
+@media (min-width:992px) {
+.navigation {
+	background: #c3c8cb
+}
+}
+.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a {
+	color: #ddd
+}
+.navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after, .navigation--main .sub-menu>li:hover>a {
+	color: #fefefe
+}
+@media (min-width:992px) {
+.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after {
+	color: #FFF
+}
+.navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after {
+	color: $colorMain_01
+}
+.navigation--main .sub-menu>li>a, .navigation--main .sub-menu>li>a:hover, .navigation--main .sub-menu>.menu-item-has-children>a::after {
+	color: #FFF
+}
+}
+.main-title {
+	background-color: #f2f2f2
+}
+.main-title {
+	background-image: url(https://demo.proteusthemes.com/buildpress/wp-content/themes/buildpress/assets/images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
+}
+.main-title h1 {
+	color: #333
+}
+.breadcrumbs {
+	background-color: #fff
+}
+.breadcrumbs a {
+	color: #666
+}
+.breadcrumbs a:hover {
+	color: #595959
+}
+.breadcrumbs {
+	color: #999
+}
+.jumbotron__category h6, .social-icons__link, .testimonial__rating, body.woocommerce-page .star-rating, body.woocommerce-page ul.products li.product a:hover img, body.woocommerce-page p.stars a {
+	color: $colorMain_01
+}
+.jumbotron__category::after, .alternative-heading::after, .navbar-toggle, #comments-submit-button, .btn-primary, .panel-grid .widget-title::after, .footer .footer__headings::after, .main-title h3::before, .hentry__title::after, .widget_search .search-submit, .pagination li .current, .pagination li:hover, .sidebar__headings::after, .sidebar .widget_nav_menu ul>li.current-menu-item a, .sidebar .widget_nav_menu ul>li>a:hover, .widget_calendar caption, .widget_tag_cloud a, body.woocommerce-page .widget_product_search #searchsubmit, body.woocommerce-page span.onsale, body.woocommerce-page ul.products::before, body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page nav.woocommerce-pagination ul li a:hover, body.woocommerce-page a.add_to_cart_button:hover, body.woocommerce-page button.button:hover, body.woocommerce-page .widget_product_categories ul>li>a:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page table.cart td.actions input.button.alt, body.woocommerce-page .cart-collaterals .shipping_calculator h2::after, body.woocommerce-page .cart-collaterals .cart_totals h2::after, body.woocommerce-page .woocommerce-info, body.woocommerce-page .woocommerce-message, body.woocommerce-page .woocommerce-error, body.woocommerce-page #payment #place_order, body.woocommerce-page .short-description::before, body.woocommerce-page .short-description::after, body.woocommerce-page .quantity .minus:hover, body.woocommerce-page .quantity .plus:hover, body.woocommerce-page button.button.alt, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, body.woocommerce-page #review_form #respond input#submit, body.woocommerce-page div.product .woocommerce-tabs h2::after, .buildpress-table thead th, .brochure-box:hover {
+	background-color: $colorButton
+}
+@media (min-width:992px) {
+.navigation--main .sub-menu>li>a {
+	background-color: $colorMain_02
+}
+}
+.btn-primary, .logo-panel img:hover, blockquote, #comments-submit-button, .navigation--main>li:hover>a {
+	border-color: $colorMain_01
+}
+.social-icons__link:hover {
+	color: $colorMain_03
+}
+.navbar-toggle:hover, .btn-primary:hover, .widget_search .search-submit:hover, #comments-submit-button:hover, .widget_tag_cloud a:hover, body.woocommerce-page .widget_product_search #searchsubmit:hover, body.woocommerce-page .widget_product_search #searchsubmit:focus, body.woocommerce-page table.cart td.actions input.button.alt:hover, body.woocommerce-page #payment #place_order:hover, body.woocommerce-page button.button.alt:hover, body.woocommerce-page #review_form #respond input#submit:hover {
+	background-color: $colorMain_03
+}
+@media (min-width:992px) {
+.navigation--main .sub-menu>li>a:hover {
+	background-color: $colorMain_03
+}
+}
+.btn-primary:hover, #comments-submit-button:hover, .navigation--main .sub-menu>li>a, .navigation--main .sub-menu, .navigation--main .sub-menu>li>.sub-menu {
+	border-color: #aab8c3
+}
+a {
+	color: #1fa7da
+}
+a:hover, .more-link .btn:hover {
+	color: #1098cb
+}
+body, .textwidget {
+	color: #999
+}
+#comments-submit-button, .btn-primary, .footer .btn-primary, .sidebar .widget_nav_menu ul>li.current-menu-item a, .widget_tag_cloud a, .pagination li .current, .widget_search .search-submit {
+	color: #fff
+}
+#comments-submit-button:hover, .btn-primary:hover, .footer .btn-primary:hover, .sidebar .widget_nav_menu ul>li a:hover, .sidebar .widget_nav_menu ul>li.current-menu-item a:hover, .widget_tag_cloud a:hover, .pagination li:hover a, body.woocommerce-page .woocommerce-message, body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page button.button.alt, body.woocommerce-page table.cart td.actions input.button.alt, body.woocommerce-page button.button.alt:hover, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a:hover, body.woocommerce-page nav.woocommerce-pagination ul li .prev:hover, body.woocommerce-page nav.woocommerce-pagination ul li .next:hover, body.woocommerce-page a.add_to_cart_button:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page nav.woocommerce-pagination ul li a:hover, body.woocommerce-page .woocommerce-info, body.woocommerce-page #payment #place_order, body.woocommerce-page .widget_product_categories ul>li>a:hover, body.woocommerce-page .widget_product_search #searchsubmit, body.woocommerce-page #review_form #respond input#submit, body.woocommerce-page button.button:hover, body.woocommerce-page .woocommerce-error .showlogin, body.woocommerce-page .woocommerce-error .showcoupon, body.woocommerce-page .woocommerce-info .showlogin, body.woocommerce-page .woocommerce-info .showcoupon, body.woocommerce-page .woocommerce-message .showlogin, body.woocommerce-page .woocommerce-message .showcoupon, body.woocommerce-page .woocommerce-error::before, body.woocommerce-page .woocommerce-info::before, body.woocommerce-page .woocommerce-message::before {
+	color: #FFF
+}
+.footer {
+	background-color: #f2f2f2
+}
+.footer {
+	background-image: url(https://demo.proteusthemes.com/buildpress/wp-content/themes/buildpress/assets/images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
+}
+.footer__headings {
+	color: #3d3d3d
+}
+.footer {
+	color: #666
+}
+.footer a {
+	color: #1fa7da
+}
+.footer a:hover {
+	color: #0074a7
+}
+.footer-bottom {
+	background-color: $colorMain_01
+}
+.footer-bottom {
+	color: #666
+}
+.footer-bottom a {
+	color: #666
+}
+.footer-bottom a:hover {
+	color: #333
+}
+.slb_details {
+	display: none
+}
+
+
+/*products*/
+.buildpress .esg-navigationbutton:hover span, .buildpress .esg-filterbutton:hover span, .buildpress .esg-sortbutton:hover span, .buildpress .esg-sortbutton-order:hover span, .buildpress .esg-cartbutton-order:hover span, .buildpress .esg-filterbutton.selected span {
+	border-bottom: none;
+	color:#FFF;
+
+}
+
+.buildpress .esg-filterbutton:hover, .buildpress .esg-sortbutton:hover, .buildpress .esg-sortbutton-order:hover, .buildpress .esg-cartbutton-order:hover, .buildpress .esg-filterbutton.selected {
+	background:$colorButton;
+
+}
+
+.buildpress .esg-filter-wrapper {
+	background:#ddd;
+}
+
+.buildpress .esg-navigationbutton span, .buildpress .esg-filterbutton span, .buildpress .esg-sortbutton span, .buildpress .esg-sortbutton-order span, .buildpress .esg-cartbutton-order span {
+	border-bottom: none;
+	color: #8796a1;
+}
+
+.buildpress .esg-filterbutton::after, .buildpress .esg-sortbutton::after, .buildpress .esg-cartbutton::after {
+	background-color:#f6f6f6;
+	height:64px;
+}

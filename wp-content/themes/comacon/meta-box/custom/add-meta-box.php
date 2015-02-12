@@ -3,46 +3,11 @@ $prefix = 'tt_';
 global $meta_boxes;
 $meta_boxes = array();
 
-$meta_boxes[] =array(
-   'id'=>'portfolio_meta',
-   'title'=>'Information',
-   'pages'=>array('post'),
-   'context' => 'normal',
-   'priority' => 'high',
-   'fields' => array(
-  		array(
-			'name'             => 'Small text',
-			'id'               => "{$prefix}port_smalltext",
-			'type'             => 'textarea'
-		),
-		
-   		array(
-			'name'             => 'Description',
-			'id'               => "{$prefix}port_description",
-			'type'             => 'wysiwyg'
-		),
-		array(
-			'name'             => 'Clients',
-			'id'               => "{$prefix}port_clients",
-			'type'             => 'wysiwyg'
-		),
-		array(
-			'name'             => 'Project',
-			'id'               => "{$prefix}port_projects",
-			'type'             => 'wysiwyg'
-		),
-		array(
-			'name'             => 'Launch Project',
-			'id'               => "{$prefix}port_projectlink",
-			'type'             => 'textarea'
-		)
-	 )
-);
 
 $meta_boxes[] =array(
-   'id'=>'pages_meta',
-   'title'=>'Information',
-   'pages'=>array('page'),
+   'id'=>'slider_meta',
+   'title'=>'Images for slider',
+   'pages'=> array('page'),
    'context' => 'normal',
    'priority' => 'high',
    'fields' => array(
@@ -60,52 +25,7 @@ $meta_boxes[] =array(
 	 )
 );
 
-$meta_boxes[] =array(
-   'id'=>'pages_meta',
-   'title'=>'Information',
-   'pages'=>array('about-lightbox'),
-   'context' => 'normal',
-   'priority' => 'high',
-   'fields' => array(
-  		
-   		array(
-			'name'             => 'Link',
-			'id'               => "{$prefix}ab_lightbox_link",
-			'type'             => 'wysiwyg'
-		),
-		array(
-			'name'             => 'Author',
-			'id'               => "{$prefix}ab_lightbox_author",
-			'type'             => 'textarea'
-		),
-		array(
-			'name'             => 'Images',
-			'id'               => "{$prefix}ab_lightbox_images",
-			'type'             => 'plupload_image'
-		)
-	 )
-);
 
-$meta_boxes[] =array(
-   'id'=>'dribble_meta',
-   'title'=>'Information',
-   'pages'=>array('dribble-footer'),
-   'context' => 'normal',
-   'priority' => 'high',
-   'fields' => array(
-  		
-   		array(
-			'name'             => 'Image',
-			'id'               => "{$prefix}dribble_image",
-			'type'             => 'image'
-		),
-		array(
-			'name'             => 'Link',
-			'id'               => "{$prefix}dribble_link",
-			'type'             => 'textarea'
-		)
-	 )
-);
 /**
  * Register meta boxes
  *
