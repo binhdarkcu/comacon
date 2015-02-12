@@ -3,6 +3,7 @@
 <head><!--[if IE]><![endif]--><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A400,700%3Alatin%7CMontserrat%3A700%3Alatin"/>
 <meta charset="UTF-8"/>
 <title>COMACON</title>
+<base href="<?php bloginfo('template_url')?>/"></base>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
