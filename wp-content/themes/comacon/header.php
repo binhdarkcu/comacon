@@ -13,18 +13,19 @@
 <!-- W3TC-include-js-head -->
 <link rel='stylesheet' href='css/all.css' type='text/css' media='all'/>
 
-<style type="text/css"></style><script src="https://demo.proteusthemes.com/buildpress/wp-includes,_js,_jquery,_jquery.js,qver==1.11.1+wp-includes,_js,_jquery,_jquery-migrate.min.js,qver==1.2.1+wp-content,_plugins,_essential-grid,_public,_assets,_js,_lightbox.js,qver==2.0.5+wp-content,_plugins,_essential-grid,_public,_assets,_js,_jquery.themepunch.tools.min.js,qver==2.0.5.pagespeed.jc.YVuN8npgKb.js"></script><script>eval(mod_pagespeed_fvF78tZhrk);</script>
+
+<script src="js/src_01.js"></script>
+<script>eval(mod_pagespeed_fvF78tZhrk);</script>
 <script>eval(mod_pagespeed_sz2DWXgh7k);</script>
 <script>eval(mod_pagespeed_wYZGjmOogu);</script>
 <script>eval(mod_pagespeed_Pq6ux5cSJr);</script>
-<script type='text/javascript' src='https://demo.proteusthemes.com/buildpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.essential.min.js?ver=2.0.5'></script>
-<script src="https://demo.proteusthemes.com/buildpress/wp-content/plugins,_siteorigin-panels,_js,_styling.min.js,qver==2.0.5+themes,_buildpress,_assets,_js,_modernizr.custom.24530.js+themes,_buildpress,_bower_components,_respimage,_respimage.min.js,qver==1.2.0.pagespeed.jc.9QTMiOq8_6.js"></script><script>eval(mod_pagespeed_7fm1$BErDG);</script>
+<script src="js/src_02.js"></script>
+<script src="js/src_03.js"></script>
+<script>eval(mod_pagespeed_7fm1$BErDG);</script>
 <script>eval(mod_pagespeed_5r4ixg3PQk);</script>
 <script>eval(mod_pagespeed_tnKaezVk5o);</script>
-<link rel="shortcut icon" href="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/11/xfavicon.png.pagespeed.ic.zabFXRxT_9.webp">
-<!-- W3TC-include-css -->
 </head>
-<body class="home page page-id-7 page-template page-template-template-front-page-slider page-template-template-front-page-slider-php custom-background siteorigin-panels siteorigin-panels-home">
+<body class="home page page-template page-template-template-front-page-slider page-template-template-front-page-slider-php custom-background siteorigin-panels siteorigin-panels-home">
 <div class="boxed-container">
 <div class="top">
 	<div class="container">

@@ -48,7 +48,7 @@
 	background-color: #f2f2f2
 }
 .main-title {
-	background-image: url(https://demo.proteusthemes.com/buildpress/wp-content/themes/buildpress/assets/images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
+	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
 }
 .main-title h1 {
 	color: #333
@@ -112,7 +112,7 @@ body, .textwidget {
 	background-color: #f2f2f2
 }
 .footer {
-	background-image: url(https://demo.proteusthemes.com/buildpress/wp-content/themes/buildpress/assets/images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
+	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
 }
 .footer__headings {
 	color: #3d3d3d
@@ -167,4 +167,10 @@ body, .textwidget {
 .buildpress .esg-filterbutton::after, .buildpress .esg-sortbutton::after, .buildpress .esg-cartbutton::after {
 	background-color:#f6f6f6;
 	height:64px;
+}
+
+.siteorigin-panels-stretch {
+	padding:30px;
+	background-color: #f2f2f2;
+	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
 }

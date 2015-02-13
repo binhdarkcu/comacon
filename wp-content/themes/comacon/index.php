@@ -17,7 +17,7 @@
 					</div>
 				</div>
 				<?php get_template_part('tpl','news');?>
-			<div class="panel-grid" id="pg-7-5"><div class="siteorigin-panels-stretch panel-row-style" style="padding:30px;background-color:#e8b71f;background-image:url(https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/xmotivational-background1.jpg.pagespeed.ic.gfyKOTeo85.webp);background-size:cover" data-stretch-type="full"><div class="panel-grid-cell" id="pgc-7-5-0"><div class="panel widget widget_text panel-first-child panel-last-child" id="panel-7-5-0-0">	<div class="textwidget"><div class="motivational-text">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</div></div>
+			<div class="panel-grid" id="pg-7-5"><div class="siteorigin-panels-stretch panel-row-style" data-stretch-type="full"><div class="panel-grid-cell" id="pgc-7-5-0"><div class="panel widget widget_text panel-first-child panel-last-child" id="panel-7-5-0-0">	<div class="textwidget"><div class="motivational-text">Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.</div></div>
 			</div></div></div></div><div class="panel-grid" id="pg-7-6"><div class="panel-grid-cell" id="pgc-7-6-0"><div class="panel widget widget_text panel-first-child panel-last-child" id="panel-7-6-0-0"><h3 class="widget-title">Clients / Partners</h3>	<div class="textwidget"><div class="logo-panel">
 			<div class="row">
 			<div class="col-xs-12  col-sm-2">
