@@ -1,3 +1,7 @@
+.logo {
+	margin-top: 30px;
+}
+
 .top {
 	background: #4a4a4a linear-gradient(to bottom, #4a4a4a, #484848)
 }
@@ -85,16 +89,12 @@
 .navbar-toggle:hover, .btn-primary:hover, .widget_search .search-submit:hover, #comments-submit-button:hover, .widget_tag_cloud a:hover, body.woocommerce-page .widget_product_search #searchsubmit:hover, body.woocommerce-page .widget_product_search #searchsubmit:focus, body.woocommerce-page table.cart td.actions input.button.alt:hover, body.woocommerce-page #payment #place_order:hover, body.woocommerce-page button.button.alt:hover, body.woocommerce-page #review_form #respond input#submit:hover {
 	background-color: $colorMain_03
 }
-@media (min-width:992px) {
-.navigation--main .sub-menu>li>a:hover {
-	background-color: $colorMain_03
-}
-}
+
 .btn-primary:hover, #comments-submit-button:hover, .navigation--main .sub-menu>li>a, .navigation--main .sub-menu, .navigation--main .sub-menu>li>.sub-menu {
 	border-color: #aab8c3
 }
 a {
-	color: #1fa7da
+	color: $colorMain_04
 }
 a:hover, .more-link .btn:hover {
 	color: #1098cb
@@ -121,10 +121,10 @@ body, .textwidget {
 	color: #666
 }
 .footer a {
-	color: #1fa7da
+	color: $colorMain_04
 }
 .footer a:hover {
-	color: #0074a7
+	color: $colorMain_04
 }
 .footer-bottom {
 	background-color: $colorMain_01
@@ -140,6 +140,70 @@ body, .textwidget {
 }
 .slb_details {
 	display: none
+}
+
+/*slider*/
+.carousel-inner {
+	.group-carousel-content {
+		.container {
+			.carousel-content {
+				background: #FFF;
+				opacity: 0.86;
+			}
+		}
+	}
+
+}
+
+.jumbotron {
+	background: #fff;
+}	
+.jumbotron__title h1 {
+	color: $colorButton;
+}
+
+.jumbotron__content p {
+	color: #11293a;	
+}
+
+.carousel-control.right {right: 3%;}
+.carousel-control.left {left: 3%;}
+
+@media (min-width:1200px) {
+	.carousel-content {
+		
+	}	
+}
+
+@media (min-width:992px) {
+	.navigation--main .sub-menu>li>a:hover {
+		background-color: $colorMain_03
+	}
+	
+	.carousel-inner {
+		.group-carousel-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			
+			.container {
+				position: relative;
+				height: 100%;
+				
+				.carousel-content {
+					height: auto;
+					max-height: none;
+					top: calc(50% - 120px);
+					left: 15px;
+					background: #FFF;
+					opacity: 0.86;
+				}
+			}
+		}
+
+	}
 }
 
 
@@ -177,3 +241,6 @@ body, .textwidget {
 		text-align:center;
 	}
 }
+
+
+
