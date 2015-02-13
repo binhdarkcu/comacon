@@ -11,7 +11,7 @@
 	add_action( 'init', 'register_menu' );
 	
 	//add theme support
-	add_theme_support('post-thumbnails',array('post','page','slider','news'));
+	add_theme_support('post-thumbnails',array('post','page','slider','news','clients'));
 	
 	//register meta box
 	// Initialize the metabox class
@@ -40,7 +40,7 @@
 	
 	
 	//remove p tag
-	remove_filter( 'the_content', 'wpautop' );
+	//remove_filter( 'the_content', 'wpautop' );
 	add_action( 'admin_init', 'hide_editor' );
 	
 	function get_page_id_by_slug($slug){

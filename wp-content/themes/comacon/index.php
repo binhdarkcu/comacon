@@ -17,26 +17,8 @@
 					</div>
 				</div>
 				<?php get_template_part('tpl','news');?>
-
-			<div class="panel-grid" id="pg-7-5"><div class="siteorigin-panels-stretch panel-row-style" data-stretch-type="full"><div class="panel-grid-cell" id="pgc-7-5-0"><div class="panel widget widget_text panel-first-child panel-last-child" id="panel-7-5-0-0">	
-<div class="post-69 page type-page status-publish has-post-thumbnail hentry page-box page-box--block">
-				
-				<div class="page-box__content">
-					<h5 class="page-box__title  text-uppercase">
-						Comacon bouwcoördinatie
-					</h5>
-Begint u aan een bouwproject? Een hele onderneming, waarmee veel geld is gemoeid. Bovendien mogen resultaat en timing niet in het gedrang komen en dit zonder dat het budget uit de hand loopt. Vertrouw daarom de coördinatie van uw project toe aan Tytgat Bouwcoördinatie en slaap voortaan op beide oren. Met onze ervaring en expertise helpen we uw project te bouwen en ontlasten we U van alle tijdrovende beslommeringen die met een bouwproject gepaard gaan.<br><br>
-
-Tytgat Bouwcoördinatie leidt alle werkzaamheden in goede banen, voorziet problemen en treedt proactief op. Stellen die problemen zich toch? Dan lossen we ze snel en efficiënt op. Bovendien houden we uw belangen voor ogen in elke fase van uw project en waken als projectmanager over kwaliteit, deadline en budget.					
-				</div>
-			</div>            
-            
-			</div>
-
-
-
-            
-            </div></div></div><div class="panel-grid" id="pg-7-6"><div class="panel-grid-cell" id="pgc-7-6-0"><div class="panel widget widget_text panel-first-child panel-last-child" id="panel-7-6-0-0"><h3 class="widget-title">Clients / Partners</h3>	<div class="textwidget"><div class="logo-panel">
+				<?php get_template_part('tpl','intro-home')?>
+            <div class="panel-grid" id="pg-7-6"><div class="panel-grid-cell" id="pgc-7-6-0"><div class="panel widget widget_text panel-first-child panel-last-child" id="panel-7-6-0-0"><h3 class="widget-title">Clients / Partners</h3>	<div class="textwidget"><div class="logo-panel">
 			<div class="row">
 			<div class="col-xs-12  col-sm-2">
 			<img src="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/xclient_01.jpg.pagespeed.ic.gJYp3C8diH.webp" alt="Client" width="208" height="98">

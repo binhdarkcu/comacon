@@ -2,7 +2,7 @@
 	<div class="collapse  navbar-collapse" id="buildpress-navbar-collapse">
 		<ul id="menu-main-menu" class="navigation--main">
 			<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-13">
-				<a href="https://demo.proteusthemes.com/buildpress/">HOME</a>
+				<a href="<?php echo bloginfo('home')?>">HOME</a>
 			</li>
 			<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
 				<a href="https://demo.proteusthemes.com/buildpress/projects/">OVER COMACON</a>
