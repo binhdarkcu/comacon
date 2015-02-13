@@ -2,11 +2,13 @@
 <div class="footer">
 <div class="container">
 <div class="row">
-<div class="col-xs-12  col-md-4"><div class="widget  widget_text  push-down-30"><h6 class="footer__headings">ABOUT US</h6>	<div class="textwidget"><img src="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/11/xlogo_footer.png.pagespeed.ic.KBo3Sgw9d3.webp" alt="Footer Logo" width="218" height="45">
+<div class="col-xs-12  col-md-4"><div class="widget  widget_text  push-down-30"><h6 class="footer__headings">ABOUT US</h6>	<div class="textwidget"><img src="images/logo.png" alt="Footer Logo" width="185">
+
+
 <br><br>
-Our construction management professio nals organize, lead and manage the people, materials and processes of truction utilizing construction management professionals
+Our construction management professio nals organize, lead, and manage the people, materials, and processes of truction utilizing construction management professionals
 <br><br>
-<strong><a href="http://themeforest.net/item/construction-wp-theme-for-construction-business/9323981?WT.ac=portfolio_item&WT.z_author=ProteusThemes" class="read-more" target="_blank">READ MORE</a></strong></div>
+<strong><a href="http://themeforest.net/item/construction-wp-theme-for-construction-business/9323981?WT.ac=portfolio_item&WT.z_author=ProteusThemes" class="read-more" target="_blank">MEER OVER COMACON</a></strong></div>
 </div></div><div class="col-xs-12  col-md-4"><div class="widget  widget_nav_menu  push-down-30"><h6 class="footer__headings">NAVIGATION</h6><div class="menu-top-menu-container"><ul id="menu-top-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-496"><a href="https://demo.proteusthemes.com/buildpress/extras/">Extras</a>
 <ul class="sub-menu">
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-499"><a href="https://demo.proteusthemes.com/buildpress/extras/shortcodes/">Shortcodes</a></li>
