@@ -5,10 +5,10 @@
 	border-bottom-color: #4d4d4d
 }
 .top, .top a {
-	color: #999
+	color: $colorText01
 }
 .navigation--top>.menu-item-has-children>a::after {
-	border-top-color: #999
+	border-top-color: $colorText01
 }
 .header {
 	background-color: #FFF
@@ -63,7 +63,7 @@
 	color: #595959
 }
 .breadcrumbs {
-	color: #999
+	color: $colorText01
 }
 .jumbotron__category h6, .social-icons__link, .testimonial__rating, body.woocommerce-page .star-rating, body.woocommerce-page ul.products li.product a:hover img, body.woocommerce-page p.stars a {
 	color: $colorMain_01
@@ -100,7 +100,7 @@ a:hover, .more-link .btn:hover {
 	color: #1098cb
 }
 body, .textwidget {
-	color: #999
+	color: $colorText01
 }
 #comments-submit-button, .btn-primary, .footer .btn-primary, .sidebar .widget_nav_menu ul>li.current-menu-item a, .widget_tag_cloud a, .pagination li .current, .widget_search .search-submit {
 	color: #fff
@@ -172,5 +172,8 @@ body, .textwidget {
 .siteorigin-panels-stretch {
 	padding:30px;
 	background-color: #f2f2f2;
-	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
+	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp);
+	.page-box__content {
+		text-align:center;
+	}
 }
