@@ -30,6 +30,8 @@
 	//change label post
 	include 'inc/change_label_post.php';
 	
+	//breadcrums
+	include 'inc/breadcrums.php';
 	//paging blog
 	//include 'inc/page_nav.php';
 	
