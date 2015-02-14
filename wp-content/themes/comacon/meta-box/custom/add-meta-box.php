@@ -5,22 +5,17 @@ $meta_boxes = array();
 
 
 $meta_boxes[] =array(
-   'id'=>'slider_meta',
-   'title'=>'Images for slider',
-   'pages'=> array('page'),
+   'id'=>'clients_meta',
+   'title'=>'Images for Clients',
+   'pages'=> array('clients'),
    'context' => 'normal',
    'priority' => 'high',
    'fields' => array(
   		
    		array(
-			'name'             => 'Introduce',
-			'id'               => "{$prefix}page_introduce",
-			'type'             => 'wysiwyg'
-		),
-		array(
-			'name'             => 'Small text',
-			'id'               => "{$prefix}page_smalltext",
-			'type'             => 'wysiwyg'
+			'name'             => 'Logo',
+			'id'               => "{$prefix}logo_clients",
+			'type'             => 'plupload_image'
 		)
 	 )
 );

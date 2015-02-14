@@ -5,7 +5,7 @@
 				<a href="<?php echo bloginfo('home')?>">HOME</a>
 			</li>
 			<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
-				<a href="https://demo.proteusthemes.com/buildpress/projects/">OVER COMACON</a>
+				<a href="<?php echo bloginfo('home')?>/about">OVER COMACON</a>
 			</li>
 			<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-51">
 				<a href="https://demo.proteusthemes.com/buildpress/our-services/">DIENSTEN</a>

@@ -1,43 +1,92 @@
 <footer>
-<div class="footer">
-<div class="container">
-<div class="row">
-<div class="col-xs-12  col-md-4"><div class="widget  widget_text  push-down-30"><h6 class="footer__headings">ABOUT US</h6>	<div class="textwidget"><img src="images/logo.png" alt="Footer Logo" width="185">
-
-
-<br><br>
-Our construction management professio nals organize, lead, and manage the people, materials, and processes of truction utilizing construction management professionals
-<br><br>
-<strong><a href="http://themeforest.net/item/construction-wp-theme-for-construction-business/9323981?WT.ac=portfolio_item&WT.z_author=ProteusThemes" class="read-more" target="_blank">MEER OVER COMACON</a></strong></div>
-</div></div><div class="col-xs-12  col-md-4"><div class="widget  widget_nav_menu  push-down-30"><h6 class="footer__headings">NAVIGATION</h6><div class="menu-top-menu-container"><ul id="menu-top-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-496"><a href="https://demo.proteusthemes.com/buildpress/extras/">Extras</a>
-<ul class="sub-menu">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-499"><a href="https://demo.proteusthemes.com/buildpress/extras/shortcodes/">Shortcodes</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a href="https://demo.proteusthemes.com/buildpress/extras/tables/">Tables</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-497"><a href="https://demo.proteusthemes.com/buildpress/extras/brochure-box/">Brochure Box</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2132"><a href="https://demo.proteusthemes.com/buildpress/alternative-page/">Alternative Pages</a>
-<ul class="sub-menu">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2142"><a href="https://demo.proteusthemes.com/buildpress/front-page-shop/">Home for Shop</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2134"><a href="https://demo.proteusthemes.com/buildpress/alternative-page/contact-for-multiple-locations/">Multiple Contacts</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133"><a href="https://demo.proteusthemes.com/buildpress/alternative-page/team-contact-combined/">Team &#038; Contact</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-164"><a target="_blank" href="http://www.proteusthemes.com/docs/buildpress/">Online Documentation</a></li>
-</ul></div></div></div><div class="col-xs-12  col-md-4"><div class="widget  widget_text  push-down-30"><h6 class="footer__headings">BUY NOW</h6>	<div class="textwidget">If you come all the way down here, you probably really like our BuildPress theme. To save you all the troubles finding where to buy this theme, we have a solution for that too. Just click the button below.
-<br><br>
-<a class="btn  btn-primary" href="http://themeforest.net/item/buildpress-wp-theme-for-construction-business/9323981?ref=proteusthemes" target="_blank">BUY NOW</a></div>
-</div></div>	</div>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="container">
-<div class="footer-bottom__left">
-BuildPress Theme by <a href="http://www.proteusthemes.com" target="_blank">ProteusThemes</a>	</div>
-<div class="footer-bottom__right">
-© 1896 - 2014 <strong>BuildPress, LCC</strong>. All rights reserved.	</div>
-</div>
-</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+			<div class="col-xs-12  col-md-4">
+				<div class="widget  widget_text  push-down-30">
+					<h6 class="footer__headings">OVER COMACON</h6>	
+					<div class="textwidget"><img src="images/logo.png" alt="Footer Logo" width="185">
+						<br><br>
+						Our construction management professio nals organize, lead, and manage the people, materials, and processes of truction utilizing construction management professionals
+						<br><br>
+						<strong>
+							<a href="<?php echo bloginfo('home')?>/about" class="read-more" target="_blank">MEER OVER COMACON</a>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12  col-md-2">
+				<div class="widget  widget_nav_menu  push-down-30">
+					<h6 class="footer__headings">NAVIGATIE</h6>
+					<div class="menu-top-menu-container">
+						<ul id="menu-top-menu-1" class="menu">
+							<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-13">
+								<a href="<?php echo bloginfo('home')?>">HOME</a>
+							</li>
+							<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
+								<a href="https://demo.proteusthemes.com/buildpress/projects/">OVER COMACON</a>
+							</li>
+							<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-51">
+								<a href="https://demo.proteusthemes.com/buildpress/our-services/">DIENSTEN</a>
+								
+							</li>
+							<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-176">
+								<a href="https://demo.proteusthemes.com/buildpress/about-us/">REFERENTIES</a>
+								
+							</li>
+							<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+								<a href="<?php echo bloginfo('home')?>/contact">CONTACTEER ONS</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12  col-md-2">
+				<div class="widget  widget_nav_menu  push-down-30">
+					<h6 class="footer__headings">DIENSTEN</h6>
+					<div class="menu-top-menu-container">
+						<ul id="menu-top-menu-1" class="menu">
+							<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-13">
+								<a href="#">Bouwpromotoren/ Investeerders</a>
+							</li>
+							<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
+								<a href="#">Bedrijven</a>
+							</li>
+							<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-51">
+								<a href="#">Grondeigenaars</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12  col-md-4">
+				<div class="widget  widget_text  push-down-30">
+					<h6 class="footer__headings">SCHRIJF JE IN OP ONZE NWSLETTER</h6>	
+					<div class="textwidget">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+						<br><br>
+						<div class="newsletter">
+							<div class="input-prepend">
+						        <span class="add-on">
+						        	<i class="icon-user icon-black"></i>
+						       	</span>
+								<input type="text" name="email" placeholder="Jouw E-mail adres"/>
+								<a class="btn  btn-primary" href="#" target="_blank">VERZENDEN</a>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+		<div class="footer-bottom__left">
+			 © 2015 Comacon
+			
+		</div>
+	</div>
 </footer>
 </div><!-- end of .boxed-container -->
 
