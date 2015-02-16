@@ -9,8 +9,13 @@
 	border-bottom-color: #4d4d4d
 }
 .top, .top a {
-	color: $colorText01
+	color: $colorText02
 }
+
+.navbar-toggle__text {
+	color: $colorText02
+}
+
 .navigation--top>.menu-item-has-children>a::after {
 	border-top-color: $colorText01
 }  
@@ -141,6 +146,30 @@ body, .textwidget {
 .slb_details {
 	display: none
 }
+
+
+/*menu*/
+html.flexbox .widget-icon-box .icon-box {
+	border-right: 1px #333333 solid;
+	
+	
+	.icon-box__title {
+		color: #333;
+		@include RobotoCondensed(16px);
+	}
+	
+	.icon-box__subtitle {
+		color: #333;
+		@include RobotoCondensed(14px);
+		
+		a {
+			color: #375c78;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+	}
+}
+
 
 /*slider*/
 .carousel-inner {
