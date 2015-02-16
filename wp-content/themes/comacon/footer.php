@@ -19,25 +19,21 @@
 				<div class="widget  widget_nav_menu  push-down-30">
 					<h6 class="footer__headings">NAVIGATIE</h6>
 					<div class="menu-top-menu-container">
-						<ul id="menu-top-menu-1" class="menu">
-							<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-13">
-								<a href="<?php echo bloginfo('home')?>">HOME</a>
-							</li>
-							<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
-								<a href="https://demo.proteusthemes.com/buildpress/projects/">OVER COMACON</a>
-							</li>
-							<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-51">
-								<a href="https://demo.proteusthemes.com/buildpress/our-services/">DIENSTEN</a>
-								
-							</li>
-							<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-176">
-								<a href="https://demo.proteusthemes.com/buildpress/about-us/">REFERENTIES</a>
-								
-							</li>
-							<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
-								<a href="<?php echo bloginfo('home')?>/contact">CONTACTEER ONS</a>
-							</li>
-						</ul>	
+						
+						<?php
+							$nav = array(
+								'theme_location'  => 'menu_footer',
+								'menu'            => '',
+								'container'       => '',
+								'container_class' => '',
+								'container_id'    => '',
+								'menu_class'      => 'menu',
+								'menu_id'         => 'menu-top-menu-1',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							);
+							
+							wp_nav_menu( $nav );
+						?>	
 					</div>
 				</div>
 			</div>
@@ -45,17 +41,20 @@
 				<div class="widget  widget_nav_menu  push-down-30">
 					<h6 class="footer__headings">DIENSTEN</h6>
 					<div class="menu-top-menu-container">
-						<ul id="menu-top-menu-1" class="menu">
-							<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-13">
-								<a href="#">Bouwpromotoren/ Investeerders</a>
-							</li>
-							<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
-								<a href="#">Bedrijven</a>
-							</li>
-							<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-51">
-								<a href="#">Grondeigenaars</a>
-							</li>
-						</ul>	
+						<?php
+							$nav = array(
+								'theme_location'  => 'menu_service',
+								'menu'            => '',
+								'container'       => '',
+								'container_class' => '',
+								'container_id'    => '',
+								'menu_class'      => 'menu',
+								'menu_id'         => 'menu-top-menu-1',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							);
+							
+							wp_nav_menu( $nav );
+						?>	
 					</div>
 				</div>
 			</div>
