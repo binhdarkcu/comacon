@@ -7,7 +7,7 @@
 					<h6 class="footer__headings">OVER COMACON</h6>	
 					<div class="textwidget"><img src="images/logo.png" alt="Footer Logo" width="185">
 						<br><br>
-						Our construction management professio nals organize, lead, and manage the people, materials, and processes of truction utilizing construction management professionals
+						<?php echo get_option('text_for_footer')?>
 						<br><br>
 						<strong>
 							<a href="<?php echo bloginfo('home')?>/about" class="read-more" target="_blank">MEER OVER COMACON</a>
@@ -62,7 +62,7 @@
 				<div class="widget  widget_text  push-down-30">
 					<h6 class="footer__headings">SCHRIJF JE IN OP ONZE NWSLETTER</h6>	
 					<div class="textwidget">
-						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+						<?php echo get_option('text_for_letter')?>
 						<br><br>
 						<div class="newsletter">
 							<div class="input-prepend">

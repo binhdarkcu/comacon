@@ -28,7 +28,7 @@
 	include TEMPLATEPATH.'/post-type/registry-post-type.php';
 
 	//customize options
-	//include 'wptuts-options/wptuts-options.php'; 
+	include 'wptuts-options/wptuts-options.php'; 
 	
 	//change label post
 	include 'inc/change_label_post.php';
