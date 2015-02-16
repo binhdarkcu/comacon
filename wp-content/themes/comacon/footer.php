@@ -64,15 +64,21 @@
 					<div class="textwidget">
 						<?php echo get_option('text_for_letter')?>
 						<br><br>
-						<div class="newsletter">
-							<div class="input-prepend">
-						        <span class="add-on">
-						        	<i class="icon-user icon-black"></i>
-						       	</span>
-								<input type="text" name="email" placeholder="Jouw E-mail adres"/>
-								<a class="btn  btn-primary" href="#" target="_blank">VERZENDEN</a>
-						    </div>
-						</div>
+						<form action="" method="post" class="form-newsletter">
+							<input name="action" type="hidden" class="action" value="sub_newsletter"/>
+							<div class="newsletter">
+								<div class="input-prepend">
+							        <span class="add-on">
+							        	<i class="icon-user icon-black"></i>
+							       	</span>
+									<input type="email" name="email" placeholder="Jouw E-mail adres" class="requiredField" aria-invalid="false"/>
+									<input type="submit" class="btn  btn-primary" value="VERZENDEN">
+									<span class="loading" style="display: none;"><img style="width: 16px;height:16px;" src="images/ajax-loader.gif" alt=""/></span>
+									<input name="ajaxurl" type="hidden" class="ajaxurl" value="<?php echo bloginfo('home').'/wp-admin/admin-ajax.php'; ?>"/>
+	                      			<input name="security" type="hidden" class="action" value="<?php echo wp_create_nonce('security')?>"/>
+							    </div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>	
@@ -93,7 +99,7 @@
 <script type='text/javascript' src='//maps.google.com/maps/api/js?sensor=false'></script>
 <script type='text/javascript'>var BuildPressVars={"pathToTheme":""};</script>
 <script src="js/orginial.js"></script>
-
+<script src="js/validate.js"></script>
 <script>eval(mod_pagespeed_IvHxVYWT2W);</script>
 <script>eval(mod_pagespeed_2NGNadrv4U);</script>
 <script>eval(mod_pagespeed_dlk9SvPAug);</script>

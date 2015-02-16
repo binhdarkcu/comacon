@@ -38,6 +38,10 @@
 	//paging blog
 	//include 'inc/page_nav.php';
 	
+	//include 'newsletter/newsletter_db.php';
+	include TEMPLATEPATH.'/newsletter/functions.php';
+	include TEMPLATEPATH.'/newsletter/page_newsletter.php';
+	
 	//cache function
 	//include TEMPLATEPATH .'/inc/disk_cached.php' ;
 	
