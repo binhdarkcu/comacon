@@ -2,10 +2,11 @@
 <?php
 	get_header();
 ?>
+<?php $page_id=get_queried_object(); ?>
 <div class="main-title" style="background-color: #f2f2f2; ">
 	<div class="container">
 		<h1 class="main-title__primary">Diensten</h1>
-		<h3 class="main-title__secondary">BEKIJK HIER AL ONZE DIENSTEN DIE WE AAN ONZE KLANTEN AANBIEDEN</h3>
+		<h3 class="main-title__secondary"><?php echo $attachment_pdf = get_field('service_title', $page_id->ID);?></h3>
 	</div>
 </div>
 <div class="breadcrumbs">
@@ -14,6 +15,7 @@
 		<?php echo bt_breadcrumb();?>
 	</div>
 </div>
+
 <div class="master-container">
 	<div class="row">
 		<main class="col-xs-12" role="main">
@@ -41,13 +43,18 @@
 										?>
 									</div>
 								</div>
+								<?php 
+									$attachment_pdf = get_field('pdf_file', $page_id->ID);
+									if(!empty($attachment_pdf)){
+								?>
 								<div class="widget  widget-brochure-box  push-down-30">
 									<h4 class="sidebar__headings">Download onze Brochure</h4>
-									<a class="brochure-box" href="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/11/brochure.pdf" target="_blank">
+									<a class="brochure-box" href="<?php echo $attachment_pdf['url'];?>" target="_blank">
 										<i class="fa  fa-file-pdf-o"></i>
 										<h5 class="brochure-box__text">VIEW PDF</h5>
 									</a>
 								</div>
+								<?php } ?>
 							</div>
 						</div>
 					</div>
@@ -60,38 +67,17 @@
 									<div class="col-xs-8">
 										<div class="panel widget widget_black-studio-tinymce panel-first-child panel-last-child" id="panel-171-0-0-0">
 											<div class="textwidget post_content">
-												<h4>Uw probleem ...</h4>
-												<p>
-													Tijdens een bouwproces kan er heel wat mislopen:
-												</p>
-												<ul>
-													<li>u vindt de geknipte architect niet;</li>
-													<li>uw dossier is onvolledig;</li>
-													<li>u komt voor vervelende verrassingen te staan;</li>
-													<li>uw deadlines worden niet gehaald;</li>
-													<li>uw budget wordt niet gerespecteerd;</li>
-													<li>uw klanten nemen hun beslissinen niet op tijd.</li>
-												</ul>
-												
-												<h4>... wordt snel opgelost</h4>
-												<p>Bij Comacon Bouwcoördinatie is uw project in goede handen. We kennen de bouwsector door en door en verdedigen uw belangen én die van uw klanten op elk moment. Bovendien lossen we problemen op, waar nodig. Ga daarom in zee met een vakkundige projectcoördinator.</p>
-												
-												<h4>Stap voor stap</h4>
-												<p>Onze ambitie? Uw project zo overzichtelijk mogelijk houden. Daarom ontwerpen we een transparant stappenplan, wanneer u dat wenst. Zo weet u meteen wat wij voor u doen, van ontwerp tot uitvoering. Bent u ontevreden over onze diensten? Die kans is klein, maar weet dat u na elke fase de samenwerking kunt stopzetten.</p>
-												
-												<h4>Onze diensten</h4>
-												<p>By Tytgat krijgt u waar voor uw geld:</p>
-												<ul>
-													<li>Indien U nog geen architect en/of dossier hebt helpen we U zoeken naar de geknipte architect voor u</li>
-													<li>We verdedigen uw belangen tijdens de ontwerpfase en helpen om uw aanbod af te stemmen op de vraa</li>
-													<li>timing en technische haalbaarheid voor ogen.</li>
-													<li>We stellen uw verkoopslastenboek transparant en concurrentieel op.</li>
-													<li>We verdelen uw dossier in loten, en zorgen voor de aanbesteding, bestelling en coördinatie.</li>
-													<li>We helpen uw klanten om hun keuzes op tijd te maken, en brengen hen op de hoogte van bijkomend	</li>
-													<li>oplevering en afrekening.</li>
-													<li>We kijken uw rekeningen na en zorgen voor de afrekening met de aannemers.</li>
-													<li>We coördineren de uitvoering van finale opmerkingen van uw klant.</li>
-												</ul>
+												<?php
+											    // TO SHOW THE PAGE CONTENTS
+											    while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+											        <div class="entry-content-page">
+											            <?php the_content(); ?> <!-- Page Content -->
+											        </div><!-- .entry-content-page -->
+											
+											    <?php
+											    endwhile; //resetting the page loop
+											    wp_reset_query(); //resetting the page query
+											    ?>
 											</div>
 										</div>
 									</div>

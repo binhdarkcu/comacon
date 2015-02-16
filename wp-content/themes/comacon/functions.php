@@ -39,7 +39,14 @@
 	//cache function
 	//include TEMPLATEPATH .'/inc/disk_cached.php' ;
 	
-	
+	//rewrite search result
+	function change_services_url_rewrite() {
+		if(is_page('services')){
+			wp_redirect( home_url( "/services/bouwpromotoren-investeerders/")  );
+			exit();
+		}	
+	}
+	add_action( 'template_redirect', 'change_services_url_rewrite' );
 	//remove p tag
 	//remove_filter( 'the_content', 'wpautop' );
 	add_action( 'admin_init', 'hide_editor' );
