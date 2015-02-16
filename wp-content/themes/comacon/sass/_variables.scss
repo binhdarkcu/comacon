@@ -7,3 +7,20 @@ $colorMain_04:#375c78;
 $colorButton:#061f31;
 
 $colorText01:#666;
+$colorText02:#999;
+
+
+
+@mixin RobotoCondensed( $value, $line:1.1 ) {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:$value;
+	line-height:$line;
+	font-weight:400;
+}
+
+@mixin RobotoCondensedBold( $value, $line:1.1 ) {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:$value;
+	line-height:$line;
+	font-weight:700;
+}

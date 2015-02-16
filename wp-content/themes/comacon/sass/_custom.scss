@@ -68,8 +68,13 @@ vertical-align: middle;
 	border-bottom-color: #4d4d4d
 }
 .top, .top a {
-	color: $colorText01
+	color: $colorText02
 }
+
+.navbar-toggle__text {
+	color: $colorText02
+}
+
 .navigation--top>.menu-item-has-children>a::after {
 	border-top-color: $colorText01
 }  
@@ -80,7 +85,7 @@ vertical-align: middle;
 	background-image: url()
 }
 .icon-box__title, .widget-icon-box .icon-box:hover .fa {
-	color: #ddd
+	color: #333
 }
 .icon-box__subtitle, .widget-icon-box .icon-box, .textwidget {
 	color: #989898
@@ -114,8 +119,18 @@ vertical-align: middle;
 	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp)
 }
 .main-title h1 {
-	color: #333
+	color: $colorMain_04;
+	font-size: 50px;
+	@include RobotoCondensed(50px);
 }
+
+.main-title__secondary {
+	@include RobotoCondensed(14px);
+	text-transform: uppercase;
+	border-top: 1px solid rgba(0,0,0,0.06);
+	color: #999;
+}
+
 .breadcrumbs {
 	background-color: #fff
 }
@@ -129,10 +144,10 @@ vertical-align: middle;
 	color: $colorText01
 }
 .jumbotron__category h6, .social-icons__link, .testimonial__rating, body.woocommerce-page .star-rating, body.woocommerce-page ul.products li.product a:hover img, body.woocommerce-page p.stars a {
-	color: $colorMain_01
+	color: $colorMain_04
 }
 .jumbotron__category::after, .alternative-heading::after, .navbar-toggle, #comments-submit-button, .btn-primary, .panel-grid .widget-title::after, .footer .footer__headings::after, .main-title h3::before, .hentry__title::after, .widget_search .search-submit, .pagination li .current, .pagination li:hover, .sidebar__headings::after, .sidebar .widget_nav_menu ul>li.current-menu-item a, .sidebar .widget_nav_menu ul>li>a:hover, .widget_calendar caption, .widget_tag_cloud a, body.woocommerce-page .widget_product_search #searchsubmit, body.woocommerce-page span.onsale, body.woocommerce-page ul.products::before, body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page nav.woocommerce-pagination ul li a:hover, body.woocommerce-page a.add_to_cart_button:hover, body.woocommerce-page button.button:hover, body.woocommerce-page .widget_product_categories ul>li>a:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page table.cart td.actions input.button.alt, body.woocommerce-page .cart-collaterals .shipping_calculator h2::after, body.woocommerce-page .cart-collaterals .cart_totals h2::after, body.woocommerce-page .woocommerce-info, body.woocommerce-page .woocommerce-message, body.woocommerce-page .woocommerce-error, body.woocommerce-page #payment #place_order, body.woocommerce-page .short-description::before, body.woocommerce-page .short-description::after, body.woocommerce-page .quantity .minus:hover, body.woocommerce-page .quantity .plus:hover, body.woocommerce-page button.button.alt, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, body.woocommerce-page #review_form #respond input#submit, body.woocommerce-page div.product .woocommerce-tabs h2::after, .buildpress-table thead th, .brochure-box:hover {
-	background-color: $colorButton
+	background-color: $colorMain_02
 }
 @media (min-width:992px) {
 .navigation--main .sub-menu>li>a {
@@ -200,6 +215,30 @@ body, .textwidget {
 .slb_details {
 	display: none
 }
+
+
+/*menu*/
+html.flexbox .widget-icon-box .icon-box {
+	border-right: 1px #333333 solid;
+	
+	
+	.icon-box__title {
+		color: #333;
+		@include RobotoCondensed(16px);
+	}
+	
+	.icon-box__subtitle {
+		color: #333;
+		@include RobotoCondensed(14px);
+		
+		a {
+			color: #375c78;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+	}
+}
+
 
 /*slider*/
 .carousel-inner {
