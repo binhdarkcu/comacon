@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 16, 2015 at 04:05 AM
+-- Generation Time: Feb 16, 2015 at 05:43 AM
 -- Server version: 5.5.36
 -- PHP Version: 5.4.27
 
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=299 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=308 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -212,7 +212,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (93, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (94, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
 (95, 'sidebars_widgets', 'a:3:{s:19:"wp_inactive_widgets";a:0:{}s:18:"orphaned_widgets_1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:13:"array_version";i:3;}', 'yes'),
-(96, 'cron', 'a:7:{i:1424058743;a:1:{s:12:"qs_cron_hook";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1424068623;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1424069274;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1424069615;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1424070030;a:1:{s:22:"transposh_backup_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1424071200;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}s:7:"version";i:2;}', 'yes'),
+(96, 'cron', 'a:7:{i:1424062343;a:1:{s:12:"qs_cron_hook";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1424068623;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1424069274;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1424069615;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1424070030;a:1:{s:22:"transposh_backup_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1424071200;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}s:7:"version";i:2;}', 'yes'),
 (101, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:2:{i:0;O:8:"stdClass":10:{s:8:"response";s:7:"upgrade";s:8:"download";s:57:"https://downloads.wordpress.org/release/wordpress-4.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:57:"https://downloads.wordpress.org/release/wordpress-4.1.zip";s:10:"no_content";s:68:"https://downloads.wordpress.org/release/wordpress-4.1-no-content.zip";s:11:"new_bundled";s:69:"https://downloads.wordpress.org/release/wordpress-4.1-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.1";s:7:"version";s:3:"4.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.1";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":11:{s:8:"response";s:10:"autoupdate";s:8:"download";s:57:"https://downloads.wordpress.org/release/wordpress-4.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:57:"https://downloads.wordpress.org/release/wordpress-4.1.zip";s:10:"no_content";s:68:"https://downloads.wordpress.org/release/wordpress-4.1-no-content.zip";s:11:"new_bundled";s:69:"https://downloads.wordpress.org/release/wordpress-4.1-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.1";s:7:"version";s:3:"4.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.1";s:15:"partial_version";s:0:"";s:13:"support_email";s:26:"updatehelp40@wordpress.org";}}s:12:"last_checked";i:1424052523;s:15:"version_checked";s:5:"4.0.1";s:12:"translations";a:0:{}}', 'yes'),
 (109, '_transient_random_seed', '2ce1e5eb9eb948397ef6a253c2ee7ee7', 'yes'),
 (110, 'auth_key', 'Ye$:YvIX]}O.#{FG8qFJ59.YCC6E..{y^bAWc]M[FyoYvIgsezf!iy<{50iRCFS^', 'yes'),
@@ -301,7 +301,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=249 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=360 ;
 
 --
 -- Dumping data for table `wp_postmeta`
@@ -370,7 +370,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (67, 1, '_wp_trash_meta_time', '1423756104'),
 (68, 1, '_wp_trash_meta_comments_status', 'a:1:{i:1;s:1:"1";}'),
 (69, 23, '_edit_last', '1'),
-(70, 23, '_edit_lock', '1424002316:1'),
+(70, 23, '_edit_lock', '1424060414:1'),
 (71, 24, '_edit_last', '1'),
 (72, 24, '_edit_lock', '1423808160:1'),
 (73, 26, '_form', '<div class="row">\n       <div class="col-xs-12  col-sm-4">\n                  [text* your-name placeholder "Jouw Naam"]\n                   [email* your-email placeholder "E-mail adres"]\n                     [text your-subject placeholder "Onderwerp"]\n       </div>\n       <div class="col-xs-12  col-sm-8">\n                       [textarea your-message placeholder "Bericht"]\n              [submit  class:btn class:btn-primary "VERSTUUR"]\n       </div>\n</div>'),
@@ -446,13 +446,13 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (164, 57, '_menu_item_url', ''),
 (165, 57, '_menu_item_orphaned', '1423998609'),
 (166, 58, '_edit_last', '1'),
-(167, 58, '_edit_lock', '1424055937:1'),
+(167, 58, '_edit_lock', '1424058741:1'),
 (168, 61, '_edit_last', '1'),
-(169, 61, '_edit_lock', '1424055565:1'),
+(169, 61, '_edit_lock', '1424058785:1'),
 (170, 63, '_edit_last', '1'),
-(171, 63, '_edit_lock', '1424053170:1'),
+(171, 63, '_edit_lock', '1424058770:1'),
 (172, 65, '_edit_last', '1'),
-(173, 65, '_edit_lock', '1424054799:1'),
+(173, 65, '_edit_lock', '1424058853:1'),
 (174, 67, '_edit_last', '1'),
 (175, 67, '_edit_lock', '1423998700:1'),
 (176, 69, '_edit_last', '1'),
@@ -520,7 +520,100 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (244, 78, '_menu_item_target', ''),
 (245, 78, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (246, 78, '_menu_item_xfn', ''),
-(247, 78, '_menu_item_url', '');
+(247, 78, '_menu_item_url', ''),
+(249, 79, '_edit_last', '1'),
+(250, 79, 'field_54e15fce22a3d', 'a:10:{s:3:"key";s:19:"field_54e15fce22a3d";s:5:"label";s:8:"Pdf File";s:4:"name";s:8:"pdf_file";s:4:"type";s:4:"file";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:11:"save_format";s:6:"object";s:7:"library";s:3:"all";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}'),
+(252, 79, 'position', 'normal'),
+(253, 79, 'layout', 'no_box'),
+(254, 79, 'hide_on_screen', ''),
+(255, 79, '_edit_lock', '1424058255:1'),
+(256, 79, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:2:"58";s:8:"order_no";i:0;s:8:"group_no";i:0;}'),
+(257, 79, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:2:"63";s:8:"order_no";i:0;s:8:"group_no";i:1;}'),
+(258, 79, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:2:"61";s:8:"order_no";i:0;s:8:"group_no";i:2;}'),
+(259, 79, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:2:"65";s:8:"order_no";i:0;s:8:"group_no";i:3;}'),
+(260, 80, 'pdf_file', ''),
+(261, 80, '_pdf_file', 'field_54e15fce22a3d'),
+(262, 61, 'pdf_file', '81'),
+(263, 61, '_pdf_file', 'field_54e15fce22a3d'),
+(264, 81, '_wp_attached_file', '2015/02/brochure.pdf'),
+(265, 82, 'pdf_file', '81'),
+(266, 82, '_pdf_file', 'field_54e15fce22a3d'),
+(267, 83, 'pdf_file', ''),
+(268, 83, '_pdf_file', 'field_54e15fce22a3d'),
+(269, 63, 'pdf_file', ''),
+(270, 63, '_pdf_file', 'field_54e15fce22a3d'),
+(271, 84, '_edit_last', '1'),
+(272, 84, 'field_54e169a9b6905', 'a:14:{s:3:"key";s:19:"field_54e169a9b6905";s:5:"label";s:13:"service title";s:4:"name";s:13:"service_title";s:4:"type";s:15:"qtranslate_text";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"none";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}'),
+(274, 84, 'position', 'acf_after_title'),
+(275, 84, 'layout', 'no_box'),
+(276, 84, 'hide_on_screen', ''),
+(277, 84, '_edit_lock', '1424059128:1'),
+(278, 84, 'rule', 'a:5:{s:5:"param";s:11:"page_parent";s:8:"operator";s:2:"==";s:5:"value";s:2:"58";s:8:"order_no";i:0;s:8:"group_no";i:0;}'),
+(279, 85, 'service_title', 'BEKIJK HIER AL ONZE DIENSTEN DIE WE AAN ONZE KLANTEN AANBIEDEN'),
+(280, 85, '_service_title', 'field_54e169a9b6905'),
+(281, 85, 'pdf_file', ''),
+(282, 85, '_pdf_file', 'field_54e15fce22a3d'),
+(283, 63, 'service_title', 'BEKIJK HIER AL ONZE DIENSTEN DIE WE AAN ONZE KLANTEN AANBIEDEN'),
+(284, 63, '_service_title', 'field_54e169a9b6905'),
+(285, 86, 'service_title', 'BEKIJK HIER AL ONZE DIENSTEN DIE WE AAN ONZE KLANTEN AANBIEDEN'),
+(286, 86, '_service_title', 'field_54e169a9b6905'),
+(287, 86, 'pdf_file', '81'),
+(288, 86, '_pdf_file', 'field_54e15fce22a3d'),
+(289, 61, 'service_title', 'BEKIJK HIER AL ONZE DIENSTEN DIE WE AAN ONZE KLANTEN AANBIEDEN'),
+(290, 61, '_service_title', 'field_54e169a9b6905'),
+(291, 87, 'service_title', 'BEKIJK HIER AL ONZE DIENSTEN DIE WE AAN ONZE KLANTEN AANBIEDEN'),
+(292, 87, '_service_title', 'field_54e169a9b6905'),
+(293, 87, 'pdf_file', ''),
+(294, 87, '_pdf_file', 'field_54e15fce22a3d'),
+(295, 65, 'service_title', 'BEKIJK HIER AL ONZE DIENSTEN DIE WE AAN ONZE KLANTEN AANBIEDEN'),
+(296, 65, '_service_title', 'field_54e169a9b6905'),
+(297, 65, 'pdf_file', ''),
+(298, 65, '_pdf_file', 'field_54e15fce22a3d'),
+(299, 69, '_wp_trash_meta_status', 'publish'),
+(300, 69, '_wp_trash_meta_time', '1424059373'),
+(301, 88, '_wp_attached_file', '2015/02/p-1.jpg'),
+(302, 88, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:15:"2015/02/p-1.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"p-1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(303, 23, 'tt_logo_projects', '88'),
+(304, 89, '_wp_attached_file', '2015/02/p-2.jpg'),
+(305, 89, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:15:"2015/02/p-2.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"p-2-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(306, 23, 'tt_logo_projects', '89'),
+(307, 90, '_wp_attached_file', '2015/02/p-3.jpg'),
+(308, 90, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:15:"2015/02/p-3.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"p-3-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(309, 23, 'tt_logo_projects', '90'),
+(310, 91, '_wp_attached_file', '2015/02/p-11.jpg'),
+(311, 91, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:16:"2015/02/p-11.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:16:"p-11-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(312, 23, '_thumbnail_id', '91'),
+(317, 93, '_edit_last', '1'),
+(318, 93, '_edit_lock', '1424061440:1'),
+(319, 94, '_wp_attached_file', '2015/02/p-21.jpg'),
+(320, 94, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:16:"2015/02/p-21.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:16:"p-21-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(321, 93, 'tt_logo_projects', '94'),
+(322, 95, '_wp_attached_file', '2015/02/p-31.jpg'),
+(323, 95, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:16:"2015/02/p-31.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:16:"p-31-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(324, 93, 'tt_logo_projects', '95'),
+(325, 96, '_wp_attached_file', '2015/02/p-22.jpg'),
+(326, 96, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:16:"2015/02/p-22.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:16:"p-22-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(327, 93, '_thumbnail_id', '96'),
+(330, 98, '_edit_last', '1'),
+(331, 98, '_edit_lock', '1424061480:1'),
+(332, 99, '_wp_attached_file', '2015/02/p-32.jpg'),
+(333, 99, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:16:"2015/02/p-32.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:16:"p-32-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(334, 98, '_thumbnail_id', '99'),
+(337, 101, '_edit_last', '1'),
+(338, 101, '_edit_lock', '1424061520:1'),
+(339, 102, '_wp_attached_file', '2015/02/p-4.jpg'),
+(340, 102, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:15:"2015/02/p-4.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"p-4-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(341, 101, '_thumbnail_id', '102'),
+(346, 104, '_edit_last', '1'),
+(347, 104, '_edit_lock', '1424061564:1'),
+(348, 105, '_wp_attached_file', '2015/02/p-33.jpg'),
+(349, 105, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:16:"2015/02/p-33.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:16:"p-33-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(350, 104, '_thumbnail_id', '105'),
+(353, 108, '_wp_attached_file', '2015/02/p-41.jpg'),
+(354, 108, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:271;s:6:"height";i:203;s:4:"file";s:16:"2015/02/p-41.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:16:"p-41-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:1;}}'),
+(355, 107, '_thumbnail_id', '108'),
+(356, 107, '_edit_last', '1'),
+(359, 107, '_edit_lock', '1424061733:1');
 
 -- --------------------------------------------------------
 
@@ -557,7 +650,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=79 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=110 ;
 
 --
 -- Dumping data for table `wp_posts`
@@ -586,7 +679,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (20, 1, '2015-02-12 15:08:04', '2015-02-12 15:08:04', '<!--:en-->Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.<!--:-->', 'grondeigenaars', '', 'publish', 'closed', 'closed', '', 'grondeigenaars', '', '', '2015-02-13 06:22:13', '2015-02-13 06:22:13', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?post_type=news&#038;p=20', 0, 'news', '', 0),
 (21, 1, '2015-02-12 15:07:59', '2015-02-12 15:07:59', '', 'n3', '', 'inherit', 'open', 'open', '', 'n3', '', '', '2015-02-12 15:07:59', '2015-02-12 15:07:59', '', 20, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/n3.jpg', 0, 'attachment', 'image/jpeg', 0),
 (22, 1, '2015-02-12 15:48:24', '2015-02-12 15:48:24', 'Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!', 'Hello world!', '', 'inherit', 'open', 'open', '', '1-revision-v1', '', '', '2015-02-12 15:48:24', '2015-02-12 15:48:24', '', 1, 'http://localhost/PHP/BLISS/COMACON/source/www/1-revision-v1/', 0, 'revision', '', 0),
-(23, 1, '2015-02-15 12:11:56', '0000-00-00 00:00:00', '', 'Mechelen Stadszaal', '', 'draft', 'open', 'open', '', '', '', '', '2015-02-15 12:11:56', '2015-02-15 12:11:56', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=23', 0, 'post', '', 0),
+(23, 1, '2015-02-16 04:09:40', '2015-02-16 04:09:40', '', 'Mechelen Stadszaal', '', 'publish', 'open', 'open', '', 'mechelen-stadszaal', '', '', '2015-02-16 04:22:26', '2015-02-16 04:22:26', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=23', 0, 'post', '', 0),
 (24, 1, '2015-02-13 02:56:53', '2015-02-13 02:56:53', '', 'Contacteer ons', '', 'publish', 'open', 'open', '', 'contact', '', '', '2015-02-13 06:18:14', '2015-02-13 06:18:14', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=24', 0, 'page', '', 0),
 (25, 1, '2015-02-13 02:56:53', '2015-02-13 02:56:53', '', '<!--:en-->Contact<!--:-->', '', 'inherit', 'open', 'open', '', '24-revision-v1', '', '', '2015-02-13 02:56:53', '2015-02-13 02:56:53', '', 24, 'http://localhost/PHP/BLISS/COMACON/source/www/24-revision-v1/', 0, 'revision', '', 0),
 (26, 1, '2015-02-13 03:10:22', '2015-02-13 03:10:22', '<div class="row">\r\n       <div class="col-xs-12  col-sm-4">\r\n                  [text* your-name placeholder "Jouw Naam"]\r\n                   [email* your-email placeholder "E-mail adres"]\r\n                     [text your-subject placeholder "Onderwerp"]\r\n       </div>\r\n       <div class="col-xs-12  col-sm-8">\r\n                       [textarea your-message placeholder "Bericht"]\r\n              [submit  class:btn class:btn-primary "VERSTUUR"]\r\n       </div>\r\n</div>\n[your-subject]\n[your-name] <[your-email]>\nFrom: [your-name] <[your-email]>\r\nSubject: [your-subject]\r\n\r\nMessage Body:\r\n[your-message]\r\n\r\n--\r\nThis e-mail was sent from a contact form on Comacon (http://localhost/PHP/BLISS/COMACON/source/www)\nbinhdarkcu@gmail.com\n\n\n\n\n\n[your-subject]\n[your-name] <[your-email]>\nMessage Body:\r\n[your-message]\r\n\r\n--\r\nThis e-mail was sent from a contact form on Comacon (http://localhost/PHP/BLISS/COMACON/source/www)\n[your-email]\n\n\n\n\nYour message was sent successfully. Thanks.\nFailed to send your message. Please try later or contact the administrator by another method.\nValidation errors occurred. Please confirm the fields and submit it again.\nFailed to send your message. Please try later or contact the administrator by another method.\nPlease accept the terms to proceed.\nPlease fill the required field.\nYour entered code is incorrect.\nNumber format seems invalid.\nThis number is too small.\nThis number is too large.\nEmail address seems invalid.\nURL seems invalid.\nTelephone number seems invalid.\nYour answer is not correct.\nDate format seems invalid.\nThis date is too early.\nThis date is too late.\nFailed to upload file.\nThis file type is not allowed.\nThis file is too large.\nFailed to upload file. Error occurred.', 'Contact form', '', 'publish', 'open', 'open', '', 'contact-form-1', '', '', '2015-02-13 04:41:31', '2015-02-13 04:41:31', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?post_type=wpcf7_contact_form&#038;p=26', 0, 'wpcf7_contact_form', '', 0),
@@ -622,15 +715,15 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (58, 1, '2015-02-15 11:11:59', '2015-02-15 11:11:59', '', 'DIENSTEN', '', 'publish', 'open', 'open', '', 'services', '', '', '2015-02-16 03:05:35', '2015-02-16 03:05:35', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=58', 0, 'page', '', 0),
 (59, 1, '2015-02-15 11:11:59', '2015-02-15 11:11:59', '', 'services', '', 'inherit', 'open', 'open', '', '58-revision-v1', '', '', '2015-02-15 11:11:59', '2015-02-15 11:11:59', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/58-revision-v1/', 0, 'revision', '', 0),
 (60, 1, '2015-02-15 11:12:07', '2015-02-15 11:12:07', '', 'DIENSTEN', '', 'inherit', 'open', 'open', '', '58-revision-v1', '', '', '2015-02-15 11:12:07', '2015-02-15 11:12:07', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/58-revision-v1/', 0, 'revision', '', 0),
-(61, 1, '2015-02-15 11:12:56', '2015-02-15 11:12:56', '', 'Bouwpromotoren / investeerders', '', 'publish', 'open', 'open', '', 'bouwpromotoren-investeerders', '', '', '2015-02-16 02:21:10', '2015-02-16 02:21:10', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=61', 0, 'page', '', 0),
+(61, 1, '2015-02-15 11:12:56', '2015-02-15 11:12:56', '<h4>Uw probleem ...</h4>\r\nTijdens een bouwproces kan er heel wat mislopen:\r\n<ul>\r\n	<li>u vindt de geknipte architect niet;</li>\r\n	<li>uw dossier is onvolledig;</li>\r\n	<li>u komt voor vervelende verrassingen te staan;</li>\r\n	<li>uw deadlines worden niet gehaald;</li>\r\n	<li>uw budget wordt niet gerespecteerd;</li>\r\n	<li>uw klanten nemen hun beslissinen niet op tijd.</li>\r\n</ul>\r\n<h4>... wordt snel opgelost</h4>\r\nBij Comacon Bouwcoördinatie is uw project in goede handen. We kennen de bouwsector door en door en verdedigen uw belangen én die van uw klanten op elk moment. Bovendien lossen we problemen op, waar nodig. Ga daarom in zee met een vakkundige projectcoördinator.\r\n<h4>Stap voor stap</h4>\r\nOnze ambitie? Uw project zo overzichtelijk mogelijk houden. Daarom ontwerpen we een transparant stappenplan, wanneer u dat wenst. Zo weet u meteen wat wij voor u doen, van ontwerp tot uitvoering. Bent u ontevreden over onze diensten? Die kans is klein, maar weet dat u na elke fase de samenwerking kunt stopzetten.\r\n<h4>Onze diensten</h4>\r\nBy Tytgat krijgt u waar voor uw geld:\r\n<ul>\r\n	<li>Indien U nog geen architect en/of dossier hebt helpen we U zoeken naar de geknipte architect voor u</li>\r\n	<li>We verdedigen uw belangen tijdens de ontwerpfase en helpen om uw aanbod af te stemmen op de vraa</li>\r\n	<li>timing en technische haalbaarheid voor ogen.</li>\r\n	<li>We stellen uw verkoopslastenboek transparant en concurrentieel op.</li>\r\n	<li>We verdelen uw dossier in loten, en zorgen voor de aanbesteding, bestelling en coördinatie.</li>\r\n	<li>We helpen uw klanten om hun keuzes op tijd te maken, en brengen hen op de hoogte van bijkomend</li>\r\n	<li>oplevering en afrekening.</li>\r\n	<li>We kijken uw rekeningen na en zorgen voor de afrekening met de aannemers.</li>\r\n	<li>We coördineren de uitvoering van finale opmerkingen van uw klant.</li>\r\n</ul>', 'Bouwpromotoren / investeerders', '', 'publish', 'open', 'open', '', 'bouwpromotoren-investeerders', '', '', '2015-02-16 03:55:24', '2015-02-16 03:55:24', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=61', 0, 'page', '', 0),
 (62, 1, '2015-02-15 11:12:56', '2015-02-15 11:12:56', '', 'Bouwpromotoren / investeerders', '', 'inherit', 'open', 'open', '', '61-revision-v1', '', '', '2015-02-15 11:12:56', '2015-02-15 11:12:56', '', 61, 'http://localhost/PHP/BLISS/COMACON/source/www/61-revision-v1/', 0, 'revision', '', 0),
-(63, 1, '2015-02-15 11:13:06', '2015-02-15 11:13:06', '', 'BEDRIJVEN', '', 'publish', 'open', 'closed', '', 'bedrijven', '', '', '2015-02-16 02:21:50', '2015-02-16 02:21:50', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=63', 0, 'page', '', 0),
+(63, 1, '2015-02-15 11:13:06', '2015-02-15 11:13:06', '<h4>Uw probleem ...</h4>\r\nTijdens een bouwproces kan er heel wat mislopen:\r\n<ul>\r\n	<li>u vindt de geknipte architect niet;</li>\r\n	<li>uw dossier is onvolledig;</li>\r\n	<li>u komt voor vervelende verrassingen te staan;</li>\r\n	<li>uw deadlines worden niet gehaald;</li>\r\n	<li>uw budget wordt niet gerespecteerd;</li>\r\n	<li>uw klanten nemen hun beslissinen niet op tijd.</li>\r\n</ul>\r\n<h4>... wordt snel opgelost</h4>\r\nBij Comacon Bouwcoördinatie is uw project in goede handen. We kennen de bouwsector door en door en verdedigen uw belangen én die van uw klanten op elk moment. Bovendien lossen we problemen op, waar nodig. Ga daarom in zee met een vakkundige projectcoördinator.\r\n<h4>Stap voor stap</h4>\r\nOnze ambitie? Uw project zo overzichtelijk mogelijk houden. Daarom ontwerpen we een transparant stappenplan, wanneer u dat wenst. Zo weet u meteen wat wij voor u doen, van ontwerp tot uitvoering. Bent u ontevreden over onze diensten? Die kans is klein, maar weet dat u na elke fase de samenwerking kunt stopzetten.\r\n<h4>Onze diensten</h4>\r\nBy Tytgat krijgt u waar voor uw geld:\r\n<ul>\r\n	<li>Indien U nog geen architect en/of dossier hebt helpen we U zoeken naar de geknipte architect voor u</li>\r\n	<li>We verdedigen uw belangen tijdens de ontwerpfase en helpen om uw aanbod af te stemmen op de vraa</li>\r\n	<li>timing en technische haalbaarheid voor ogen.</li>\r\n	<li>We stellen uw verkoopslastenboek transparant en concurrentieel op.</li>\r\n	<li>We verdelen uw dossier in loten, en zorgen voor de aanbesteding, bestelling en coördinatie.</li>\r\n	<li>We helpen uw klanten om hun keuzes op tijd te maken, en brengen hen op de hoogte van bijkomend</li>\r\n	<li>oplevering en afrekening.</li>\r\n	<li>We kijken uw rekeningen na en zorgen voor de afrekening met de aannemers.</li>\r\n	<li>We coördineren de uitvoering van finale opmerkingen van uw klant.</li>\r\n</ul>', 'BEDRIJVEN', '', 'publish', 'open', 'closed', '', 'bedrijven', '', '', '2015-02-16 03:55:08', '2015-02-16 03:55:08', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=63', 0, 'page', '', 0),
 (64, 1, '2015-02-15 11:13:06', '2015-02-15 11:13:06', '', 'BEDRIJVEN', '', 'inherit', 'open', 'open', '', '63-revision-v1', '', '', '2015-02-15 11:13:06', '2015-02-15 11:13:06', '', 63, 'http://localhost/PHP/BLISS/COMACON/source/www/63-revision-v1/', 0, 'revision', '', 0),
-(65, 1, '2015-02-15 11:13:16', '2015-02-15 11:13:16', '', 'grondeigenaars', '', 'publish', 'open', 'open', '', 'grondeigenaars', '', '', '2015-02-16 02:22:14', '2015-02-16 02:22:14', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=65', 0, 'page', '', 0),
+(65, 1, '2015-02-15 11:13:16', '2015-02-15 11:13:16', '', 'grondeigenaars', '', 'publish', 'open', 'open', '', 'grondeigenaars', '', '', '2015-02-16 03:55:38', '2015-02-16 03:55:38', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=65', 0, 'page', '', 0),
 (66, 1, '2015-02-15 11:13:16', '2015-02-15 11:13:16', '', 'grondeigenaars', '', 'inherit', 'open', 'open', '', '65-revision-v1', '', '', '2015-02-15 11:13:16', '2015-02-15 11:13:16', '', 65, 'http://localhost/PHP/BLISS/COMACON/source/www/65-revision-v1/', 0, 'revision', '', 0),
 (67, 1, '2015-02-15 11:13:34', '2015-02-15 11:13:34', '', 'REFERENTIES', '', 'publish', 'open', 'open', '', 'referenties', '', '', '2015-02-15 11:13:34', '2015-02-15 11:13:34', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=67', 0, 'page', '', 0),
 (68, 1, '2015-02-15 11:13:34', '2015-02-15 11:13:34', '', 'REFERENTIES', '', 'inherit', 'open', 'open', '', '67-revision-v1', '', '', '2015-02-15 11:13:34', '2015-02-15 11:13:34', '', 67, 'http://localhost/PHP/BLISS/COMACON/source/www/67-revision-v1/', 0, 'revision', '', 0),
-(69, 1, '2015-02-15 11:14:32', '2015-02-15 11:14:32', '', 'Bouwpromotoren / investeerders', '', 'publish', 'open', 'open', '', 'bouwpromotoren-investeerders', '', '', '2015-02-15 11:14:32', '2015-02-15 11:14:32', '', 67, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=69', 0, 'page', '', 0),
+(69, 1, '2015-02-15 11:14:32', '2015-02-15 11:14:32', '', 'Bouwpromotoren / investeerders', '', 'trash', 'open', 'open', '', 'bouwpromotoren-investeerders', '', '', '2015-02-16 04:02:53', '2015-02-16 04:02:53', '', 67, 'http://localhost/PHP/BLISS/COMACON/source/www/?page_id=69', 0, 'page', '', 0),
 (70, 1, '2015-02-15 11:14:32', '2015-02-15 11:14:32', '', 'Bouwpromotoren / investeerders', '', 'inherit', 'open', 'open', '', '69-revision-v1', '', '', '2015-02-15 11:14:32', '2015-02-15 11:14:32', '', 69, 'http://localhost/PHP/BLISS/COMACON/source/www/69-revision-v1/', 0, 'revision', '', 0),
 (71, 1, '2015-02-15 11:15:54', '2015-02-15 11:15:54', ' ', '', '', 'publish', 'open', 'open', '', '71', '', '', '2015-02-15 11:18:24', '2015-02-15 11:18:24', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=71', 3, 'nav_menu_item', '', 0),
 (72, 1, '2015-02-15 11:15:54', '2015-02-15 11:15:54', ' ', '', '', 'publish', 'open', 'open', '', '72', '', '', '2015-02-15 11:18:24', '2015-02-15 11:18:24', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=72', 7, 'nav_menu_item', '', 0),
@@ -639,7 +732,39 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (75, 1, '2015-02-15 11:17:59', '2015-02-15 11:17:59', ' ', '', '', 'publish', 'open', 'open', '', '75', '', '', '2015-02-15 11:18:24', '2015-02-15 11:18:24', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=75', 6, 'nav_menu_item', '', 0),
 (76, 1, '2015-02-16 02:58:03', '2015-02-16 02:58:03', ' ', '', '', 'publish', 'open', 'open', '', '76', '', '', '2015-02-16 02:58:03', '2015-02-16 02:58:03', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=76', 3, 'nav_menu_item', '', 0),
 (77, 1, '2015-02-16 02:58:03', '2015-02-16 02:58:03', ' ', '', '', 'publish', 'open', 'open', '', '77', '', '', '2015-02-16 02:58:03', '2015-02-16 02:58:03', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=77', 2, 'nav_menu_item', '', 0),
-(78, 1, '2015-02-16 02:58:03', '2015-02-16 02:58:03', ' ', '', '', 'publish', 'open', 'open', '', '78', '', '', '2015-02-16 02:58:03', '2015-02-16 02:58:03', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=78', 1, 'nav_menu_item', '', 0);
+(78, 1, '2015-02-16 02:58:03', '2015-02-16 02:58:03', ' ', '', '', 'publish', 'open', 'open', '', '78', '', '', '2015-02-16 02:58:03', '2015-02-16 02:58:03', '', 58, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=78', 1, 'nav_menu_item', '', 0),
+(79, 1, '2015-02-16 03:13:28', '2015-02-16 03:13:28', '', 'pdf file', '', 'publish', 'closed', 'closed', '', 'acf_pdf-file', '', '', '2015-02-16 03:14:56', '2015-02-16 03:14:56', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?post_type=acf&#038;p=79', 0, 'acf', '', 0),
+(80, 1, '2015-02-16 03:15:53', '2015-02-16 03:15:53', '<h4>Uw probleem ...</h4>\r\nTijdens een bouwproces kan er heel wat mislopen:\r\n<ul>\r\n	<li>u vindt de geknipte architect niet;</li>\r\n	<li>uw dossier is onvolledig;</li>\r\n	<li>u komt voor vervelende verrassingen te staan;</li>\r\n	<li>uw deadlines worden niet gehaald;</li>\r\n	<li>uw budget wordt niet gerespecteerd;</li>\r\n	<li>uw klanten nemen hun beslissinen niet op tijd.</li>\r\n</ul>\r\n<h4>... wordt snel opgelost</h4>\r\nBij Comacon Bouwcoördinatie is uw project in goede handen. We kennen de bouwsector door en door en verdedigen uw belangen én die van uw klanten op elk moment. Bovendien lossen we problemen op, waar nodig. Ga daarom in zee met een vakkundige projectcoördinator.\r\n<h4>Stap voor stap</h4>\r\nOnze ambitie? Uw project zo overzichtelijk mogelijk houden. Daarom ontwerpen we een transparant stappenplan, wanneer u dat wenst. Zo weet u meteen wat wij voor u doen, van ontwerp tot uitvoering. Bent u ontevreden over onze diensten? Die kans is klein, maar weet dat u na elke fase de samenwerking kunt stopzetten.\r\n<h4>Onze diensten</h4>\r\nBy Tytgat krijgt u waar voor uw geld:\r\n<ul>\r\n	<li>Indien U nog geen architect en/of dossier hebt helpen we U zoeken naar de geknipte architect voor u</li>\r\n	<li>We verdedigen uw belangen tijdens de ontwerpfase en helpen om uw aanbod af te stemmen op de vraa</li>\r\n	<li>timing en technische haalbaarheid voor ogen.</li>\r\n	<li>We stellen uw verkoopslastenboek transparant en concurrentieel op.</li>\r\n	<li>We verdelen uw dossier in loten, en zorgen voor de aanbesteding, bestelling en coördinatie.</li>\r\n	<li>We helpen uw klanten om hun keuzes op tijd te maken, en brengen hen op de hoogte van bijkomend</li>\r\n	<li>oplevering en afrekening.</li>\r\n	<li>We kijken uw rekeningen na en zorgen voor de afrekening met de aannemers.</li>\r\n	<li>We coördineren de uitvoering van finale opmerkingen van uw klant.</li>\r\n</ul>', 'Bouwpromotoren / investeerders', '', 'inherit', 'open', 'open', '', '61-revision-v1', '', '', '2015-02-16 03:15:53', '2015-02-16 03:15:53', '', 61, 'http://localhost/PHP/BLISS/COMACON/source/www/61-revision-v1/', 0, 'revision', '', 0),
+(81, 1, '2015-02-16 03:46:58', '2015-02-16 03:46:58', '', 'brochure', '', 'inherit', 'open', 'open', '', 'brochure', '', '', '2015-02-16 03:46:58', '2015-02-16 03:46:58', '', 61, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/brochure.pdf', 0, 'attachment', 'application/pdf', 0),
+(82, 1, '2015-02-16 03:47:02', '2015-02-16 03:47:02', '<h4>Uw probleem ...</h4>\r\nTijdens een bouwproces kan er heel wat mislopen:\r\n<ul>\r\n	<li>u vindt de geknipte architect niet;</li>\r\n	<li>uw dossier is onvolledig;</li>\r\n	<li>u komt voor vervelende verrassingen te staan;</li>\r\n	<li>uw deadlines worden niet gehaald;</li>\r\n	<li>uw budget wordt niet gerespecteerd;</li>\r\n	<li>uw klanten nemen hun beslissinen niet op tijd.</li>\r\n</ul>\r\n<h4>... wordt snel opgelost</h4>\r\nBij Comacon Bouwcoördinatie is uw project in goede handen. We kennen de bouwsector door en door en verdedigen uw belangen én die van uw klanten op elk moment. Bovendien lossen we problemen op, waar nodig. Ga daarom in zee met een vakkundige projectcoördinator.\r\n<h4>Stap voor stap</h4>\r\nOnze ambitie? Uw project zo overzichtelijk mogelijk houden. Daarom ontwerpen we een transparant stappenplan, wanneer u dat wenst. Zo weet u meteen wat wij voor u doen, van ontwerp tot uitvoering. Bent u ontevreden over onze diensten? Die kans is klein, maar weet dat u na elke fase de samenwerking kunt stopzetten.\r\n<h4>Onze diensten</h4>\r\nBy Tytgat krijgt u waar voor uw geld:\r\n<ul>\r\n	<li>Indien U nog geen architect en/of dossier hebt helpen we U zoeken naar de geknipte architect voor u</li>\r\n	<li>We verdedigen uw belangen tijdens de ontwerpfase en helpen om uw aanbod af te stemmen op de vraa</li>\r\n	<li>timing en technische haalbaarheid voor ogen.</li>\r\n	<li>We stellen uw verkoopslastenboek transparant en concurrentieel op.</li>\r\n	<li>We verdelen uw dossier in loten, en zorgen voor de aanbesteding, bestelling en coördinatie.</li>\r\n	<li>We helpen uw klanten om hun keuzes op tijd te maken, en brengen hen op de hoogte van bijkomend</li>\r\n	<li>oplevering en afrekening.</li>\r\n	<li>We kijken uw rekeningen na en zorgen voor de afrekening met de aannemers.</li>\r\n	<li>We coördineren de uitvoering van finale opmerkingen van uw klant.</li>\r\n</ul>', 'Bouwpromotoren / investeerders', '', 'inherit', 'open', 'open', '', '61-revision-v1', '', '', '2015-02-16 03:47:02', '2015-02-16 03:47:02', '', 61, 'http://localhost/PHP/BLISS/COMACON/source/www/61-revision-v1/', 0, 'revision', '', 0),
+(83, 1, '2015-02-16 03:50:46', '2015-02-16 03:50:46', '<h4>Uw probleem ...</h4>\r\nTijdens een bouwproces kan er heel wat mislopen:\r\n<ul>\r\n	<li>u vindt de geknipte architect niet;</li>\r\n	<li>uw dossier is onvolledig;</li>\r\n	<li>u komt voor vervelende verrassingen te staan;</li>\r\n	<li>uw deadlines worden niet gehaald;</li>\r\n	<li>uw budget wordt niet gerespecteerd;</li>\r\n	<li>uw klanten nemen hun beslissinen niet op tijd.</li>\r\n</ul>\r\n<h4>... wordt snel opgelost</h4>\r\nBij Comacon Bouwcoördinatie is uw project in goede handen. We kennen de bouwsector door en door en verdedigen uw belangen én die van uw klanten op elk moment. Bovendien lossen we problemen op, waar nodig. Ga daarom in zee met een vakkundige projectcoördinator.\r\n<h4>Stap voor stap</h4>\r\nOnze ambitie? Uw project zo overzichtelijk mogelijk houden. Daarom ontwerpen we een transparant stappenplan, wanneer u dat wenst. Zo weet u meteen wat wij voor u doen, van ontwerp tot uitvoering. Bent u ontevreden over onze diensten? Die kans is klein, maar weet dat u na elke fase de samenwerking kunt stopzetten.\r\n<h4>Onze diensten</h4>\r\nBy Tytgat krijgt u waar voor uw geld:\r\n<ul>\r\n	<li>Indien U nog geen architect en/of dossier hebt helpen we U zoeken naar de geknipte architect voor u</li>\r\n	<li>We verdedigen uw belangen tijdens de ontwerpfase en helpen om uw aanbod af te stemmen op de vraa</li>\r\n	<li>timing en technische haalbaarheid voor ogen.</li>\r\n	<li>We stellen uw verkoopslastenboek transparant en concurrentieel op.</li>\r\n	<li>We verdelen uw dossier in loten, en zorgen voor de aanbesteding, bestelling en coördinatie.</li>\r\n	<li>We helpen uw klanten om hun keuzes op tijd te maken, en brengen hen op de hoogte van bijkomend</li>\r\n	<li>oplevering en afrekening.</li>\r\n	<li>We kijken uw rekeningen na en zorgen voor de afrekening met de aannemers.</li>\r\n	<li>We coördineren de uitvoering van finale opmerkingen van uw klant.</li>\r\n</ul>', 'BEDRIJVEN', '', 'inherit', 'open', 'open', '', '63-revision-v1', '', '', '2015-02-16 03:50:46', '2015-02-16 03:50:46', '', 63, 'http://localhost/PHP/BLISS/COMACON/source/www/63-revision-v1/', 0, 'revision', '', 0),
+(84, 1, '2015-02-16 03:54:17', '2015-02-16 03:54:17', '', 'services title', '', 'publish', 'closed', 'closed', '', 'acf_services-title', '', '', '2015-02-16 03:54:29', '2015-02-16 03:54:29', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?post_type=acf&#038;p=84', 0, 'acf', '', 0);
+INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
+(85, 1, '2015-02-16 03:55:08', '2015-02-16 03:55:08', '<h4>Uw probleem ...</h4>\r\nTijdens een bouwproces kan er heel wat mislopen:\r\n<ul>\r\n	<li>u vindt de geknipte architect niet;</li>\r\n	<li>uw dossier is onvolledig;</li>\r\n	<li>u komt voor vervelende verrassingen te staan;</li>\r\n	<li>uw deadlines worden niet gehaald;</li>\r\n	<li>uw budget wordt niet gerespecteerd;</li>\r\n	<li>uw klanten nemen hun beslissinen niet op tijd.</li>\r\n</ul>\r\n<h4>... wordt snel opgelost</h4>\r\nBij Comacon Bouwcoördinatie is uw project in goede handen. We kennen de bouwsector door en door en verdedigen uw belangen én die van uw klanten op elk moment. Bovendien lossen we problemen op, waar nodig. Ga daarom in zee met een vakkundige projectcoördinator.\r\n<h4>Stap voor stap</h4>\r\nOnze ambitie? Uw project zo overzichtelijk mogelijk houden. Daarom ontwerpen we een transparant stappenplan, wanneer u dat wenst. Zo weet u meteen wat wij voor u doen, van ontwerp tot uitvoering. Bent u ontevreden over onze diensten? Die kans is klein, maar weet dat u na elke fase de samenwerking kunt stopzetten.\r\n<h4>Onze diensten</h4>\r\nBy Tytgat krijgt u waar voor uw geld:\r\n<ul>\r\n	<li>Indien U nog geen architect en/of dossier hebt helpen we U zoeken naar de geknipte architect voor u</li>\r\n	<li>We verdedigen uw belangen tijdens de ontwerpfase en helpen om uw aanbod af te stemmen op de vraa</li>\r\n	<li>timing en technische haalbaarheid voor ogen.</li>\r\n	<li>We stellen uw verkoopslastenboek transparant en concurrentieel op.</li>\r\n	<li>We verdelen uw dossier in loten, en zorgen voor de aanbesteding, bestelling en coördinatie.</li>\r\n	<li>We helpen uw klanten om hun keuzes op tijd te maken, en brengen hen op de hoogte van bijkomend</li>\r\n	<li>oplevering en afrekening.</li>\r\n	<li>We kijken uw rekeningen na en zorgen voor de afrekening met de aannemers.</li>\r\n	<li>We coördineren de uitvoering van finale opmerkingen van uw klant.</li>\r\n</ul>', 'BEDRIJVEN', '', 'inherit', 'open', 'open', '', '63-revision-v1', '', '', '2015-02-16 03:55:08', '2015-02-16 03:55:08', '', 63, 'http://localhost/PHP/BLISS/COMACON/source/www/63-revision-v1/', 0, 'revision', '', 0),
+(86, 1, '2015-02-16 03:55:24', '2015-02-16 03:55:24', '<h4>Uw probleem ...</h4>\r\nTijdens een bouwproces kan er heel wat mislopen:\r\n<ul>\r\n	<li>u vindt de geknipte architect niet;</li>\r\n	<li>uw dossier is onvolledig;</li>\r\n	<li>u komt voor vervelende verrassingen te staan;</li>\r\n	<li>uw deadlines worden niet gehaald;</li>\r\n	<li>uw budget wordt niet gerespecteerd;</li>\r\n	<li>uw klanten nemen hun beslissinen niet op tijd.</li>\r\n</ul>\r\n<h4>... wordt snel opgelost</h4>\r\nBij Comacon Bouwcoördinatie is uw project in goede handen. We kennen de bouwsector door en door en verdedigen uw belangen én die van uw klanten op elk moment. Bovendien lossen we problemen op, waar nodig. Ga daarom in zee met een vakkundige projectcoördinator.\r\n<h4>Stap voor stap</h4>\r\nOnze ambitie? Uw project zo overzichtelijk mogelijk houden. Daarom ontwerpen we een transparant stappenplan, wanneer u dat wenst. Zo weet u meteen wat wij voor u doen, van ontwerp tot uitvoering. Bent u ontevreden over onze diensten? Die kans is klein, maar weet dat u na elke fase de samenwerking kunt stopzetten.\r\n<h4>Onze diensten</h4>\r\nBy Tytgat krijgt u waar voor uw geld:\r\n<ul>\r\n	<li>Indien U nog geen architect en/of dossier hebt helpen we U zoeken naar de geknipte architect voor u</li>\r\n	<li>We verdedigen uw belangen tijdens de ontwerpfase en helpen om uw aanbod af te stemmen op de vraa</li>\r\n	<li>timing en technische haalbaarheid voor ogen.</li>\r\n	<li>We stellen uw verkoopslastenboek transparant en concurrentieel op.</li>\r\n	<li>We verdelen uw dossier in loten, en zorgen voor de aanbesteding, bestelling en coördinatie.</li>\r\n	<li>We helpen uw klanten om hun keuzes op tijd te maken, en brengen hen op de hoogte van bijkomend</li>\r\n	<li>oplevering en afrekening.</li>\r\n	<li>We kijken uw rekeningen na en zorgen voor de afrekening met de aannemers.</li>\r\n	<li>We coördineren de uitvoering van finale opmerkingen van uw klant.</li>\r\n</ul>', 'Bouwpromotoren / investeerders', '', 'inherit', 'open', 'open', '', '61-revision-v1', '', '', '2015-02-16 03:55:24', '2015-02-16 03:55:24', '', 61, 'http://localhost/PHP/BLISS/COMACON/source/www/61-revision-v1/', 0, 'revision', '', 0),
+(87, 1, '2015-02-16 03:55:38', '2015-02-16 03:55:38', '', 'grondeigenaars', '', 'inherit', 'open', 'open', '', '65-revision-v1', '', '', '2015-02-16 03:55:38', '2015-02-16 03:55:38', '', 65, 'http://localhost/PHP/BLISS/COMACON/source/www/65-revision-v1/', 0, 'revision', '', 0),
+(88, 1, '2015-02-16 04:09:02', '2015-02-16 04:09:02', '', 'p-1', '', 'inherit', 'open', 'open', '', 'p-1', '', '', '2015-02-16 04:09:02', '2015-02-16 04:09:02', '', 23, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-1.jpg', 0, 'attachment', 'image/jpeg', 0),
+(89, 1, '2015-02-16 04:09:06', '2015-02-16 04:09:06', '', 'p-2', '', 'inherit', 'open', 'open', '', 'p-2', '', '', '2015-02-16 04:09:06', '2015-02-16 04:09:06', '', 23, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-2.jpg', 1, 'attachment', 'image/jpeg', 0),
+(90, 1, '2015-02-16 04:09:09', '2015-02-16 04:09:09', '', 'p-3', '', 'inherit', 'open', 'open', '', 'p-3', '', '', '2015-02-16 04:09:09', '2015-02-16 04:09:09', '', 23, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-3.jpg', 2, 'attachment', 'image/jpeg', 0),
+(91, 1, '2015-02-16 04:09:33', '2015-02-16 04:09:33', '', 'p-1', '', 'inherit', 'open', 'open', '', 'p-1-2', '', '', '2015-02-16 04:09:33', '2015-02-16 04:09:33', '', 23, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-11.jpg', 0, 'attachment', 'image/jpeg', 0),
+(92, 1, '2015-02-16 04:09:40', '2015-02-16 04:09:40', '', 'Mechelen Stadszaal', '', 'inherit', 'open', 'open', '', '23-revision-v1', '', '', '2015-02-16 04:09:40', '2015-02-16 04:09:40', '', 23, 'http://localhost/PHP/BLISS/COMACON/source/www/23-revision-v1/', 0, 'revision', '', 0),
+(93, 1, '2015-02-16 04:26:49', '2015-02-16 04:26:49', '', 'Green House', '', 'publish', 'open', 'open', '', 'green-house', '', '', '2015-02-16 04:26:49', '2015-02-16 04:26:49', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=93', 0, 'post', '', 0),
+(94, 1, '2015-02-16 04:26:26', '2015-02-16 04:26:26', '', 'p-2', '', 'inherit', 'open', 'open', '', 'p-2-2', '', '', '2015-02-16 04:26:26', '2015-02-16 04:26:26', '', 93, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-21.jpg', 0, 'attachment', 'image/jpeg', 0),
+(95, 1, '2015-02-16 04:26:29', '2015-02-16 04:26:29', '', 'p-3', '', 'inherit', 'open', 'open', '', 'p-3-2', '', '', '2015-02-16 04:26:29', '2015-02-16 04:26:29', '', 93, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-31.jpg', 1, 'attachment', 'image/jpeg', 0),
+(96, 1, '2015-02-16 04:26:38', '2015-02-16 04:26:38', '', 'p-2', '', 'inherit', 'open', 'open', '', 'p-2-3', '', '', '2015-02-16 04:26:38', '2015-02-16 04:26:38', '', 93, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-22.jpg', 0, 'attachment', 'image/jpeg', 0),
+(97, 1, '2015-02-16 04:26:49', '2015-02-16 04:26:49', '', 'Green House', '', 'inherit', 'open', 'open', '', '93-revision-v1', '', '', '2015-02-16 04:26:49', '2015-02-16 04:26:49', '', 93, 'http://localhost/PHP/BLISS/COMACON/source/www/93-revision-v1/', 0, 'revision', '', 0),
+(98, 1, '2015-02-16 04:40:18', '2015-02-16 04:40:18', '', 'Villa Rustica Renovation', '', 'publish', 'open', 'open', '', 'villa-rustica-renovation', '', '', '2015-02-16 04:40:18', '2015-02-16 04:40:18', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=98', 0, 'post', '', 0),
+(99, 1, '2015-02-16 04:40:08', '2015-02-16 04:40:08', '', 'p-3', '', 'inherit', 'open', 'open', '', 'p-3-3', '', '', '2015-02-16 04:40:08', '2015-02-16 04:40:08', '', 98, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-32.jpg', 0, 'attachment', 'image/jpeg', 0),
+(100, 1, '2015-02-16 04:40:18', '2015-02-16 04:40:18', '', 'Villa Rustica Renovation', '', 'inherit', 'open', 'open', '', '98-revision-v1', '', '', '2015-02-16 04:40:18', '2015-02-16 04:40:18', '', 98, 'http://localhost/PHP/BLISS/COMACON/source/www/98-revision-v1/', 0, 'revision', '', 0),
+(101, 1, '2015-02-16 04:40:47', '2015-02-16 04:40:47', '', 'Pool In Luxury Neighbourhood', '', 'publish', 'open', 'open', '', 'pool-in-luxury-neighbourhood', '', '', '2015-02-16 04:40:56', '2015-02-16 04:40:56', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=101', 0, 'post', '', 0),
+(102, 1, '2015-02-16 04:40:39', '2015-02-16 04:40:39', '', 'p-4', '', 'inherit', 'open', 'open', '', 'p-4', '', '', '2015-02-16 04:40:39', '2015-02-16 04:40:39', '', 101, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-4.jpg', 0, 'attachment', 'image/jpeg', 0),
+(103, 1, '2015-02-16 04:40:47', '2015-02-16 04:40:47', '', 'Pool In Luxury Neighbourhood', '', 'inherit', 'open', 'open', '', '101-revision-v1', '', '', '2015-02-16 04:40:47', '2015-02-16 04:40:47', '', 101, 'http://localhost/PHP/BLISS/COMACON/source/www/101-revision-v1/', 0, 'revision', '', 0),
+(104, 1, '2015-02-16 04:41:38', '2015-02-16 04:41:38', '', 'House Of Cards', '', 'publish', 'open', 'open', '', 'house-of-cards', '', '', '2015-02-16 04:41:38', '2015-02-16 04:41:38', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=104', 0, 'post', '', 0),
+(105, 1, '2015-02-16 04:41:33', '2015-02-16 04:41:33', '', 'p-3', '', 'inherit', 'open', 'open', '', 'p-3-4', '', '', '2015-02-16 04:41:33', '2015-02-16 04:41:33', '', 104, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-33.jpg', 0, 'attachment', 'image/jpeg', 0),
+(106, 1, '2015-02-16 04:41:38', '2015-02-16 04:41:38', '', 'House Of Cards', '', 'inherit', 'open', 'open', '', '104-revision-v1', '', '', '2015-02-16 04:41:38', '2015-02-16 04:41:38', '', 104, 'http://localhost/PHP/BLISS/COMACON/source/www/104-revision-v1/', 0, 'revision', '', 0),
+(107, 1, '2015-02-16 04:42:10', '2015-02-16 04:42:10', '', 'Green School', '', 'publish', 'open', 'open', '', 'green-school', '', '', '2015-02-16 04:42:10', '2015-02-16 04:42:10', '', 0, 'http://localhost/PHP/BLISS/COMACON/source/www/?p=107', 0, 'post', '', 0),
+(108, 1, '2015-02-16 04:42:06', '2015-02-16 04:42:06', '', 'p-4', '', 'inherit', 'open', 'open', '', 'p-4-2', '', '', '2015-02-16 04:42:06', '2015-02-16 04:42:06', '', 107, 'http://localhost/PHP/BLISS/COMACON/source/www/wp-content/uploads/2015/02/p-41.jpg', 0, 'attachment', 'image/jpeg', 0),
+(109, 1, '2015-02-16 04:42:10', '2015-02-16 04:42:10', '', 'Green School', '', 'inherit', 'open', 'open', '', '107-revision-v1', '', '', '2015-02-16 04:42:10', '2015-02-16 04:42:10', '', 107, 'http://localhost/PHP/BLISS/COMACON/source/www/107-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -691,7 +816,8 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
 (1, 1, 0),
 (5, 1, 0),
-(23, 1, 0),
+(23, 2, 0),
+(23, 3, 0),
 (52, 6, 0),
 (54, 6, 0),
 (55, 6, 0),
@@ -702,7 +828,16 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (75, 6, 0),
 (76, 7, 0),
 (77, 7, 0),
-(78, 7, 0);
+(78, 7, 0),
+(93, 2, 0),
+(93, 5, 0),
+(98, 5, 0),
+(101, 2, 0),
+(101, 3, 0),
+(101, 4, 0),
+(104, 4, 0),
+(104, 5, 0),
+(107, 5, 0);
 
 -- --------------------------------------------------------
 
@@ -728,10 +863,10 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 (1, 1, 'category', '', 0, 0),
-(2, 2, 'category', '', 0, 0),
-(3, 3, 'category', '', 0, 0),
-(4, 4, 'category', '', 0, 0),
-(5, 5, 'category', '', 0, 0),
+(2, 2, 'category', '', 0, 3),
+(3, 3, 'category', '', 0, 2),
+(4, 4, 'category', '', 0, 2),
+(5, 5, 'category', '', 0, 4),
 (6, 6, 'nav_menu', '', 0, 8),
 (7, 7, 'nav_menu', '', 0, 3);
 
@@ -817,8 +952,8 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'show_welcome_panel', '1'),
 (14, 1, 'session_tokens', 'a:3:{s:64:"e2b97f622ca70ea2775c6c6977f2281a098740a4a02d3a8b627b03f25c96b9b3";i:1424099640;s:64:"e608b5c18495f4a5ab39386b59dca46898692f42196e12d148d6ea45d531f9ea";i:1424171024;s:64:"9f1656108f0cee25203a732b941ab2913910e9ff5a31c24aef8d7e69d2572d5f";i:1424225580;}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
-(16, 1, 'wp_user-settings', 'editor=tinymce&libraryContent=upload&align=right'),
-(17, 1, 'wp_user-settings-time', '1424052777'),
+(16, 1, 'wp_user-settings', 'editor=tinymce&libraryContent=browse&align=right'),
+(17, 1, 'wp_user-settings-time', '1424058419'),
 (18, 1, 'managenav-menuscolumnshidden', 'a:4:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";}'),
 (19, 1, 'metaboxhidden_nav-menus', 'a:5:{i:0;s:8:"add-post";i:1;s:10:"add-slider";i:2;s:8:"add-news";i:3;s:11:"add-clients";i:4;s:12:"add-post_tag";}'),
 (20, 1, 'nav_menu_recently_edited', '6');
