@@ -49,7 +49,24 @@
 	add_action( 'template_redirect', 'change_services_url_rewrite' );
 	//remove p tag
 	//remove_filter( 'the_content', 'wpautop' );
-	add_action( 'admin_init', 'hide_editor' );
+	//add_action( 'admin_init', 'hide_editor' );
+	
+	function enable_more_buttons($buttons) {
+
+	$buttons[] = 'fontselect';
+	$buttons[] = 'fontsizeselect';
+	$buttons[] = 'styleselect';
+	$buttons[] = 'backcolor';
+	$buttons[] = 'newdocument';
+	$buttons[] = 'cut';
+	$buttons[] = 'copy';
+	$buttons[] = 'charmap';
+	$buttons[] = 'hr';
+	$buttons[] = 'visualaid';
+	
+	return $buttons;
+	}
+	add_filter("mce_buttons_3", "enable_more_buttons");
 	
 	function get_page_id_by_slug($slug){
 	    global $wpdb;

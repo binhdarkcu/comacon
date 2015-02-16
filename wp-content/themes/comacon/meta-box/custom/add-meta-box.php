@@ -20,6 +20,21 @@ $meta_boxes[] =array(
 	 )
 );
 
+$meta_boxes[] =array(
+   'id'=>'projects_meta',
+   'title'=>'Images for project',
+   'pages'=> array('post'),
+   'context' => 'normal',
+   'priority' => 'high',
+   'fields' => array(
+  		
+   		array(
+			'name'             => 'Images',
+			'id'               => "{$prefix}logo_projects",
+			'type'             => 'plupload_image'
+		)
+	 )
+);
 
 /**
  * Register meta boxes

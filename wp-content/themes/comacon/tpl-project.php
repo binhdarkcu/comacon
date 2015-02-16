@@ -10,100 +10,66 @@
 				<article class="myportfolio-container buildpress" id="esg-grid-33-1-wrap">
 					<!-- THE GRID ITSELF WITH FILTERS, PAGINATION, SORTING ETC... -->
 					<div id="esg-grid-33-1" class="esg-grid" style="background-color: transparent;padding: 0px 0px 25px 0px ; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; display:none">
-						<article class="esg-filters esg-singlefilters" style="margin-bottom: 30px; text-align: left; "><!-- THE FILTERING, SORTING AND WOOCOMMERCE BUTTONS --><!-- THE FILTER BUTTONS --><div class="esg-filter-wrapper  esg-fgc-33" style="margin-left: 0px; margin-right: 0px;"><div class="esg-filterbutton selected esg-allfilter" data-filter="filterall" data-fid="-1"><span>All Projects</span></div><div class="esg-filterbutton" data-fid="24" data-filter="filter-buildings"><span>Buildings</span><span class="esg-filter-checked"><i class="eg-icon-ok-1"></i></span></div><div class="esg-filterbutton" data-fid="25" data-filter="filter-interior-design"><span>Interior Design</span><span class="esg-filter-checked"><i class="eg-icon-ok-1"></i></span></div><div class="esg-filterbutton" data-fid="26" data-filter="filter-isolation"><span>Isolation</span><span class="esg-filter-checked"><i class="eg-icon-ok-1"></i></span></div><div class="esg-filterbutton" data-fid="27" data-filter="filter-plumbing"><span>Plumbing</span><span class="esg-filter-checked"><i class="eg-icon-ok-1"></i></span></div><div class="esg-filterbutton" data-fid="28" data-filter="filter-tiling"><span>Tiling</span><span class="esg-filter-checked"><i class="eg-icon-ok-1"></i></span></div><div class="eg-clearfix"></div></div></article><div class="esg-clear-no-height"></div><!-- ############################ -->
+						<article class="esg-filters esg-singlefilters" style="margin-bottom: 30px; text-align: left; "><!-- THE FILTERING, SORTING AND WOOCOMMERCE BUTTONS --><!-- THE FILTER BUTTONS -->
+							<div class="esg-filter-wrapper  esg-fgc-33" style="margin-left: 0px; margin-right: 0px;">
+								<div class="esg-filterbutton selected esg-allfilter" data-filter="filterall" data-fid="-1">
+									<span>All ALLE REFERENTIES</span>
+								</div>
+								<?php
+									$categories = get_categories(); 
+									//print_r($categories);
+									  foreach ($categories as $category) {
+									  	$catname = $category->cat_name;
+										$catslug = $category->slug;
+								?>
+								<div class="esg-filterbutton" data-fid="<?php echo $category->id;?>" data-filter="filter-<?php echo $catslug;?>">
+									<span><?php echo $catname;?></span>
+									<span class="esg-filter-checked"><i class="eg-icon-ok-1"></i></span>
+								</div>
+								<?php }?>
+								<div class="eg-clearfix"></div>
+							</div>
+						</article>
+						<div class="esg-clear-no-height"></div><!-- ############################ -->
 						<!-- THE GRID ITSELF WITH ENTRIES -->
 						<!-- ############################ -->
 							<ul>
 							<!-- PORTFOLIO ITEM 92 -->
-								<li class="filterall filter-buildings eg-buildpress-item-skin-wrapper eg-post-id-225" data-date="1414421567">
+							<?php
+								$args_projects = array(
+									'post_type' 	 => 'post',
+									'posts_per_page' =>  -1 ,
+									'order'			 => 'asc'
+								);
+								$query_projects = get_posts($args_projects);
+								foreach ( $query_projects as $projects ) {
+							    	$category = get_the_category($projects->ID);
+									$cat_slug=  $category[0]->slug;
+									$strCat = '';	
+									$length = count($category);
+									for($i = 0; $i < $length; $i++){
+										$strCat .= $category[$i]->slug.' ';
+									}
+									$url = wp_get_attachment_image_src( get_post_thumbnail_id($projects->ID), 'large' );
+							?>
+								<li class="filterall filter-<?php echo $strCat; ?> eg-buildpress-item-skin-wrapper eg-post-id-<?php echo $projects->ID; ?>">
 									<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
 									<div class="esg-media-cover-wrapper">
 									<!-- THE MEDIA OF THE ENTRY -->
 										<div class="esg-entry-media">
-											<img src="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/xproject_03-360x240.jpg.pagespeed.ic.KOtHBYTndV.webp" alt="Project Image" width="360" height="240">
+											<img src="<?php echo $url[0]; ?>" alt="" width="360" height="240">
 										</div>
 										<!-- THE CONTENT OF THE ENTRY -->
 										<div class="esg-entry-cover">
 										<!-- THE COLORED OVERLAY -->
 											<div class="esg-overlay esg-fade eg-buildpress-item-skin-container" data-delay="0"></div>
-											<div class="esg-center eg-post-225 eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0">Contemporary Villa</div>
+											<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0"><?php echo get_the_title();?></div>
 											<div class="esg-center eg-buildpress-item-skin-element-9 esg-none esg-clear" style="height: 5px; visibility: hidden;"></div>
-											<div class="esg-center eg-post-225 eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-225" href="https://demo.proteusthemes.com/buildpress/projects/contemporary-villa/" target="_self">View Project</a></div>
+											<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-<?php echo $projects->ID; ?>" href="<?php echo get_the_permalink($projects->ID); ?>" target="_self">View Project</a></div>
 										</div><!-- END OF THE CONTENT IN THE ENTRY -->
 									</div><!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
 								</li><!-- END OF PORTFOLIO ITEM -->
-								<!-- PORTFOLIO ITEM 92 -->
-								<li class="filterall filter-buildings filter-isolation eg-buildpress-item-skin-wrapper eg-post-id-240" data-date="1414427920">
-									<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
-									<div class="esg-media-cover-wrapper">
-										<!-- THE MEDIA OF THE ENTRY -->
-										<div class="esg-entry-media">
-											<img src="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/xproject_10-360x240.jpg.pagespeed.ic.GSBLVLhSmS.webp" alt="Project Image" width="360" height="240">
-										</div>
-										<!-- THE CONTENT OF THE ENTRY -->
-										<div class="esg-entry-cover">
-											<!-- THE COLORED OVERLAY -->
-											<div class="esg-overlay esg-fade eg-buildpress-item-skin-container" data-delay="0"></div>
-											<div class="esg-center eg-post-240 eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0">Green House</div>
-											<div class="esg-center eg-buildpress-item-skin-element-9 esg-none esg-clear" style="height: 5px; visibility: hidden;"></div>
-											<div class="esg-center eg-post-240 eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-240" href="https://demo.proteusthemes.com/buildpress/projects/green-house/" target="_self">View Project</a></div>
-										</div><!-- END OF THE CONTENT IN THE ENTRY -->
-									</div><!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
-								</li><!-- END OF PORTFOLIO ITEM -->
-								<!-- PORTFOLIO ITEM 92 -->
-								<li class="filterall filter-plumbing filter-tiling eg-buildpress-item-skin-wrapper eg-post-id-244" data-date="1414428483">
-									<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
-									<div class="esg-media-cover-wrapper">
-										<!-- THE MEDIA OF THE ENTRY -->
-										<div class="esg-entry-media">
-											<img src="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/xproject_04-360x240.jpg.pagespeed.ic.iYiLRjupv1.webp" alt="Project Image" width="360" height="240">
-										</div>
-										<!-- THE CONTENT OF THE ENTRY -->
-										<div class="esg-entry-cover">
-											<!-- THE COLORED OVERLAY -->
-											<div class="esg-overlay esg-fade eg-buildpress-item-skin-container" data-delay="0"></div>
-											<div class="esg-center eg-post-244 eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0">Villa Rustica Renovation</div>
-											<div class="esg-center eg-buildpress-item-skin-element-9 esg-none esg-clear" style="height: 5px; visibility: hidden;"></div>
-											<div class="esg-center eg-post-244 eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-244" href="https://demo.proteusthemes.com/buildpress/projects/villa-rustica-renovation/" target="_self">View Project</a></div>
-										</div><!-- END OF THE CONTENT IN THE ENTRY -->
-									</div><!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
-								</li><!-- END OF PORTFOLIO ITEM -->
-								<!-- PORTFOLIO ITEM 92 -->
-								<li class="filterall filter-interior-design filter-plumbing eg-buildpress-item-skin-wrapper eg-post-id-246" data-date="1414428764">
-									<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
-									<div class="esg-media-cover-wrapper">
-										<!-- THE MEDIA OF THE ENTRY -->
-										<div class="esg-entry-media">
-											<img src="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/xproject_08-360x240.jpg.pagespeed.ic.LM6UYc7reR.webp" alt="Project Image" width="360" height="240">
-										</div>
-										<!-- THE CONTENT OF THE ENTRY -->
-										<div class="esg-entry-cover">
-										<!-- THE COLORED OVERLAY -->
-											<div class="esg-overlay esg-fade eg-buildpress-item-skin-container" data-delay="0"></div>
-											<div class="esg-center eg-post-246 eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0">Pool In Luxury Neighbourhood</div>
-											<div class="esg-center eg-buildpress-item-skin-element-9 esg-none esg-clear" style="height: 5px; visibility: hidden;"></div>
-											<div class="esg-center eg-post-246 eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-246" href="https://demo.proteusthemes.com/buildpress/projects/pool-in-luxury-neighbourhood/" target="_self">View Project</a></div>
-										</div><!-- END OF THE CONTENT IN THE ENTRY -->
-									</div><!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
-								</li><!-- END OF PORTFOLIO ITEM -->
-								<!-- PORTFOLIO ITEM 92 -->
-								<li class="filterall filter-buildings filter-interior-design eg-buildpress-item-skin-wrapper eg-post-id-247" data-date="1414428878">
-									<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
-									<div class="esg-media-cover-wrapper">
-									<!-- THE MEDIA OF THE ENTRY -->
-										<div class="esg-entry-media">
-											<img src="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/xproject_02-360x240.jpg.pagespeed.ic.nQl77uxQcN.webp" alt="Project Image" width="360" height="240">
-										</div>
-										<!-- THE CONTENT OF THE ENTRY -->
-										<div class="esg-entry-cover">
-											<!-- THE COLORED OVERLAY -->
-											<div class="esg-overlay esg-fade eg-buildpress-item-skin-container" data-delay="0"></div>
-											<div class="esg-center eg-post-247 eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0">House of Cards</div>
-											<div class="esg-center eg-buildpress-item-skin-element-9 esg-none esg-clear" style="height: 5px; visibility: hidden;"></div>
-											<div class="esg-center eg-post-247 eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-247" href="https://demo.proteusthemes.com/buildpress/projects/house-of-cards/" target="_self">View Project</a></div>
-										</div><!-- END OF THE CONTENT IN THE ENTRY -->
-									</div><!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
-								</li><!-- END OF PORTFOLIO ITEM -->
+							<?php }?>
 								
 							</ul>
 							<!-- ############################ -->
