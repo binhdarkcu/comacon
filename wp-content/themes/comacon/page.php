@@ -25,11 +25,20 @@
 								<h4 class="sidebar__headings">Diensten voor wie?</h4>
 								<div class="widget  widget_nav_menu">
 									<div class="menu-services-menu-container">
-										<ul id="menu-services-menu" class="menu">
-											<li class=""><a href="#">BOUWPROMOTOREN / INVESTEERDERS</a></li>
-											<li class=""><a href="#">BEDRIJVEN</a></li>
-											<li class=""><a href="#">GRONDEIGENAARS</a></li>
-										</ul>
+										<?php
+											$nav = array(
+												'theme_location'  => 'menu_service',
+												'menu'            => '',
+												'container'       => '',
+												'container_class' => '',
+												'container_id'    => '',
+												'menu_class'      => 'menu',
+												'menu_id'         => 'menu-services-menu',
+												'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+											);
+											
+											wp_nav_menu( $nav );
+										?>
 									</div>
 								</div>
 								<div class="widget  widget-brochure-box  push-down-30">
@@ -44,7 +53,7 @@
 					</div>
 					
 					<div class="col-xs-9">
-						<h4 class="sidebar__headings">Voor Bouwpromotoren / Investeerders</h4>
+						<h4 class="sidebar__headings"><?php echo get_the_title();?></h4>
 						<article class="post-171 page type-page status-publish hentry">
 							<div class="panel-grid" id="pg-171-0">
 								<div class="panel-grid-cell" id="pgc-52-0-0">
@@ -86,7 +95,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-xs-4">
+									<div class="col-xs-4 reference-sidebar">
 										<h4>Referenties</h4>
 										<ul style="list-style-type: none;padding-left: 0;">
 											<li>

@@ -4,9 +4,10 @@
 	  register_nav_menu('menu_top',__( 'menu_top' ));
 	  
 		register_nav_menus( array(
-			'menu_top' => 'Header - Menu'
+			'menu_top' => 'Header - Menu',
+			'menu_service' => 'Service - Menu'
 		) );
-	  
+	  register_nav_menu('menu_service',__( 'menu_service' ));
 	}
 	add_action( 'init', 'register_menu' );
 	
@@ -116,4 +117,29 @@
 	        return 0;
 	
 	    return $previous_post->ID;
+	}
+	
+	
+	function get_child_pages_by_parent_title($pageId,$limit)
+	{
+	    // needed to use $post
+	    global $post;
+	    // used to store the result
+	    $pages = array();
+	
+	    // What to select
+	    $args = array(
+	        'post_type' => 'page',
+	        'post_parent' => $pageId,
+	        'posts_per_page' => $limit,
+	        'order'			 => 'asc'
+	    );
+	    $the_query = new WP_Query( $args );
+	
+	    while ( $the_query->have_posts() ) {
+	        $the_query->the_post();
+	        $pages[] = $post;
+	    }
+	    wp_reset_postdata();
+	    return $pages;
 	}
