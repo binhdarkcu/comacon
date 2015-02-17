@@ -102,7 +102,9 @@
    <?php
       if ( !empty($_POST) && wp_verify_nonce($_POST['social_option'],'social_option') )
       {
-      	
+      		update_option( 'url_company',($_POST['url_company']));
+			update_option( 'url_open',($_POST['url_open']));
+			update_option( 'url_day',($_POST['url_day']));
           	update_option( 'url_address',($_POST['url_address']));
 			update_option( 'url_phone',($_POST['url_phone']));
 			update_option( 'url_email',($_POST['url_email']));
@@ -128,6 +130,15 @@
 	       			 <label for="url_email">Email</label><br/>
 	                   <input name="url_email" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_email') ); ?>"/><br /><br />
 	       			 <!--title fr-->
+	       			 
+	       			 <label for="url_company">Company</label><br/>
+	                   <input name="url_company" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_company') ); ?>"/><br /><br />
+	       			 
+	       			 <label for="url_open">Open</label><br/>
+	                   <input name="url_open" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_open') ); ?>"/><br /><br />
+	       			
+	       			 <label for="url_day">Open Day</label><br/>
+	                   <input name="url_day" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_day') ); ?>"/><br /><br />
 	       			 
 	       			 <label for="url_facebook">Facebook</label><br/>
 	                   <input name="url_facebook" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_facebook') ); ?>"/><br /><br />

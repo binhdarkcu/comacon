@@ -1,3 +1,7 @@
+<?php
+	$refer = !empty($_REQUEST['refer']) ? $_REQUEST['refer']:0;
+?>
+
 <div class="panel-grid" id="pg-7-2">
 	<div class="siteorigin-panels-stretch panel-row-style" data-stretch-type="full">
 		<div class="panel-grid-cell" id="pgc-7-2-0">
@@ -12,17 +16,19 @@
 					<div id="esg-grid-33-1" class="esg-grid" style="background-color: transparent;padding: 0px 0px 25px 0px ; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; display:none">
 						<article class="esg-filters esg-singlefilters" style="margin-bottom: 30px; text-align: left; "><!-- THE FILTERING, SORTING AND WOOCOMMERCE BUTTONS --><!-- THE FILTER BUTTONS -->
 							<div class="esg-filter-wrapper  esg-fgc-33" style="margin-left: 0px; margin-right: 0px;">
-								<div class="esg-filterbutton selected esg-allfilter" data-filter="filterall" data-fid="-1">
+								<div class="esg-filterbutton  <?php if($refer == '' ) echo 'selected';?> esg-allfilter" data-filter="filterall" data-fid="-1">
 									<span>All ALLE REFERENTIES</span>
 								</div>
 								<?php
 									$categories = get_categories(); 
 									//print_r($categories);
+									$i = 0;
 									  foreach ($categories as $category) {
+									  	$i++;
 									  	$catname = $category->cat_name;
 										$catslug = $category->slug;
 								?>
-								<div class="esg-filterbutton" data-fid="<?php echo $category->id;?>" data-filter="filter-<?php echo $catslug;?>">
+								<div class="esg-filterbutton <?php if($refer == $i) echo 'selected';?>" data-fid="<?php echo $category->id;?>" data-filter="filter-<?php echo $catslug;?>">
 									<span><?php echo $catname;?></span>
 									<span class="esg-filter-checked"><i class="eg-icon-ok-1"></i></span>
 								</div>
