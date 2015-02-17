@@ -10,7 +10,7 @@
 						<?php echo get_option('text_for_footer')?>
 						<br><br>
 						<strong>
-							<a href="<?php echo bloginfo('home')?>/about" class="read-more" target="_blank">MEER OVER COMACON</a>
+							<a href="<?php echo bloginfo('home')?>/about" class="read-more">MEER OVER COMACON</a>
 						</strong>
 					</div>
 				</div>
