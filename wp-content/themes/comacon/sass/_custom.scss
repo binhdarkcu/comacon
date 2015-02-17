@@ -162,6 +162,7 @@ vertical-align: middle;
 }
 .navigation--main>li.current-menu-item a,.navigation--main>li.current-menu-item>a, .btn-primary, .logo-panel img:hover, blockquote, #comments-submit-button, .navigation--main>li:hover>a {
 	border-color: $colorMain_01;
+	background-color: $colorMain_01;
 }
 .navigation--main>li.current-menu-item>a, .navigation--main>li.current_page_parent>a{
   border-top: 3px solid $colorMain_01;
@@ -346,7 +347,7 @@ html.flexbox .widget-icon-box .icon-box {
 }
 
 .siteorigin-panels-stretch {
-	padding:30px;
+	/*padding:30px;*/
 	/*background-color: #f2f2f2;*/
 	/*background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp);*/
 	.page-box__content {

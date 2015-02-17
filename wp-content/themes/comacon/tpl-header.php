@@ -11,7 +11,7 @@
 <header class="header">
 	<div class="container">
 		<div class="logo">
-			<a href="https://demo.proteusthemes.com/buildpress">
+			<a href="<?php echo site_url(); ?>">
 				<img src="images/logo.png" class="img-responsive"/>
 			</a>
 		</div>
