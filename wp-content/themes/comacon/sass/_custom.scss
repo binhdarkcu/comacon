@@ -132,10 +132,16 @@ vertical-align: middle;
 }
 
 .breadcrumbs {
-	background-color: #fff
+	background-color: #fff;
+	@include RobotoCondensed(14px);
+	
+	strong.current {
+		@include RobotoCondensed(14px);
+	}
 }
 .breadcrumbs a {
-	color: #666
+	color: #666;
+	@include RobotoCondensed(14px);
 }
 .breadcrumbs a:hover {
 	color: #595959
