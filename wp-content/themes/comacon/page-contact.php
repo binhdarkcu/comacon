@@ -46,7 +46,7 @@
 				</div>
 			</div>
 			<div class="panel-grid" id="pg-29-2">
-				<div class="panel-grid-cell" id="pgc-29-2-0">
+				<div class="panel-grid-cell col-xs-3" id="pgc-29-2-0">
 					<div class="panel widget widget_text panel-first-child" id="panel-29-2-0-0">	
 						<div class="textwidget">
 							<span class="icon-container">
@@ -72,7 +72,7 @@
 						<a class="social-icons__link" href="https://www.youtube.com/user/ProteusNetCompany" target="_blank"><i class="fa  fa-youtube"></i></a>
 					</div>
 				</div>
-				<div class="panel-grid-cell" id="pgc-29-2-1">
+				<div class="panel-grid-cell col-xs-9" id="pgc-29-2-1">
 					<div class="panel widget widget_text panel-first-child panel-last-child" id="panel-29-2-1-0">	<div class="textwidget"><div class="wpcf7" id="wpcf7-f5-o1" lang="en-US" dir="ltr">
 						<div class="screen-reader-response"></div>
 						<?php echo do_shortcode( '[contact-form-7 id="26" title="Contact form"]' ); ?>
