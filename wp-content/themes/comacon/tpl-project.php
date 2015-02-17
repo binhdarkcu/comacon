@@ -1,5 +1,5 @@
 <div class="panel-grid" id="pg-7-2">
-	<div class="siteorigin-panels-stretch panel-row-style" style="background-color:#454545;" data-stretch-type="full">
+	<div class="siteorigin-panels-stretch panel-row-style" data-stretch-type="full">
 		<div class="panel-grid-cell" id="pgc-7-2-0">
 			<div class="panel widget widget_ess-grid-widget panel-first-child panel-last-child" id="panel-7-2-0-0">
 				<!-- CACHE FOUND FOR: 33 -->
@@ -80,7 +80,7 @@
 					</article>
 				<!-- END OF THE GRID WRAPPER -->
 				<div class="clear"></div>
-				<script type="text/javascript">var essapi_33;jQuery(document).ready(function(){essapi_33=jQuery("#esg-grid-33-1").tpessential({gridID:33,layout:"even",forceFullWidth:"off",lazyLoad:"off",row:1,loadMoreAjaxToken:"5f4a1bfe04",loadMoreAjaxUrl:"https://demo.proteusthemes.com/buildpress/wp-admin/admin-ajax.php",loadMoreAjaxAction:"Essential_Grid_Front_request_ajax",ajaxContentTarget:"ess-grid-ajax-container-",ajaxScrollToOffset:"0",ajaxCloseButton:"off",ajaxContentSliding:"on",ajaxScrollToOnLoad:"on",ajaxNavButton:"off",ajaxCloseType:"type1",ajaxCloseInner:"false",ajaxCloseStyle:"light",ajaxClosePosition:"tr",space:30,pageAnimation:"fade",paginationScrollToTop:"off",spinner:"spinner0",evenGridMasonrySkinPusher:"off",lightBoxMode:"single",animSpeed:300,delayBasic:1,mainhoverdelay:1,filterType:"single",showDropFilter:"hover",filterGroupClass:"esg-fgc-33",aspectratio:"4:3",responsiveEntries:[{width:1400,amount:4},{width:1170,amount:4},{width:1024,amount:4},{width:960,amount:3},{width:778,amount:3},{width:640,amount:3},{width:480,amount:1}]});});</script>
+				<script type="text/javascript">var essapi_33;jQuery(document).ready(function(){essapi_33=jQuery("#esg-grid-33-1").tpessential({gridID:33,layout:"even",forceFullWidth:"off",lazyLoad:"off",row:10,loadMoreAjaxToken:"5f4a1bfe04",loadMoreAjaxUrl:"",loadMoreAjaxAction:"Essential_Grid_Front_request_ajax",ajaxContentTarget:"ess-grid-ajax-container-",ajaxScrollToOffset:"0",ajaxCloseButton:"off",ajaxContentSliding:"on",ajaxScrollToOnLoad:"on",ajaxNavButton:"off",ajaxCloseType:"type1",ajaxCloseInner:"false",ajaxCloseStyle:"light",ajaxClosePosition:"tr",space:30,pageAnimation:"fade",paginationScrollToTop:"off",spinner:"spinner0",evenGridMasonrySkinPusher:"off",lightBoxMode:"single",animSpeed:300,delayBasic:1,mainhoverdelay:1,filterType:"single",showDropFilter:"hover",filterGroupClass:"esg-fgc-33",aspectratio:"4:3",responsiveEntries:[{width:1400,amount:4},{width:1170,amount:4},{width:1024,amount:4},{width:960,amount:3},{width:778,amount:3},{width:640,amount:3},{width:480,amount:1}]});});</script>
 			</div>
 		</div>
 </div>
