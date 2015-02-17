@@ -1,7 +1,44 @@
+body {
+	@include RobotoCondensed(14px, 1.6);
+	color: #666;
+}
 
 input[type="email"].error, input[type="text"].error{
   border: 1px solid red;
 }
+
+h3.widget-title{
+	@include RobotoCondensed(24px);
+	color: $colorButton;
+}
+
+h5.page-box__title{
+	@include RobotoCondensedBold(24px);
+	color: $colorButton;
+	
+	a {
+		color: $colorButton;
+	}
+}
+
+h6 {
+	@include RobotoCondensedBold(14px);
+	color: $colorButton;
+	a {
+		color: $colorButton;
+	}	
+}
+
+.page-box__content {
+	p {
+		
+		
+		a {
+			@include RobotoCondensedBold(16px);
+		}
+	}
+}
+
 .ssba img
 { 
 width: 55px;
@@ -100,7 +137,7 @@ vertical-align: middle;
 }
 }
 .navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a {
-	color: #ddd
+	color: #ddd;
 }
 .navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after, .navigation--main .sub-menu>li:hover>a {
 	color: #fefefe
@@ -151,13 +188,14 @@ vertical-align: middle;
 	color: #595959
 }
 .breadcrumbs {
-	color: $colorText01
+	color: $colorText01;
 }
 .jumbotron__category h6, .social-icons__link, .testimonial__rating, body.woocommerce-page .star-rating, body.woocommerce-page ul.products li.product a:hover img, body.woocommerce-page p.stars a {
-	color: $colorMain_04
+	color: $colorMain_04;
+	
 }
 .jumbotron__category::after, .alternative-heading::after, .navbar-toggle, #comments-submit-button, .btn-primary, .panel-grid .widget-title::after, .footer .footer__headings::after, .main-title h3::before, .hentry__title::after, .widget_search .search-submit, .pagination li .current, .pagination li:hover, .sidebar__headings::after, .sidebar .widget_nav_menu ul>li.current-menu-item a, .sidebar .widget_nav_menu ul>li>a:hover, .widget_calendar caption, .widget_tag_cloud a, body.woocommerce-page .widget_product_search #searchsubmit, body.woocommerce-page span.onsale, body.woocommerce-page ul.products::before, body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page nav.woocommerce-pagination ul li a:hover, body.woocommerce-page a.add_to_cart_button:hover, body.woocommerce-page button.button:hover, body.woocommerce-page .widget_product_categories ul>li>a:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page table.cart td.actions input.button.alt, body.woocommerce-page .cart-collaterals .shipping_calculator h2::after, body.woocommerce-page .cart-collaterals .cart_totals h2::after, body.woocommerce-page .woocommerce-info, body.woocommerce-page .woocommerce-message, body.woocommerce-page .woocommerce-error, body.woocommerce-page #payment #place_order, body.woocommerce-page .short-description::before, body.woocommerce-page .short-description::after, body.woocommerce-page .quantity .minus:hover, body.woocommerce-page .quantity .plus:hover, body.woocommerce-page button.button.alt, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, body.woocommerce-page #review_form #respond input#submit, body.woocommerce-page div.product .woocommerce-tabs h2::after, .buildpress-table thead th, .brochure-box:hover {
-	background-color: $colorMain_02
+	background-color: $colorMain_04;
 }
 @media (min-width:992px) {
 .navigation--main .sub-menu>li>a {
@@ -166,12 +204,19 @@ vertical-align: middle;
 }
 .navigation--main>li.current-menu-item a,.navigation--main>li.current-menu-item>a, .btn-primary, .logo-panel img:hover, blockquote, #comments-submit-button, .navigation--main>li:hover>a {
 	border-color: $colorMain_01;
-	background-color: $colorMain_01;
+}
+.navigation--main>li>a{
+	text-transform: uppercase;
+	@include RobotoBold (15px);
+
 }
 .navigation--main>li.current-menu-item>a, .navigation--main>li.current_page_parent>a{
   border-top: 3px solid $colorMain_01;
   padding-top: 24px;
   color: $colorMain_01;
+	text-transform: uppercase;
+	@include RobotoBold (15px);
+
 }
 .navigation--main>.menu-item-has-children.current_page_parent>a::after{
   color: $colorMain_01;
@@ -184,7 +229,10 @@ vertical-align: middle;
 }
 
 .btn-primary:hover, #comments-submit-button:hover, .navigation--main .sub-menu>li>a, .navigation--main .sub-menu, .navigation--main .sub-menu>li>.sub-menu {
-	border-color: #aab8c3
+	border-color: #aab8c3;
+	text-transform: uppercase;
+	@include RobotoCondensed(15px);
+
 }
 a {
 	color: $colorMain_04
@@ -193,7 +241,7 @@ a:hover, .more-link .btn:hover {
 	color: #1098cb
 }
 body, .textwidget {
-	color: $colorText01
+	color: #333;
 }
 #comments-submit-button, .btn-primary, .footer .btn-primary, .sidebar .widget_nav_menu ul>li.current-menu-item a, .widget_tag_cloud a, .pagination li .current, .widget_search .search-submit {
 	color: #fff
@@ -277,10 +325,13 @@ html.flexbox .widget-icon-box .icon-box {
 }	
 .jumbotron__title h1 {
 	color: $colorButton;
+	@include RobotoCondensedBold( 24px );
+	text-transform: uppercase;
 }
 
 .jumbotron__content p {
 	color: #11293a;	
+	@include RobotoCondensed( 16px );
 }
 
 .carousel-control.right {right: 3%;}
@@ -314,8 +365,25 @@ html.flexbox .widget-icon-box .icon-box {
 					max-height: none;
 					top: calc(50% - 120px);
 					left: 15px;
-					background: #FFF;
-					opacity: 0.86;
+					background: rgba(255,255,255,0.86);
+					opacity: 1;
+					
+					.jumbotron__category {
+						border-bottom: 1px solid #696969;
+						
+						h6 {
+							@include RobotoBold( 14px );
+						}
+						
+					}
+					
+					.btn-primary {
+						background: $colorMain_03;
+						@include Roboto( 14px );
+						text-transform: uppercase;
+					}
+					
+					
 				}
 			}
 		}
@@ -350,10 +418,23 @@ html.flexbox .widget-icon-box .icon-box {
 	height:64px;
 }
 
+
+body.home .siteorigin-panels-stretch {
+	padding:30px;
+	background-color: #f2f2f2;
+	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp);
+	
+	.page-box__title {
+		color: #061f31;
+	}
+	
+	.page-box__content {
+		p {
+			font-size: 16px;
+		}
+	}
+}
 .siteorigin-panels-stretch {
-	/*padding:30px;*/
-	/*background-color: #f2f2f2;*/
-	/*background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp);*/
 	.page-box__content {
 		text-align:center;
 	}
@@ -361,3 +442,16 @@ html.flexbox .widget-icon-box .icon-box {
 
 
 
+.footer .widget_nav_menu ul>li>a {
+	color: #333;
+	text-transform: capitalize;
+}
+
+.footer .read-more {
+	color: #375c78;
+	@include RobotoCondensedBold(16px);
+}
+
+.footer-bottom__left {
+	color: #fff;
+}

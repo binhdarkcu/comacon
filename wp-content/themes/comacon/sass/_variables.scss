@@ -10,6 +10,19 @@ $colorText01:#666;
 $colorText02:#999;
 
 
+@mixin Roboto( $value, $line:1.1 ) {
+	font-family: 'Roboto', sans-serif;
+	font-size:$value;
+	line-height:$line;
+	font-weight:400;
+}
+
+@mixin RobotoBold( $value, $line:1.1 ) {
+	font-family: 'Roboto', sans-serif;
+	font-size:$value;
+	line-height:$line;
+	font-weight:700;
+}
 
 @mixin RobotoCondensed( $value, $line:1.1 ) {
 	font-family: 'Roboto Condensed', sans-serif;

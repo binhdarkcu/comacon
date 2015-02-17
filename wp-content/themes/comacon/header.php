@@ -2,9 +2,8 @@
 <html lang="en-US">
 <head><!--[if IE]><![endif]-->
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A400,700%3Alatin%7CMontserrat%3A700%3Alatin"/>
-
-<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
 <meta charset="UTF-8"/>
 <title>C O M A C O N</title>
