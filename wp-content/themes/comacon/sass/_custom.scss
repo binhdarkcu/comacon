@@ -455,3 +455,23 @@ body.home .siteorigin-panels-stretch {
 .footer-bottom__left {
 	color: #fff;
 }
+
+.newsletter {
+	position: relative;
+	
+	span.fa-envelope {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		z-index: 1;
+		font-size: 25px;
+		color: #bdbdbd;
+	}	
+	input[type=email]{
+		width: 55%;
+		margin-right: 6px;
+		height: 48px;
+		padding-left: 41px;
+		background: #fff;
+	}
+}

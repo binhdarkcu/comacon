@@ -71,7 +71,8 @@
 							        <span class="add-on">
 							        	<i class="icon-user icon-black"></i>
 							       	</span>
-									<input type="email" name="email" placeholder="Jouw E-mail adres" class="requiredField" aria-invalid="false"/>
+									<span class="fa fa-envelope"></span>                                    
+									<input type="email" name="email" placeholder="Jouw E-mail adres" class="requiredField wpcf7-text" aria-invalid="false"/>
 									<input type="submit" class="btn  btn-primary" value="VERZENDEN">
 									<span class="loading" style="display: none;"><img style="width: 16px;height:16px;" src="images/ajax-loader.gif" alt=""/></span>
 									<input name="ajaxurl" type="hidden" class="ajaxurl" value="<?php echo bloginfo('home').'/wp-admin/admin-ajax.php'; ?>"/>
@@ -91,6 +92,7 @@
 			 © 2015 Comacon
 			
 		</div>
+        </div>
 	</div>
 </footer>
 </div><!-- end of .boxed-container -->
