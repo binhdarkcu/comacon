@@ -244,8 +244,15 @@ body, .textwidget {
 	color: #333;
 }
 #comments-submit-button, .btn-primary, .footer .btn-primary, .sidebar .widget_nav_menu ul>li.current-menu-item a, .widget_tag_cloud a, .pagination li .current, .widget_search .search-submit {
-	color: #fff
+	color: #fff;
+	@include RobotoBold(14px);
+	background: $colorButton;
 }
+
+#comments-submit-button:focus, .btn-primary:focus {
+	border-color:$colorButton;
+}
+
 #comments-submit-button:hover, .btn-primary:hover, .footer .btn-primary:hover, .sidebar .widget_nav_menu ul>li a:hover, .sidebar .widget_nav_menu ul>li.current-menu-item a:hover, .widget_tag_cloud a:hover, .pagination li:hover a, body.woocommerce-page .woocommerce-message, body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page button.button.alt, body.woocommerce-page table.cart td.actions input.button.alt, body.woocommerce-page button.button.alt:hover, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a:hover, body.woocommerce-page nav.woocommerce-pagination ul li .prev:hover, body.woocommerce-page nav.woocommerce-pagination ul li .next:hover, body.woocommerce-page a.add_to_cart_button:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page nav.woocommerce-pagination ul li a:hover, body.woocommerce-page .woocommerce-info, body.woocommerce-page #payment #place_order, body.woocommerce-page .widget_product_categories ul>li>a:hover, body.woocommerce-page .widget_product_search #searchsubmit, body.woocommerce-page #review_form #respond input#submit, body.woocommerce-page button.button:hover, body.woocommerce-page .woocommerce-error .showlogin, body.woocommerce-page .woocommerce-error .showcoupon, body.woocommerce-page .woocommerce-info .showlogin, body.woocommerce-page .woocommerce-info .showcoupon, body.woocommerce-page .woocommerce-message .showlogin, body.woocommerce-page .woocommerce-message .showcoupon, body.woocommerce-page .woocommerce-error::before, body.woocommerce-page .woocommerce-info::before, body.woocommerce-page .woocommerce-message::before {
 	color: #FFF
 }
