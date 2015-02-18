@@ -7,34 +7,21 @@ jQuery(document).ready(function(){
 	    	'opacity':1,
 	    },300);
 	    
-	    jQuery(this).find('.eg-buildpress-item-skin-element-0-a').css({'visibility':'inherit','opacity':1}).animate({
+	    jQuery(this).find('.eg-buildpress-item-skin-element-0-a').css({'visibility':'inherit','opacity':1}).stop().animate({
 	    	'top':'0px'
 	    },300);
-	    jQuery(this).find('.eg-buildpress-item-skin-element-1').css({'visibility':'inherit','opacity':1}).animate({
+	    jQuery(this).find('.eg-buildpress-item-skin-element-1').css({'visibility':'inherit','opacity':1}).stop().animate({
 	    	'top':'0px'
 	    },300);
 	    
 	  }, function() {
-	    jQuery(this).find('.esg-overlay').animate({
-	    	'visibility':'hidden',
-	    	'opacity':0,
+	    jQuery('.esg-overlay').css({'opacity':0});
+	    jQuery('.eg-buildpress-item-skin-element-0-a').css({'opacity':0}).filter(':not(:animated)').animate({
+	    	'top':'15px'
 	    },300);
-	    
-	    jQuery(this).find('.eg-buildpress-item-skin-element-0-a').animate({
-	    	'top':'15px',
-	    	'opacity':0
-	    },300, function(){
-	    	jQuery(this).css({'visibility':'hidden'});
-	    	jQuery('.eg-buildpress-item-skin-element-0-a').removeAttr('style');
-	    });
-	    
-	    jQuery(this).find('.eg-buildpress-item-skin-element-1').animate({
-	    	'top':'-15px',
-	    	'opacity':0
-	    },300, function(){
-	    	jQuery(this).css({'visibility':'hidden'});
-	    	jQuery('.eg-buildpress-item-skin-element-1').removeAttr('style');
-	    });
+	    jQuery('.eg-buildpress-item-skin-element-1').css({'opacity':0}).filter(':not(:animated)').animate({
+	    	'top':'-15px'
+	    },300);
 	  }
 );
 });
