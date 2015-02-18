@@ -113,7 +113,7 @@ vertical-align: middle;
 }
 
 .navbar-toggle__text {
-	color: $colorText02
+	color: #fff;
 }
 
 .navigation--top>.menu-item-has-children>a::after {
@@ -131,27 +131,59 @@ vertical-align: middle;
 .icon-box__subtitle, .widget-icon-box .icon-box, .textwidget {
 	color: #989898
 }
-@media (min-width:992px) {
-.navigation {
-	background: #c3c8cb
-}
-}
-.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a {
+
+.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a{
 	color: #ddd;
 }
 .navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after, .navigation--main .sub-menu>li:hover>a {
 	color: #fefefe
 }
 @media (min-width:992px) {
-.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after {
-	color: #FFF
+	.navigation {
+		background: #c3c8cb
+	}
+	
+	.logo {
+		float: left;
+		margin-top: 20px;
+	}
+	
+	.header-widgets-desktop {
+		float: right;
+		padding: 18px 0;
+	}
+	
+	.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after {
+		color: #FFF
+	}
+
+	.navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after {
+		color: $colorMain_01
+	}
+
+	.navigation--main .sub-menu>li>a, .navigation--main .sub-menu>li>a:hover, .navigation--main .sub-menu>.menu-item-has-children>a::after {
+		color: #FFF
+	}
 }
-.navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after {
-	color: $colorMain_01
+
+@media (max-width:992px) {
+	.navigation--main>li>a, .navigation--main>li>a:hover, .navigation--main>.menu-item-has-children>a, .navigation--main>.menu-item-has-children>a:hover, .btn-primary:hover, #comments-submit-button:hover, .navigation--main .sub-menu>li>a, .navigation--main .sub-menu, .navigation--main .sub-menu>li>.sub-menu {
+		color: #243a4a !important;
+	}
+	
+	.navigation--main>li.current-menu-item>a, .navigation--main>li.current_page_parent>a {
+		padding-top: 5px !important;
+	}
+	
+	.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a {
+		color: #243a4a !important;
+	}
 }
-.navigation--main .sub-menu>li>a, .navigation--main .sub-menu>li>a:hover, .navigation--main .sub-menu>.menu-item-has-children>a::after {
-	color: #FFF
-}
+
+@media (max-width: 480px){
+	.logo {
+		margin-top: 10px;
+	}
 }
 .main-title {
 	background-color: #f2f2f2
