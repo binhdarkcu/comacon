@@ -27,3 +27,7 @@
 <?php
 	get_footer();
 ?>
+
+<script>
+	eval(mod_pagespeed_IvHxVYWT2W);
+</script>
