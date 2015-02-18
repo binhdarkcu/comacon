@@ -145,6 +145,10 @@ vertical-align: middle;
 	color: #fefefe
 }
 @media (min-width:992px) {
+	html.flexbox .header-widgets {
+		justify-content: flex-end;
+	}
+	
 	.navigation {
 		background: #c3c8cb
 	}
