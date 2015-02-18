@@ -3,7 +3,7 @@ body {
 	color: #666;
 }
 
- .reference-sidebar{
+.reference-sidebar{
     ul{
       li{
         position: relative;
@@ -182,6 +182,10 @@ vertical-align: middle;
 	color: #fefefe
 }
 @media (min-width:992px) {
+	html.flexbox .header-widgets {
+		justify-content: flex-end;
+	}
+	
 	.navigation {
 		background: #c3c8cb
 	}
@@ -493,6 +497,7 @@ html.flexbox .widget-icon-box .icon-box {
 .buildpress .esg-navigationbutton span, .buildpress .esg-filterbutton span, .buildpress .esg-sortbutton span, .buildpress .esg-sortbutton-order span, .buildpress .esg-cartbutton-order span {
 	border-bottom: none;
 	color: #8796a1;
+	@include RobotoCondensedBold(16px);
 }
 
 .buildpress .esg-filterbutton::after, .buildpress .esg-sortbutton::after, .buildpress .esg-cartbutton::after {
@@ -501,7 +506,7 @@ html.flexbox .widget-icon-box .icon-box {
 }
 
 
-body.home .siteorigin-panels-stretch {
+.siteorigin-panels-stretch {
 	padding:30px;
 	background-color: #f2f2f2;
 	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp);
@@ -514,6 +519,10 @@ body.home .siteorigin-panels-stretch {
 		p {
 			font-size: 16px;
 		}
+	}
+	
+	&.projects {
+		background:#fff;
 	}
 }
 .siteorigin-panels-stretch {
@@ -556,4 +565,19 @@ body.home .siteorigin-panels-stretch {
 		padding-left: 41px;
 		background: #fff;
 	}
+}
+
+
+.eg-buildpress-item-skin-element-0, .eg-buildpress-item-skin-element-0:hover {
+	background: $colorMain_04 !important;
+	background-color: $colorMain_04 !important;
+	color: #fff !important;
+	font-family: 'Roboto', sans-serif  !important;
+	font-size:14px !important;
+	font-weight:700 !important;
+
+}
+
+.eg-buildpress-item-skin-element-1 {
+	@include RobotoCondensedBold(16px);
 }
