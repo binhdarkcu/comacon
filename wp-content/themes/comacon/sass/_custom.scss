@@ -529,3 +529,18 @@ html.flexbox .widget-icon-box .icon-box {
 		background: #fff;
 	}
 }
+
+
+.eg-buildpress-item-skin-element-0, .eg-buildpress-item-skin-element-0:hover {
+	background: $colorMain_04 !important;
+	background-color: $colorMain_04 !important;
+	color: #fff !important;
+	font-family: 'Roboto', sans-serif  !important;
+	font-size:14px !important;
+	font-weight:700 !important;
+
+}
+
+.eg-buildpress-item-skin-element-1 {
+	@include RobotoCondensedBold(16px);
+}
