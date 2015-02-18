@@ -102,6 +102,7 @@
 <script type='text/javascript'>var BuildPressVars={"pathToTheme":""};</script>
 <script src="js/orginial.js"></script>
 <script src="js/validate.js"></script>
+<script src="js/custom.js"></script>
 <script>eval(mod_pagespeed_IvHxVYWT2W);</script>
 <script>eval(mod_pagespeed_2NGNadrv4U);</script>
 <script>eval(mod_pagespeed_dlk9SvPAug);</script>

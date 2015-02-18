@@ -19,7 +19,7 @@
 		<main class="col-xs-12" role="main">
 			<div class="row">
 				<div class="container">
-					<div class="col-xs-4">
+					<div class="col-md-4">
 						<div class="sidebar">
 							<div class="push-down-30">
 								<h4 class="sidebar__headings">Waarom Comacon</h4>
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					
-					<div class="col-xs-8">
+					<div class="col-md-8">
 						<h4 class="sidebar__headings">Wie is Comacon</h4>
 						<article class="post-171 page type-page status-publish hentry">
 							<div class="panel-grid" id="pg-171-0">

@@ -3,6 +3,43 @@ body {
 	color: #666;
 }
 
+ .reference-sidebar{
+    ul{
+      li{
+        position: relative;
+        margin-bottom: 15px;
+        img{
+          width: 100%;
+        }
+        .esg-cc{
+          top: 50%;
+          margin-top: -32px;
+        }
+        .esg-overlay{
+          opacity: 0;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          border: 0px solid transparent;
+          outline: 0px solid transparent;
+          -webkit-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+        }
+        .eg-buildpress-item-skin-element-1{
+          visibility: hidden;
+          opacity: 0;
+          top: -15px;
+        }
+        .eg-buildpress-item-skin-element-0-a{
+          visibility: hidden;
+          opacity: 0;
+          top: 15px;
+        }
+      }
+    }
+  }
 input[type="email"].error, input[type="text"].error{
   border: 1px solid red;
 }

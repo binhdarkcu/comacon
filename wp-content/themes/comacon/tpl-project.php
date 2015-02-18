@@ -69,7 +69,7 @@
 										<div class="esg-entry-cover">
 										<!-- THE COLORED OVERLAY -->
 											<div class="esg-overlay esg-fade eg-buildpress-item-skin-container" data-delay="0"></div>
-											<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0"><?php echo get_the_title();?></div>
+											<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0"><?php echo get_the_title($projects->ID);?></div>
 											<div class="esg-center eg-buildpress-item-skin-element-9 esg-none esg-clear" style="height: 5px; visibility: hidden;"></div>
 											<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-<?php echo $projects->ID; ?>" href="<?php echo get_the_permalink($projects->ID); ?>" target="_self">View Project</a></div>
 										</div><!-- END OF THE CONTENT IN THE ENTRY -->

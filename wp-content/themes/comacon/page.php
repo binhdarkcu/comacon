@@ -21,7 +21,7 @@
 		<main class="col-xs-12" role="main">
 			<div class="row">
 				<div class="container">
-					<div class="col-xs-3">
+					<div class="col-md-3">
 						<div class="sidebar">
 							<div class="push-down-30">
 								<h4 class="sidebar__headings">Diensten voor wie?</h4>
@@ -59,12 +59,12 @@
 						</div>
 					</div>
 					
-					<div class="col-xs-9">
+					<div class="col-md-9">
 						<h4 class="sidebar__headings"><?php echo get_the_title();?></h4>
 						<article class="post-171 page type-page status-publish hentry">
 							<div class="panel-grid" id="pg-171-0">
 								<div class="panel-grid-cell" id="pgc-52-0-0">
-									<div class="col-xs-8">
+									<div class="col-md-8">
 										<div class="panel widget widget_black-studio-tinymce panel-first-child panel-last-child" id="panel-171-0-0-0">
 											<div class="textwidget post_content">
 												<?php
@@ -81,38 +81,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-xs-4 reference-sidebar">
-										<h4>Referenties</h4>
-										<ul style="list-style-type: none;padding-left: 0;">
-											<li>
-												<img src="images/s-1.jpg"/>
-												<div class="esg-overlay esg-fade eg-buildpress-item-skin-container"></div>
-												<a href="#" style="display: none;">
-													<h4>Mechelen Stadszaal</h4>
-													<span>BEKIJK PROJECT</span>
-												</a>
-												<br/>
-											</li>
-											<li>
-												<img src="images/s-2.jpg"/>
-												<div class="esg-overlay esg-fade eg-buildpress-item-skin-container"></div>
-												<a href="#" style="display: none;">
-													<h4>Mechelen Stadszaal</h4>
-													<span>BEKIJK PROJECT</span>
-												</a>
-												<br/>
-											</li>
-											<li>
-												<img src="images/s-3.jpg"/>
-												<div class="esg-overlay esg-fade eg-buildpress-item-skin-container"></div>
-												<a href="#" style="display: none;">
-													<h4>Mechelen Stadszaal</h4>
-													<span>BEKIJK PROJECT</span>
-												</a>
-												<br/>
-											</li>
-										</ul>
-									</div>
+									<?php get_sidebar('service');?>
 									
 								</div>
 								
