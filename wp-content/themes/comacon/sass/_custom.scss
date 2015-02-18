@@ -460,6 +460,7 @@ html.flexbox .widget-icon-box .icon-box {
 .buildpress .esg-navigationbutton span, .buildpress .esg-filterbutton span, .buildpress .esg-sortbutton span, .buildpress .esg-sortbutton-order span, .buildpress .esg-cartbutton-order span {
 	border-bottom: none;
 	color: #8796a1;
+	@include RobotoCondensedBold(16px);
 }
 
 .buildpress .esg-filterbutton::after, .buildpress .esg-sortbutton::after, .buildpress .esg-cartbutton::after {
@@ -468,7 +469,7 @@ html.flexbox .widget-icon-box .icon-box {
 }
 
 
-body.home .siteorigin-panels-stretch {
+.siteorigin-panels-stretch {
 	padding:30px;
 	background-color: #f2f2f2;
 	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp);
@@ -481,6 +482,10 @@ body.home .siteorigin-panels-stretch {
 		p {
 			font-size: 16px;
 		}
+	}
+	
+	&.projects {
+		background:#fff;
 	}
 }
 .siteorigin-panels-stretch {

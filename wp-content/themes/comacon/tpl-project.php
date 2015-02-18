@@ -3,7 +3,7 @@
 ?>
 
 <div class="panel-grid" id="pg-7-2">
-	<div class="siteorigin-panels-stretch panel-row-style" data-stretch-type="full">
+	<div class="siteorigin-panels-stretch panel-row-style projects" data-stretch-type="full">
 		<div class="panel-grid-cell" id="pgc-7-2-0">
 			<div class="panel widget widget_ess-grid-widget panel-first-child panel-last-child" id="panel-7-2-0-0">
 				<!-- CACHE FOUND FOR: 33 -->
