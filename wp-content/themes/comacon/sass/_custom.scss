@@ -49,6 +49,7 @@ h3.widget-title{
 
 h5.page-box__title{
 	@include RobotoCondensedBold(24px);
+	word-break: break-word;
 	color: $colorButton;
 	
 	a {
@@ -474,15 +475,22 @@ html.flexbox .widget-icon-box .icon-box {
 .carousel-control.right {right: 3%;}
 .carousel-control.left {left: 3%;}
 
-@media (min-width:1200px) {
-	.carousel-content {
-		
-	}	
+@media (max-width:780px) {
+	#pgc-7-3-0, #pgc-7-3-1 {
+		width: 80%;
+	}		
 }
 
 @media (min-width:992px) {
+	.jumbotron {
+		padding-bottom: 40px;
+	}
 	.navigation--main .sub-menu>li>a:hover {
 		background-color: $colorMain_03
+	}
+	
+	#pg-7-1 {
+		margin-top: 20px;
 	}
 	
 	.carousel-inner {
@@ -528,6 +536,10 @@ html.flexbox .widget-icon-box .icon-box {
 	}
 }
 
+/*home*/
+.panel-grid .widget-title {
+	font-size: 24px;
+}
 
 /*products*/
 .buildpress .esg-navigationbutton:hover span, .buildpress .esg-filterbutton:hover span, .buildpress .esg-sortbutton:hover span, .buildpress .esg-sortbutton-order:hover span, .buildpress .esg-cartbutton-order:hover span, .buildpress .esg-filterbutton.selected span {
@@ -568,7 +580,7 @@ html.flexbox .widget-icon-box .icon-box {
 	
 	.page-box__content {
 		p {
-			font-size: 16px;
+			@include RobotoCondensedBold(16px);
 		}
 	}
 	
