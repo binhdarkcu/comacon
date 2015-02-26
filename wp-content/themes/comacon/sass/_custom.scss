@@ -580,7 +580,7 @@ html.flexbox .widget-icon-box .icon-box {
 	
 	.page-box__content {
 		p {
-			@include RobotoCondensedBold(16px);
+			@include RobotoCondensed(16px);
 		}
 	}
 	
