@@ -47,7 +47,7 @@
 			<div class="widget  widget-social-icons">	
 				<a class="social-icons__link" href="<?php if(!empty($fb)) echo $fb; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-facebook"></i></a>
 				<a class="social-icons__link" href="<?php if(!empty($tw)) echo $tw; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-twitter"></i></a>
-				<a class="social-icons__link" href="<?php if(!empty($yt)) echo $yt; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-youtube"></i></a>
+				<a class="social-icons__link" href="<?php if(!empty($yt)) echo $yt; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-linkedin-square"></i></a>
 			</div>	
 		</div>
 		<!-- Toggle Button for Mobile Navigation -->

@@ -190,7 +190,8 @@ vertical-align: middle;
 	
 	.logo {
 		float: left;
-		margin-top: 20px;
+		margin-top: 38px;
+		margin-bottom: 33px;
 	}
 	
 	.header-widgets-desktop {
@@ -208,6 +209,10 @@ vertical-align: middle;
 
 	.navigation--main .sub-menu>li>a, .navigation--main .sub-menu>li>a:hover, .navigation--main .sub-menu>.menu-item-has-children>a::after {
 		color: #FFF
+	}
+	
+	.header-widgets-desktop {
+		padding: 32px 0;
 	}
 }
 
@@ -275,9 +280,23 @@ vertical-align: middle;
 	background-color: $colorMain_04;
 }
 @media (min-width:992px) {
-.navigation--main .sub-menu>li>a {
-	background-color: $colorMain_02
-}
+	.navigation--main .sub-menu>li>a {
+		background-color: $colorMain_02
+	}
+
+	.navigation--main>li>a{
+		text-transform: uppercase;
+		@include RobotoBold (15px);
+		padding: 20px 22px;
+	}
+	
+	.navigation--main>li:hover>a {
+		padding-top: 17px;
+	}
+	
+	.navigation--main>.menu-item-has-children>a::after {
+		bottom:3px;
+	}
 }
 .navigation--main>li.current-menu-item a,.navigation--main>li.current-menu-item>a, .btn-primary, .logo-panel img:hover, blockquote, #comments-submit-button, .navigation--main>li:hover>a {
 	border-color: $colorMain_01;
@@ -285,11 +304,10 @@ vertical-align: middle;
 .navigation--main>li>a{
 	text-transform: uppercase;
 	@include RobotoBold (15px);
-
 }
 .navigation--main>li.current-menu-item>a, .navigation--main>li.current_page_parent>a{
   border-top: 3px solid $colorMain_01;
-  padding-top: 24px;
+  padding-top: 17px;
   color: $colorMain_01;
 	text-transform: uppercase;
 	@include RobotoBold (15px);
@@ -390,6 +408,41 @@ html.flexbox .widget-icon-box .icon-box {
 	}
 }
 
+
+.fa {
+	&.fa-linkedin-square {
+		font-size: 27px;
+	}
+	
+	&.fa-facebook {
+		font-size: 21px;
+	}
+	
+	&.fa-twitter {
+		font-size: 22px;
+	}
+}
+
+.widget-social-icons {
+	margin-right: 0;
+
+}
+.social-icons__link {
+	padding: 0 12px;
+	&:last-child{
+		padding-right: 0;
+	}
+}
+
+.icon-box {
+	padding-right: 30px;
+	margin-left: 30px;
+}
+
+.icon-box>.fa {
+	margin-top: 3px;
+	color: #c3c8cb;
+}
 
 /*slider*/
 .carousel-inner {
