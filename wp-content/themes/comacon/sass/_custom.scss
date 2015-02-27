@@ -489,6 +489,10 @@ html.flexbox .widget-icon-box .icon-box {
 		background-color: $colorMain_03
 	}
 	
+	.navigation--main>li>a::before {
+		background: #ddd;
+	}
+	
 	#pg-7-1 {
 		margin-top: 20px;
 	}
@@ -589,11 +593,13 @@ html.flexbox .widget-icon-box .icon-box {
 	
 	.page-box__title {
 		color: #061f31;
+		margin-bottom: 34px;
 	}
 	
 	.page-box__content {
 		p {
-			@include RobotoCondensed(16px);
+			@include RobotoCondensed(16px, 1.6);
+			margin-bottom: 20px;
 		}
 	}
 	

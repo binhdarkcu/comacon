@@ -99,17 +99,11 @@
 
 
 <script type='text/javascript' src='//maps.google.com/maps/api/js?sensor=false'></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 <script type='text/javascript'>var BuildPressVars={"pathToTheme":""};</script>
 <script src="js/orginial.js"></script>
 <script src="js/validate.js"></script>
 <script src="js/custom.js"></script>
 <script>eval(mod_pagespeed_IvHxVYWT2W);</script>
-<script>eval(mod_pagespeed_2NGNadrv4U);</script>
-<script>eval(mod_pagespeed_dlk9SvPAug);</script>
-<script>eval(mod_pagespeed_rwADZIu_BN);</script>
-<script>eval(mod_pagespeed_DHY65I3jgO);</script>
-<script>eval(mod_pagespeed_yPf8DQEHR2);</script>
-<script>eval(mod_pagespeed_M0IsbeP2fH);</script>
-<script>eval(mod_pagespeed_Q$HntTw5UC);</script>
 </body>
 </html>
