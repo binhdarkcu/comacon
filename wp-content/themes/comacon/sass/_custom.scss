@@ -2,7 +2,10 @@ body {
 	@include RobotoCondensed(14px, 1.6);
 	color: #666;
 }
-
+.navigation--main .sub-menu>li.current_page_item a{
+  color: #fefefe;
+  background-color: #243a4a;
+}
 .reference-sidebar{
     ul{
       li{
