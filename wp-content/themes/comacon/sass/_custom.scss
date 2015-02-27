@@ -542,6 +542,18 @@ html.flexbox .widget-icon-box .icon-box {
 }
 
 /*products*/
+@media (min-width:992px) {
+	.buildpress .esg-filterbutton::after, .buildpress .esg-sortbutton::after, .buildpress .esg-cartbutton::after {
+		top: -4px;
+		right: -4px;
+		
+	}
+	
+	.buildpress .esg-filterbutton:nth-last-child(2)::after {
+		right: 0;
+	}
+} /*end media*/
+
 .buildpress .esg-navigationbutton:hover span, .buildpress .esg-filterbutton:hover span, .buildpress .esg-sortbutton:hover span, .buildpress .esg-sortbutton-order:hover span, .buildpress .esg-cartbutton-order:hover span, .buildpress .esg-filterbutton.selected span {
 	border-bottom: none;
 	color:#FFF;
@@ -555,6 +567,7 @@ html.flexbox .widget-icon-box .icon-box {
 
 .buildpress .esg-filter-wrapper {
 	background:#ddd;
+	display: inline-table;
 }
 
 .buildpress .esg-navigationbutton span, .buildpress .esg-filterbutton span, .buildpress .esg-sortbutton span, .buildpress .esg-sortbutton-order span, .buildpress .esg-cartbutton-order span {
