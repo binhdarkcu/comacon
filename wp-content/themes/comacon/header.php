@@ -24,6 +24,8 @@
 <script>eval(mod_pagespeed_wYZGjmOogu);</script>
 <script>eval(mod_pagespeed_Pq6ux5cSJr);</script>
 <script src="js/src_02.js"></script>
+<script src="js/src_03.js"></script>
+<script>eval(mod_pagespeed_7fm1$BErDG);</script>
 </head>
 <body class="home page page-template page-template-template-front-page-slider page-template-template-front-page-slider-php custom-background siteorigin-panels siteorigin-panels-home">
 <div class="boxed-container">

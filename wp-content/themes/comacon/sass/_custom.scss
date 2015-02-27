@@ -169,12 +169,17 @@ vertical-align: middle;
 }
 .icon-box__subtitle, .widget-icon-box .icon-box, .textwidget {
 	color: #989898;
-
+	
 }
 
 .widget-icon-box .icon-box {
 	border-right: 1px solid #595959;
 	width: 180px;
+	box-sizing: content-box;
+	
+	.icon-box__text {
+		
+	}
 }
 
 .navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a{
