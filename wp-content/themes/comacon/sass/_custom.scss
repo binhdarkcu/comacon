@@ -1,11 +1,3 @@
-body {
-	@include RobotoCondensed(14px, 1.6);
-	color: #666;
-}
-.navigation--main .sub-menu>li.current_page_item a{
-  color: #fefefe;
-  background-color: #243a4a;
-}
 .reference-sidebar{
     ul{
       li{
@@ -44,40 +36,16 @@ body {
 input[type="email"].error, input[type="text"].error{
   border: 1px solid red;
 }
-
-h3.widget-title{
-	@include RobotoCondensed(24px);
-	color: $colorButton;
+.navigation--main>li.current-menu-item>a, .navigation--main>li.current_page_parent>a {
+  border-top: 3px solid #243a4a;
+  padding-top: 26px;
+  color: #243a4a;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 700;
 }
-
-h5.page-box__title{
-	@include RobotoCondensedBold(24px);
-	word-break: break-word;
-	color: $colorButton;
-	
-	a {
-		color: $colorButton;
-	}
-}
-
-h6 {
-	@include RobotoCondensedBold(14px);
-	color: $colorButton;
-	a {
-		color: $colorButton;
-	}	
-}
-
-.page-box__content {
-	p {
-		
-		
-		a {
-			@include RobotoCondensedBold(16px);
-		}
-	}
-}
-
 .ssba img
 { 
 width: 55px;
@@ -152,7 +120,7 @@ vertical-align: middle;
 }
 
 .navbar-toggle__text {
-	color: #fff;
+	color: $colorText02
 }
 
 .navigation--top>.menu-item-has-children>a::after {
@@ -168,76 +136,29 @@ vertical-align: middle;
 	color: #333
 }
 .icon-box__subtitle, .widget-icon-box .icon-box, .textwidget {
-	color: #989898;
-
+	color: #989898
 }
-
-.widget-icon-box .icon-box {
-	border-right: 1px solid #595959;
-	width: 180px;
+@media (min-width:992px) {
+.navigation {
+	background: #c3c8cb
 }
-
-.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a{
-	color: #ddd;
+}
+.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a {
+	color: #ddd
 }
 .navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after, .navigation--main .sub-menu>li:hover>a {
 	color: #fefefe
 }
 @media (min-width:992px) {
-	html.flexbox .header-widgets {
-		justify-content: flex-end;
-	}
-	
-	.navigation {
-		background: #c3c8cb
-	}
-	
-	.logo {
-		float: left;
-		margin-top: 38px;
-		margin-bottom: 33px;
-	}
-	
-	.header-widgets-desktop {
-		float: right;
-		padding: 18px 0;
-	}
-	
-	.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after {
-		color: #FFF
-	}
-
-	.navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after {
-		color: $colorMain_01
-	}
-
-	.navigation--main .sub-menu>li>a, .navigation--main .sub-menu>li>a:hover, .navigation--main .sub-menu>.menu-item-has-children>a::after {
-		color: #FFF
-	}
-	
-	.header-widgets-desktop {
-		padding: 32px 0;
-	}
+.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after {
+	color: #FFF
 }
-
-@media (max-width:992px) {
-	.navigation--main>li>a, .navigation--main>li>a:hover, .navigation--main>.menu-item-has-children>a, .navigation--main>.menu-item-has-children>a:hover, .btn-primary:hover, #comments-submit-button:hover, .navigation--main .sub-menu>li>a, .navigation--main .sub-menu, .navigation--main .sub-menu>li>.sub-menu {
-		color: #243a4a !important;
-	}
-	
-	.navigation--main>li.current-menu-item>a, .navigation--main>li.current_page_parent>a {
-		padding-top: 5px !important;
-	}
-	
-	.navigation--main>li>a, .navigation--main>.menu-item-has-children>a::after, .navigation--main .sub-menu>li>a {
-		color: #243a4a !important;
-	}
+.navigation--main>li:hover>a, .navigation--main>.menu-item-has-children:hover>a::after {
+	color: $colorMain_01
 }
-
-@media (max-width: 480px){
-	.logo {
-		margin-top: 10px;
-	}
+.navigation--main .sub-menu>li>a, .navigation--main .sub-menu>li>a:hover, .navigation--main .sub-menu>.menu-item-has-children>a::after {
+	color: #FFF
+}
 }
 .main-title {
 	background-color: #f2f2f2
@@ -259,66 +180,30 @@ vertical-align: middle;
 }
 
 .breadcrumbs {
-	background-color: #fff;
-	@include RobotoCondensed(14px);
-	
-	strong.current {
-		@include RobotoCondensed(14px);
-	}
+	background-color: #fff
 }
 .breadcrumbs a {
-	color: #666;
-	@include RobotoCondensed(14px);
+	color: #666
 }
 .breadcrumbs a:hover {
 	color: #595959
 }
 .breadcrumbs {
-	color: $colorText01;
+	color: $colorText01
 }
 .jumbotron__category h6, .social-icons__link, .testimonial__rating, body.woocommerce-page .star-rating, body.woocommerce-page ul.products li.product a:hover img, body.woocommerce-page p.stars a {
-	color: $colorMain_04;
-	
+	color: $colorMain_04
 }
 .jumbotron__category::after, .alternative-heading::after, .navbar-toggle, #comments-submit-button, .btn-primary, .panel-grid .widget-title::after, .footer .footer__headings::after, .main-title h3::before, .hentry__title::after, .widget_search .search-submit, .pagination li .current, .pagination li:hover, .sidebar__headings::after, .sidebar .widget_nav_menu ul>li.current-menu-item a, .sidebar .widget_nav_menu ul>li>a:hover, .widget_calendar caption, .widget_tag_cloud a, body.woocommerce-page .widget_product_search #searchsubmit, body.woocommerce-page span.onsale, body.woocommerce-page ul.products::before, body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page nav.woocommerce-pagination ul li a:hover, body.woocommerce-page a.add_to_cart_button:hover, body.woocommerce-page button.button:hover, body.woocommerce-page .widget_product_categories ul>li>a:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page table.cart td.actions input.button.alt, body.woocommerce-page .cart-collaterals .shipping_calculator h2::after, body.woocommerce-page .cart-collaterals .cart_totals h2::after, body.woocommerce-page .woocommerce-info, body.woocommerce-page .woocommerce-message, body.woocommerce-page .woocommerce-error, body.woocommerce-page #payment #place_order, body.woocommerce-page .short-description::before, body.woocommerce-page .short-description::after, body.woocommerce-page .quantity .minus:hover, body.woocommerce-page .quantity .plus:hover, body.woocommerce-page button.button.alt, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, body.woocommerce-page #review_form #respond input#submit, body.woocommerce-page div.product .woocommerce-tabs h2::after, .buildpress-table thead th, .brochure-box:hover {
-	background-color: $colorMain_04;
+	background-color: $colorMain_02
 }
 @media (min-width:992px) {
-	.navigation--main .sub-menu>li>a {
-		background-color: $colorMain_02
-	}
-
-	.navigation--main>li>a{
-		text-transform: uppercase;
-		@include RobotoBold (15px);
-		padding: 20px 22px;
-	}
-	
-	.navigation--main>li:hover>a {
-		padding-top: 17px;
-	}
-	
-	.navigation--main>.menu-item-has-children>a::after {
-		bottom:3px;
-	}
+.navigation--main .sub-menu>li>a {
+	background-color: $colorMain_02
 }
-.navigation--main>li.current-menu-item a,.navigation--main>li.current-menu-item>a, .btn-primary, .logo-panel img:hover, blockquote, #comments-submit-button, .navigation--main>li:hover>a {
-	border-color: $colorMain_01;
 }
-.navigation--main>li>a{
-	text-transform: uppercase;
-	@include RobotoBold (15px);
-}
-.navigation--main>li.current-menu-item>a, .navigation--main>li.current_page_parent>a{
-  border-top: 3px solid $colorMain_01;
-  padding-top: 17px;
-  color: $colorMain_01;
-	text-transform: uppercase;
-	@include RobotoBold (15px);
-
-}
-.navigation--main>.menu-item-has-children.current_page_parent>a::after{
-  color: $colorMain_01;
+.btn-primary, .logo-panel img:hover, blockquote, #comments-submit-button, .navigation--main>li:hover>a {
+	border-color: $colorMain_01
 }
 .social-icons__link:hover {
 	color: $colorMain_03
@@ -328,10 +213,7 @@ vertical-align: middle;
 }
 
 .btn-primary:hover, #comments-submit-button:hover, .navigation--main .sub-menu>li>a, .navigation--main .sub-menu, .navigation--main .sub-menu>li>.sub-menu {
-	border-color: #aab8c3;
-	text-transform: uppercase;
-	@include RobotoCondensed(15px);
-
+	border-color: #aab8c3
 }
 a {
 	color: $colorMain_04
@@ -340,18 +222,11 @@ a:hover, .more-link .btn:hover {
 	color: #1098cb
 }
 body, .textwidget {
-	color: #333;
+	color: $colorText01
 }
 #comments-submit-button, .btn-primary, .footer .btn-primary, .sidebar .widget_nav_menu ul>li.current-menu-item a, .widget_tag_cloud a, .pagination li .current, .widget_search .search-submit {
-	color: #fff;
-	@include RobotoBold(14px);
-	background: $colorButton;
+	color: #fff
 }
-
-#comments-submit-button:focus, .btn-primary:focus {
-	border-color:$colorButton;
-}
-
 #comments-submit-button:hover, .btn-primary:hover, .footer .btn-primary:hover, .sidebar .widget_nav_menu ul>li a:hover, .sidebar .widget_nav_menu ul>li.current-menu-item a:hover, .widget_tag_cloud a:hover, .pagination li:hover a, body.woocommerce-page .woocommerce-message, body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce-page button.button.alt, body.woocommerce-page table.cart td.actions input.button.alt, body.woocommerce-page button.button.alt:hover, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a, body.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a:hover, body.woocommerce-page nav.woocommerce-pagination ul li .prev:hover, body.woocommerce-page nav.woocommerce-pagination ul li .next:hover, body.woocommerce-page a.add_to_cart_button:hover, body.woocommerce-page a.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page nav.woocommerce-pagination ul li a:hover, body.woocommerce-page .woocommerce-info, body.woocommerce-page #payment #place_order, body.woocommerce-page .widget_product_categories ul>li>a:hover, body.woocommerce-page .widget_product_search #searchsubmit, body.woocommerce-page #review_form #respond input#submit, body.woocommerce-page button.button:hover, body.woocommerce-page .woocommerce-error .showlogin, body.woocommerce-page .woocommerce-error .showcoupon, body.woocommerce-page .woocommerce-info .showlogin, body.woocommerce-page .woocommerce-info .showcoupon, body.woocommerce-page .woocommerce-message .showlogin, body.woocommerce-page .woocommerce-message .showcoupon, body.woocommerce-page .woocommerce-error::before, body.woocommerce-page .woocommerce-info::before, body.woocommerce-page .woocommerce-message::before {
 	color: #FFF
 }
@@ -413,41 +288,6 @@ html.flexbox .widget-icon-box .icon-box {
 }
 
 
-.fa {
-	&.fa-linkedin-square {
-		font-size: 27px;
-	}
-	
-	&.fa-facebook {
-		font-size: 21px;
-	}
-	
-	&.fa-twitter {
-		font-size: 22px;
-	}
-}
-
-.widget-social-icons {
-	margin-right: 0;
-
-}
-.social-icons__link {
-	padding: 0 12px;
-	&:last-child{
-		padding-right: 0;
-	}
-}
-
-.icon-box {
-	padding-right: 30px;
-	margin-left: 30px;
-}
-
-.icon-box>.fa {
-	margin-top: 3px;
-	color: #c3c8cb;
-}
-
 /*slider*/
 .carousel-inner {
 	.group-carousel-content {
@@ -466,38 +306,24 @@ html.flexbox .widget-icon-box .icon-box {
 }	
 .jumbotron__title h1 {
 	color: $colorButton;
-	@include RobotoCondensedBold( 24px );
-	text-transform: uppercase;
 }
 
 .jumbotron__content p {
 	color: #11293a;	
-	@include RobotoCondensed( 16px );
 }
 
 .carousel-control.right {right: 3%;}
 .carousel-control.left {left: 3%;}
 
-@media (max-width:780px) {
-	#pgc-7-3-0, #pgc-7-3-1 {
-		width: 80%;
-	}		
+@media (min-width:1200px) {
+	.carousel-content {
+		
+	}	
 }
 
 @media (min-width:992px) {
-	.jumbotron {
-		padding-bottom: 40px;
-	}
 	.navigation--main .sub-menu>li>a:hover {
 		background-color: $colorMain_03
-	}
-	
-	.navigation--main>li>a::before {
-		background: #ddd;
-	}
-	
-	#pg-7-1 {
-		margin-top: 20px;
 	}
 	
 	.carousel-inner {
@@ -517,25 +343,8 @@ html.flexbox .widget-icon-box .icon-box {
 					max-height: none;
 					top: calc(50% - 120px);
 					left: 15px;
-					background: rgba(255,255,255,0.86);
-					opacity: 1;
-					
-					.jumbotron__category {
-						border-bottom: 1px solid #696969;
-						
-						h6 {
-							@include RobotoBold( 14px );
-						}
-						
-					}
-					
-					.btn-primary {
-						background: $colorMain_03;
-						@include Roboto( 14px );
-						text-transform: uppercase;
-					}
-					
-					
+					background: #FFF;
+					opacity: 0.86;
 				}
 			}
 		}
@@ -543,24 +352,8 @@ html.flexbox .widget-icon-box .icon-box {
 	}
 }
 
-/*home*/
-.panel-grid .widget-title {
-	font-size: 24px;
-}
 
 /*products*/
-@media (min-width:992px) {
-	.buildpress .esg-filterbutton::after, .buildpress .esg-sortbutton::after, .buildpress .esg-cartbutton::after {
-		top: -4px;
-		right: -4px;
-		
-	}
-	
-	.buildpress .esg-filterbutton:nth-last-child(2)::after {
-		right: 0;
-	}
-} /*end media*/
-
 .buildpress .esg-navigationbutton:hover span, .buildpress .esg-filterbutton:hover span, .buildpress .esg-sortbutton:hover span, .buildpress .esg-sortbutton-order:hover span, .buildpress .esg-cartbutton-order:hover span, .buildpress .esg-filterbutton.selected span {
 	border-bottom: none;
 	color:#FFF;
@@ -574,13 +367,11 @@ html.flexbox .widget-icon-box .icon-box {
 
 .buildpress .esg-filter-wrapper {
 	background:#ddd;
-	display: inline-table;
 }
 
 .buildpress .esg-navigationbutton span, .buildpress .esg-filterbutton span, .buildpress .esg-sortbutton span, .buildpress .esg-sortbutton-order span, .buildpress .esg-cartbutton-order span {
 	border-bottom: none;
 	color: #8796a1;
-	@include RobotoCondensedBold(16px);
 }
 
 .buildpress .esg-filterbutton::after, .buildpress .esg-sortbutton::after, .buildpress .esg-cartbutton::after {
@@ -588,81 +379,18 @@ html.flexbox .widget-icon-box .icon-box {
 	height:64px;
 }
 
-
 .siteorigin-panels-stretch {
 	padding:30px;
 	background-color: #f2f2f2;
 	background-image: url(../images/xtitle-area-pattern.png.pagespeed.ic.wSO0SJvEQn.webp);
-	
-	.page-box__title {
-		color: #061f31;
-		margin-bottom: 34px;
-	}
-	
-	.page-box__content {
-		p {
-			@include RobotoCondensed(16px, 1.6);
-			margin-bottom: 20px;
-		}
-	}
-	
-	&.projects {
-		background:#fff;
-	}
-}
-.siteorigin-panels-stretch {
 	.page-box__content {
 		text-align:center;
 	}
 }
 
-
-
-.footer .widget_nav_menu ul>li>a {
-	color: #333;
-	text-transform: capitalize;
-}
-
-.footer .read-more {
-	color: #375c78;
-	@include RobotoCondensedBold(16px);
-}
-
-.footer-bottom__left {
-	color: #fff;
-}
-
-.newsletter {
-	position: relative;
-	
-	span.fa-envelope {
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		z-index: 1;
-		font-size: 25px;
-		color: #bdbdbd;
-	}	
-	input[type=email]{
-		width: 55%;
-		margin-right: 6px;
-		height: 48px;
-		padding-left: 41px;
-		background: #fff;
-	}
-}
-
-
-.eg-buildpress-item-skin-element-0, .eg-buildpress-item-skin-element-0:hover {
-	background: $colorMain_04 !important;
-	background-color: $colorMain_04 !important;
-	color: #fff !important;
-	font-family: 'Roboto', sans-serif  !important;
-	font-size:14px !important;
-	font-weight:700 !important;
+.post_content{
 
 }
 
-.eg-buildpress-item-skin-element-1 {
-	@include RobotoCondensedBold(16px);
-}
+
+
