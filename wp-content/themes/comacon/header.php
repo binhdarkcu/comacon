@@ -6,6 +6,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
 <meta charset="UTF-8"/>
+<link rel="shortcut icon" href="images/favicon.ico" />
 <title>C O M A C O N</title>
 <base href="<?php echo bloginfo('template_url')?>/"></base>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
