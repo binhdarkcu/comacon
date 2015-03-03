@@ -3,10 +3,10 @@
 	function revcon_change_post_label() {
 	    global $menu;
 	    global $submenu;
-	    $menu[5][0] = 'Projects';
-	    $submenu['edit.php'][5][0] = 'Projects';
-	    $submenu['edit.php'][10][0] = 'Add Projects';
-	    $submenu['edit.php'][16][0] = 'Projects Tags';
+	    $menu[5][0] = 'References';
+	    $submenu['edit.php'][5][0] = 'References';
+	    $submenu['edit.php'][10][0] = 'Add References';
+	    $submenu['edit.php'][16][0] = 'References Tags';
 	    echo '';
 	}
 	function revcon_change_post_object() {
