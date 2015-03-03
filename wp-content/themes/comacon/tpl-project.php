@@ -17,7 +17,7 @@
 						<article class="esg-filters esg-singlefilters" style="margin-bottom: 30px; text-align: left; "><!-- THE FILTERING, SORTING AND WOOCOMMERCE BUTTONS --><!-- THE FILTER BUTTONS -->
 							<div class="esg-filter-wrapper  esg-fgc-33" style="margin-left: 0px; margin-right: 0px;">
 								<div class="esg-filterbutton  <?php if($refer == '' ) echo 'selected';?> esg-allfilter" data-filter="filterall" data-fid="-1">
-									<span>All ALLE REFERENTIES</span>
+									<span>ALLE REFERENTIES</span>
 								</div>
 								<?php
 									$categories = get_categories(); 
