@@ -1,4 +1,4 @@
-<div class="panel-grid" id="pg-7-5">
+<div class="panel-grid introhome" id="pg-7-5">
 	<div class="siteorigin-panels-stretch panel-row-style" data-stretch-type="full">
 		<div class="panel-grid-cell" id="pgc-7-5-0">
 			<div class="panel widget widget_text panel-first-child panel-last-child" id="panel-7-5-0-0">	
