@@ -43,9 +43,9 @@ function register_custom_slider() {
 add_action( 'init', 'register_custom_news' );
 function register_custom_news() {	
 	$news_label = array(
-    'name' => _x('Slider', 'News'),
+    'name' => _x('Hompage Links', 'Hompage Links'),
     'singular_name' => _x('news', 'news'),
-    'add_new' => _x('Add New', 'News'),
+    'add_new' => _x('Add New', 'HOMEPAGE LINKS'),
     'add_new_item' => __('Add New'),
     'edit_item' => __('Edit '),
     'new_item' => __('Add New'),
@@ -55,7 +55,7 @@ function register_custom_news() {
     'not_found' =>  __('Not Find'),
     'not_found_in_trash' => __('Not Find in Trash'), 
     'parent_item_colon' => '',
-    'menu_name' => 'News'
+    'menu_name' => 'Hompage Links'
   );
   $news= array(
     'labels' => $news_label,
@@ -82,7 +82,7 @@ function register_custom_news() {
 add_action( 'init', 'register_custom_clients' );
 function register_custom_clients() {	
 	$news_label = array(
-    'name' => _x('Clients', 'Clients'),
+    'name' => _x('Partners', 'Partners'),
     'singular_name' => _x('clients', 'clients'),
     'add_new' => _x('Add New', 'Clients'),
     'add_new_item' => __('Add New'),
@@ -94,7 +94,7 @@ function register_custom_clients() {
     'not_found' =>  __('Not Find'),
     'not_found_in_trash' => __('Not Find in Trash'), 
     'parent_item_colon' => '',
-    'menu_name' => 'Clients'
+    'menu_name' => 'Partners'
   );
   $news= array(
     'labels' => $news_label,
