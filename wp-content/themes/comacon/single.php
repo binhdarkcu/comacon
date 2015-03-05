@@ -31,7 +31,8 @@
 		<main class="col-xs-12" role="main">
 			<div class="row">
 				<div class="container">
-					<article class="post-225 portfolio type-portfolio status-publish has-post-thumbnail hentry post-inner">
+					<div class="col-xs-12">
+						<article class="post-225 portfolio type-portfolio status-publish has-post-thumbnail hentry post-inner">
 						<h2 class="hentry__title"><?php echo get_the_title($post->ID);?></h2>
 						<div class="row">
 						<div class="col-xs-12 col-md-6">
@@ -96,6 +97,7 @@
 						</div>
 						<div class="clearfix"></div>
 						</article>
+					</div>
 				</div>
 			</div>
 		</main>
