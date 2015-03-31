@@ -111,7 +111,8 @@
 			update_option( 'url_twitter',($_POST['url_twitter']));
 			update_option( 'url_youtube',($_POST['url_youtube']));
 			update_option( 'url_skype',($_POST['url_skype']));
-			update_option( 'url_facebook',($_POST['url_facebook']));			
+			update_option( 'url_facebook',($_POST['url_facebook']));
+			update_option( 'url_likedin',($_POST['url_likedin']));			
     ?>
       		<div id="index_message" name="index_message" class="updated" style="display:table;width: 100%;margin-bottom: 0;">Update successful!</div><br/>
       		<?php
@@ -150,6 +151,8 @@
 	                   <label for="url_youtube">Youtube</label><br/>
 	                   <input name="url_youtube" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_youtube') ); ?>"/><br /><br />	
 	                   
+	                   <label for="url_likedin">Likedin</label><br/>
+	                   <input name="url_likedin" size="65" style="border-style:inset;border-width: 2px;color: #000;background-color: #f1f1f1" value="<?php echo esc_attr( get_option('url_likedin') ); ?>"/><br /><br />
 	                    
 	                   <input type="submit" name="footer_submit" value="Update" style="" class="button-primary"/>
 	                   

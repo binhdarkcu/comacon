@@ -16,6 +16,11 @@ $meta_boxes[] =array(
 			'name'             => 'Logo',
 			'id'               => "{$prefix}logo_clients",
 			'type'             => 'plupload_image'
+		),
+		array(
+			'name'             => 'Link',
+			'id'               => "{$prefix}link_clients",
+			'type'             => 'textarea'
 		)
 	 )
 );

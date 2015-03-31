@@ -24,6 +24,13 @@ $colorText02:#999;
 	font-weight:700;
 }
 
+@mixin RobotoMedium( $value, $line:1.1 ) {
+  font-family: 'Roboto', sans-serif;
+  font-size:$value;
+  line-height:$line;
+  font-weight:500;
+}
+
 @mixin RobotoCondensed( $value, $line:1.1 ) {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size:$value;

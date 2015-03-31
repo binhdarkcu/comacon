@@ -3,7 +3,7 @@
 <head><!--[if IE]><![endif]-->
 
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
 
 <meta charset="UTF-8"/>
 <link rel="shortcut icon" href="images/favicon.ico" />

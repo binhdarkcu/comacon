@@ -1,4 +1,4 @@
-<div class="panel-grid" id="pg-7-1">
+<div class="panel-grid news-home" id="pg-7-1">
 	<?php
 	    $i = -1;
 		$args_news = array(
@@ -20,11 +20,13 @@
 				</a>
 				<div class="page-box__content">
 					<h5 class="page-box__title  text-uppercase">
-						<a href="<?php echo get_the_permalink($news->ID);?>"><?php echo get_the_title($news->ID);?></a>
+						<?php echo get_the_title($news->ID);?>
 					</h5>
-					<?php echo wp_trim_words($news->post_content,33,'');?>	
+					<div class="desc">
+						<?php echo wp_trim_words($news->post_content,45,'');?>	
+					</div>
 					<p>
-						<a href="<?php echo get_the_permalink($news->ID);?>" class="read-more  read-more--page-box"><?php echo $linkNews;?></a>
+						<?php echo $linkNews;?>
 					</p>
 				</div>
 			</div>

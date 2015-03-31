@@ -25,19 +25,19 @@
 								<h4 class="sidebar__headings">Waarom Comacon</h4>
 								<span class="i-clock"><img src="images/i-clock.png"/></span>
 								<h5>WE RESPECTEREN DEADLINES</h5>
-								<p>
+								<p class="pad-bot-20">
 									Our construction management professio nals organize, lead, and manage the people, materials, and processes of construction utilizing the latest techno logies.
 								</p>
 								
 								<span class="i-clock"><img src="images/i-diagram.png"/></span>
 								<h5>VERBETEREING STAAT CENTRAAL</h5>
-								<p>
+								<p class="pad-bot-20">
 									Our construction management professio nals organize, lead, and manage the people, materials, and processes of construction utilizing the latest techno logies.
 								</p>
 								
 								<span class="i-clock"><img src="images/i-star.png"/></span>
 								<h5>Kwaliteit gegarandeerd</h5>
-								<p>
+								<p class="pad-bot-20">
 									Our construction management professio nals organize, lead, and manage the people, materials, and processes of construction utilizing the latest techno logies.
 								</p>
 							</div>

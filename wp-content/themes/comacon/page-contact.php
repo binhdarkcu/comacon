@@ -13,7 +13,7 @@
 		<?php echo bt_breadcrumb();?>
 	</div>
 </div>
-<div class="master-container">
+<div class="master-container contactPage">
 	<div class="post-29 page type-page status-publish hentry container" role="main">
 		<div id="pl-29">
 			<div class="panel-grid" id="pg-29-0">
@@ -52,28 +52,26 @@
 							<span class="icon-container">
 								<span class="fa fa-home"></span>
 							</span> 
-							<b><?php echo get_option('url_company');?></b><br>
-							<?php echo get_option('url_address');?><br><br>
+							<b class="t-big"><?php echo get_option('url_company');?></b><br>
+							<span class="pad-top-10"><?php echo get_option('url_address');?></span><br><br>
 							<span class="icon-container"><span class="fa fa-phone"></span></span> 
-							<b><?php echo get_option('url_phone');?></b><br>
-							<span class="icon-container"><span class="fa fa-fax"></span></span> 
-							<b><?php echo get_option('url_phone');?></b><br>
+							<b class="t-big"><?php echo get_option('url_phone');?></b><br>
+							
 							<span class="icon-container"><span class="fa fa-envelope"></span></span> 
-							<a href="mailto:<?php echo get_option('url_email');?>"><?php echo get_option('url_email');?><script cf-hash="f9e31" type="text/javascript">
+							<a class="mailto" href="mailto:<?php echo get_option('url_email');?>"><?php echo get_option('url_email');?><script cf-hash="f9e31" type="text/javascript">
 		/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></a><br><br>
 							<span class="icon-container"><span class="fa fa-home"></span></span> <b><?php echo get_option('url_open');?></b><br>
 							<?php echo get_option('url_day');?>
 						</div>
 					</div>
-					<div class="panel widget widget_pt_social_icons panel-last-child" id="panel-29-2-0-1">
+					<div class="panel widget widget_pt_social_icons panel-last-child pad-top-10" id="panel-29-2-0-1">
 						<?php
 							$fb = get_option('url_facebook');
 							$tw = get_option('url_twitter');
-							$yt = get_option('url_youtube'); 
+							$lk = get_option('url_likedin'); 
 						?>	
 						<a class="social-icons__link" href="<?php if(!empty($fb)) echo $fb; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-facebook"></i></a>
-						<a class="social-icons__link" href="<?php if(!empty($tw)) echo $tw; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-twitter"></i></a>
-						<a class="social-icons__link" href="<?php if(!empty($yt)) echo $yt; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-youtube"></i></a>
+						<a class="social-icons__link" href="<?php if(!empty($lk)) echo $lk; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-linkedin "></i></a>
 					</div>
 				</div>
 				<div class="panel-grid-cell col-md-9" id="pgc-29-2-1">

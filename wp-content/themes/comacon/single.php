@@ -62,6 +62,37 @@
 								</ul>
 							</div>
 							<div class="hentry__content  project__content">
+								<h2 class="hentry__title clear font20">Onze diensten</h2>
+								<div class="choose-projecttype">
+									<ul>
+										<li>
+											<img src="images/s-question.png"/>
+											<div class="desc"><a href="<?php echo bloginfo('home')?>/services/#Haalbaarheid">HAALBAARHEID</a></div>
+										</li>
+										<li>
+											<img src="images/s-pen.png"/>
+											<div class="desc d02"><a href="<?php echo bloginfo('home')?>/services/#Ontwerp">ONTWERP</a></div>
+										</li>
+										<li>
+											<img src="images/s-book.png"/>
+											<div class="desc d03"><a href="<?php echo bloginfo('home')?>/services/#Prijsaanvragen">PRIJSAANVRAGEN</a></div>
+										</li>
+										<li>
+											<img src="images/s-note.png"/>
+											<div class="desc d04"><a href="<?php echo bloginfo('home')?>/services/#Bestelling">BESTELLING</a></div>
+										</li>
+										<li>
+											<img src="images/s-hat.png"/>
+											<div class="desc d05"><a href="<?php echo bloginfo('home')?>/services/#Uitvoering">UITVOERING</a></div>
+										</li>
+										<li>
+											<img src="images/s-euro.png"/>
+											<div class="desc d06"><a href="<?php echo bloginfo('home')?>/services/#Verkoop-marketing">VERKOOP EN MARKETING</a></div>
+										</li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+								<h2 class="hentry__title clear font20">Over dit project</h2>
 								<?php the_content();?>
 							</div>
 							<nav class="project__navigation">
@@ -81,7 +112,7 @@
 							</nav>
 						</div>
 						<div class="col-xs-12 col-md-6">
-						<div class="project__gallery">
+						<div class="project__gallery single_project">
 							<?php
 								$img_list=get_post_meta(get_the_id(),'tt_logo_projects',FALSE);
 				           		foreach ($img_list as $key => $img) {

@@ -60,7 +60,7 @@
 			</div>
 			<div class="col-xs-12  col-md-4">
 				<div class="widget  widget_text  push-down-30">
-					<h6 class="footer__headings">SCHRIJF JE IN OP ONZE NWSLETTER</h6>	
+					<h6 class="footer__headings">SCHRIJF JE IN OP ONZE NIEUWSBRIEF</h6>	
 					<div class="textwidget">
 						<?php echo get_option('text_for_letter')?>
 						<br><br>

@@ -16,7 +16,7 @@
 			</a>
 		</div>
 		<div class="header-widgets  header-widgets-desktop">
-		<div class="widget  widget-icon-box">	
+		<div class="widget  widget-icon-box phone-box">	
 			<div class="icon-box">
 				<i class="fa  fa-phone  fa-3x"></i>
 				<div class="icon-box__text">
@@ -27,7 +27,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="widget  widget-icon-box">	
+		<div class="widget  widget-icon-box address-box">	
 			<div class="icon-box">
 				<i class="fa  fa-home  fa-3x"></i>
 				<div class="icon-box__text">
@@ -45,9 +45,13 @@
 				$yt = get_option('url_youtube'); 
 			?>
 			<div class="widget  widget-social-icons">	
-				<a class="social-icons__link" href="<?php if(!empty($fb)) echo $fb; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-facebook"></i></a>
-				<a class="social-icons__link" href="<?php if(!empty($tw)) echo $tw; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-twitter"></i></a>
-				<a class="social-icons__link" href="<?php if(!empty($yt)) echo $yt; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-linkedin-square"></i></a>
+				<?php //if(!empty($fb)){?>
+					<a class="social-icons__link" href="<?php if(!empty($fb)) echo $fb; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-facebook"></i></a>
+				<?php //}?>
+				
+				<?php //if(!empty($yt)){?>
+					<a class="social-icons__link" href="<?php if(!empty($yt)) echo $yt; else echo 'javascript:void(0);'?>" target="_blank"><i class="fa  fa-linkedin-square"></i></a>
+				<?php //}?>
 			</div>	
 		</div>
 		<!-- Toggle Button for Mobile Navigation -->

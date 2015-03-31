@@ -15,9 +15,10 @@
 							foreach ($queryClients as $clients) {
 								$img = get_post_meta($clients->ID,'tt_logo_clients',true);
 								$src = wp_get_attachment_image_src($img ,'full');
+								$link = get_post_meta($clients->ID,'tt_link_clients',true);
 						?>
 						<div class="col-xs-12  col-sm-2">
-							<img src="<?php echo $src[0];?>" alt="<?php echo get_the_title($slider->ID)?>" width="208" height="98">
+							<a href="<?php echo $link;?>" target="_blank"><img src="<?php echo $src[0];?>" alt="<?php echo get_the_title($slider->ID)?>" width="208" height="98"></a>
 						</div>
 						<?php }?>
 					</div>
