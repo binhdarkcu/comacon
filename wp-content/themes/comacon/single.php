@@ -40,11 +40,11 @@
 								<ul class="list-unstyled">
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-calendar"></i></span> 
-										Construction datum: <strong><?php echo get_the_time('F Y',$post->ID)?></strong>
+										Startdatum werkzaamheden: <strong><?php echo get_the_time('F Y',$post->ID)?></strong>
 									</li>
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-map-marker"></i></span> 
-										Location: <strong><?php echo $location;?></strong>
+										Bouwplaats: <strong><?php echo $location;?></strong>
 									</li>
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-arrows-alt"></i></span> 
@@ -53,11 +53,11 @@
 									
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-usd"></i></span> 
-										Investeeerder: <strong><?php echo $investeeerder;?></strong>
+										Klant: <strong><?php echo $investeeerder;?></strong>
 									</li>
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-th-list"></i></span> 
-										Waarde: <strong><?php echo $waarde;?></strong>
+										Partners: <strong><?php echo $waarde;?></strong>
 									</li>	
 								</ul>
 							</div>
