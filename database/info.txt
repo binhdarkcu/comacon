@@ -1,0 +1,52 @@
+https://demo.proteusthemes.com/buildpress/
+
+
+Hostname	ftp.comacon.be
+Temporary hostname	comaconbe.webhosting.be
+Port	21
+User name	comaconbe@comacon.be
+Password	b5a2bx7E
+Folder	/www
+
+
+
+
+
+https://my.register.be
+
+login: vangriekenjurgen@gmail.com
+pw: Djpulzevg007
+
+
+2. slider
+The client has added a post here and the image doesn't automatically crop so it shows the whole image, how can we solve this so the image always shows nice?
+
+3.- can we have this content in the cms? -> yes, we have it in cms
+
+4. fix colour of font => checked design (true font and color)
+
+5.ABOUT COMACON: 
+- colours and fonts are not matching design (attached again)
+- picture to integrate and align on right as in design:
+- How to adjust the texts on the left, under 'Waarom Comacon'?
+
+6.DIENSTEN
+- colours and fonts are not matching design (attached again) also pls pay attention to titles in capitals etc...
+- take off 'Download onze brochure' and PDF link
+
+NEW: we will work with icons in the content for 'SERVICES' means that if you look at this attachment you will see every services is visualised 
+
+7.REFERENCE DETAIL
+check: images on the right are stretched, the ones that are long are now squeezed, pls keep same proportions
+- links behind images on the right are all pointing to a different image
+-left, we change the copy here slightly, this part must be included in cms
+-- construction datum -> startdatum werkzaamheden
+-- location -> bouwplaats
+-- investeerder -> klant
+-- waarde -> partners (this will be a list of partners and each partner with link to their website)
+
+8.REFERENCE DETAIL 
+Under here we will have the service icons, this will list the services comacon did for this project, this must be included in the cms with a tickbox for each service, there will be a hover- rollover with what this icon means. See services page for naming (HAALBAARHEID - ONTWERP - PRIJSAANVRAGEN - BESTELLING - UITVOERING - VERKOOP EN MARKETING)
+So some projects will include all the services, others only a few, this must me in the cms
+
+9.CONTACT
