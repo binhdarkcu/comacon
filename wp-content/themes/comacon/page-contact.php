@@ -46,7 +46,7 @@
 				</div>
 			</div>
 			<div class="panel-grid" id="pg-29-2">
-				<div class="panel-grid-cell col-md-3" id="pgc-29-2-0">
+				<div class="panel-grid-cell col-md-3 pad-left-0" id="pgc-29-2-0">
 					<div class="panel widget widget_text panel-first-child" id="panel-29-2-0-0">	
 						<div class="textwidget">
 							<span class="icon-container">
