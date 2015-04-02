@@ -36,7 +36,7 @@
 						<h2 class="hentry__title"><?php echo get_the_title($post->ID);?></h2>
 						<div class="row">
 						<div class="col-xs-12 col-md-6">
-							<div class="project__meta-data">
+							<div class="project__meta-data project_detail_box">
 								<ul class="list-unstyled">
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-calendar"></i></span> 
@@ -52,7 +52,7 @@
 									</li>
 									
 									<li>
-										<span class="project__meta-icon"><i class="fa  fa-usd"></i></span> 
+										<span class="project__meta-icon"><i class="fa  fa-user"></i></span> 
 										Klant: <strong><?php echo $investeeerder;?></strong>
 									</li>
 									<li>
@@ -120,7 +120,7 @@
 								if($img_thumb!=''){		 
 							?>
 							<a href="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/project_03.jpg" data-slb-group="225" data-slb-active="1" data-slb-internal="0">
-								<img width="555" height="312" src="<?php echo $img_thumb[0];?>">
+								<img width="100%" src="<?php echo $img_thumb[0];?>">
 							</a>
 							<?php }};?>
 						</div>

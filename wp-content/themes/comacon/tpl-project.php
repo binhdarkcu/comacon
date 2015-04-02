@@ -63,7 +63,7 @@
 									<div class="esg-media-cover-wrapper">
 									<!-- THE MEDIA OF THE ENTRY -->
 										<div class="esg-entry-media">
-											<img src="<?php echo $url[0]; ?>" alt="" width="360" height="240">
+											<img src="<?php echo $url[0]; ?>" alt="" width="255" height="190">
 										</div>
 										<!-- THE CONTENT OF THE ENTRY -->
 										<div class="esg-entry-cover">
