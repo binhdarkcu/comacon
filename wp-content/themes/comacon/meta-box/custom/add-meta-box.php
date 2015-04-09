@@ -41,6 +41,22 @@ $meta_boxes[] =array(
 	 )
 );
 
+$meta_boxes[] =array(
+    'id'=>'abouts_meta',
+    'title'=>'Images for project',
+    'pages'=> array('ta_about'),
+    'context' => 'normal',
+    'priority' => 'high',
+    'fields' => array(
+
+        array(
+            'name'             => 'Images',
+            'id'               => "{$prefix}logo_about",
+            'type'             => 'thickbox_image'
+        )
+    )
+);
+
 /**
  * Register meta boxes
  *

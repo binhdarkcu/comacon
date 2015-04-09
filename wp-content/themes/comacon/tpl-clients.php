@@ -18,7 +18,7 @@
 								$link = get_post_meta($clients->ID,'tt_link_clients',true);
 						?>
 						<div class="col-xs-12  col-sm-2">
-							<a href="<?php echo $link;?>" target="_blank"><img src="<?php echo $src[0];?>" alt="<?php echo get_the_title($slider->ID)?>" width="208" height="98"></a>
+							<a href="<?php echo $link;?>" target="_blank"><img src="<?php echo $src[0];?>" alt="<?php echo get_the_title($clients->ID)?>" width="208" height="98"></a>
 						</div>
 						<?php }?>
 					</div>

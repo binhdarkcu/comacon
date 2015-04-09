@@ -116,3 +116,40 @@ function register_custom_clients() {
   ); 
  register_post_type('clients',$news);
 }
+
+//ABOUT LEFT
+add_action( 'init', 'register_custom_ta_about' );
+function register_custom_ta_about() {
+    $news_label = array(
+        'name' => 'Abouts',
+        'singular_name' => _x('ta_about', 'ta_about'),
+        'add_new' => _x('Add New', 'About'),
+        'add_new_item' => __('Add New'),
+        'edit_item' => __('Edit '),
+        'new_item' => __('Add About'),
+        'all_items' => __('View All'),
+        'view_item' => __('View'),
+        'search_items' => __('Search'),
+        'not_found' =>  __('Not Find'),
+        'not_found_in_trash' => __('Not Find in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Abouts'
+    );
+    $news= array(
+        'labels' => $news_label,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus'=>true,
+        'query_var' => true,
+        'rewrite' =>  array('slug'=>'ta_about'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 5,
+        'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
+
+    );
+    register_post_type('ta_about',$news);
+}

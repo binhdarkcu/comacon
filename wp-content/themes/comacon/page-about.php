@@ -23,10 +23,30 @@
 						<div class="sidebar">
 							<div class="push-down-30">
 								<h4 class="sidebar__headings">Waarom Comacon</h4>
+                                <?php
+                                $args_clients = array(
+                                    'post_type' 	 => 'ta_about',
+                                    'posts_per_page' => 5 ,
+                                    'order'			 => 'asc'
+                                );
+                                $queryClients = get_posts($args_clients);
+                                foreach ($queryClients as $abouts) {
+                                    //print_r($abouts);
+                                    $img = get_post_meta($abouts->ID,'tt_logo_about',true);
+                                    $src = wp_get_attachment_image_src($img ,'full');
+                                    ?>
+                                    <span class="i-clock"><img src="<?php echo $src[0];?>"/></span>
+                                    <h5><?php echo get_the_title($abouts->ID)?></h5>
+                                    <p class="pad-bot-20">
+                                        <?php echo $abouts->post_content  ?>
+                                    </p>
+                                <?php }?>
+								<!--
+
 								<span class="i-clock"><img src="images/i-clock.png"/></span>
 								<h5>WE RESPECTEREN DEADLINES</h5>
 								<p class="pad-bot-20">
-									Our construction management professio nals organize, lead, and manage the people, materials, and processes of construction utilizing the latest techno logies.
+									Our constructino management professio nals organize, lead, and manage the people, materials, and processes of construction utilizing the latest techno logies.
 								</p>
 								
 								<span class="i-clock"><img src="images/i-diagram.png"/></span>
@@ -39,7 +59,7 @@
 								<h5>Kwaliteit gegarandeerd</h5>
 								<p class="pad-bot-20">
 									Our construction management professio nals organize, lead, and manage the people, materials, and processes of construction utilizing the latest techno logies.
-								</p>
+								</p>-->
 							</div>
 						</div>
 					</div>
