@@ -4,7 +4,7 @@
 		<?php
 			$args_projects = array(
 				'post_type' 	 => 'post',
-				'posts_per_page' =>  3 ,
+				'posts_per_page' =>  20 ,
 				'order'			 => 'asc'
 			);
 			$query_projects = get_posts($args_projects);
