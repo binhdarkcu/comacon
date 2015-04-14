@@ -26,7 +26,7 @@ $meta_boxes[] =array(
 );
 
 $meta_boxes[] =array(
-   'id'=>'projects_meta',
+   'id'=>'project_detail_meta',
    'title'=>'Details',
    'pages'=> array('post'),
    'context' => 'normal',
