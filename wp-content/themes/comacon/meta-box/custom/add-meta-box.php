@@ -27,7 +27,7 @@ $meta_boxes[] =array(
 
 $meta_boxes[] =array(
    'id'=>'projects_meta',
-   'title'=>'Images for project',
+   'title'=>'Details',
    'pages'=> array('post'),
    'context' => 'normal',
    'priority' => 'high',
@@ -37,8 +37,60 @@ $meta_boxes[] =array(
 			'name'             => 'Images',
 			'id'               => "{$prefix}logo_projects",
 			'type'             => 'plupload_image'
-		)
+		),
+       array(
+           'name'             => 'Date',
+           'id'               => "{$prefix}date_projects",
+           'type'             => 'text'
+       ),
+
 	 )
+);
+
+$meta_boxes[] =array(
+    'id'=>'projects_meta',
+    'title'=>'Services',
+    'pages'=> array('post'),
+    'context' => 'normal',
+    'priority' => 'high',
+    'fields' => array(
+        array(
+            'name'             => 'HAALBAARHEID',
+            'id'               => "{$prefix}radio_services_01",
+            'std'  =>'',
+            'type'             => 'checkbox'
+        ),
+        array(
+            'name'             => 'ONTWERP',
+            'id'               => "{$prefix}radio_services_02",
+            'std'  =>'',
+            'type'             => 'checkbox'
+        ),
+        array(
+            'name'             => 'PRIJSAANVRAGEN',
+            'id'               => "{$prefix}radio_services_03",
+            'std'  =>'',
+            'type'             => 'checkbox'
+        ),
+        array(
+            'name'             => 'BESTELLING',
+            'id'               => "{$prefix}radio_services_04",
+            'std'  =>'',
+            'type'             => 'checkbox'
+        ),
+        array(
+            'name'             => 'UITVOERING',
+            'id'               => "{$prefix}radio_services_05",
+            'std'  =>'',
+            'type'             => 'checkbox'
+        ),
+        array(
+            'name'             => 'VERKOOP EN MARKETING',
+            'id'               => "{$prefix}radio_services_06",
+            'std'  =>'',
+            'type'             => 'checkbox'
+        )
+    )
 );
 
 $meta_boxes[] =array(

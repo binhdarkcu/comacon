@@ -15,6 +15,13 @@
 	$oppervalakte = get_field('oppervalakte',$post->ID, FALSE, FALSE);
 	$investeeerder = get_field('investeeerder',$post->ID, FALSE, FALSE);
 	$waarde = get_field('waarde',$post->ID, FALSE, FALSE);
+
+        $radio_services_01 = get_post_meta($post->ID,'tt_radio_services_01',true);
+        $radio_services_02 = get_post_meta($post->ID,'tt_radio_services_02',true);
+        $radio_services_03 = get_post_meta($post->ID,'tt_radio_services_03',true);
+        $radio_services_04 = get_post_meta($post->ID,'tt_radio_services_04',true);
+        $radio_services_05 = get_post_meta($post->ID,'tt_radio_services_05',true);
+        $radio_services_06 = get_post_meta($post->ID,'tt_radio_services_06',true);
 ?>
 <div class="breadcrumbs">
 	<div class="breadcrumbs">
@@ -47,8 +54,8 @@
 										Bouwplaats: <strong><?php echo $location;?></strong>
 									</li>
 									<li>
-										<span class="project__meta-icon"><i class="fa  fa-arrows-alt"></i></span> 
-										Oppervalakte: <strong><?php echo $oppervalakte;?></strong>
+										<span class="project__meta-icon"><i class="fa  fa-arrows-alt"></i></span>
+                                        Oppervlakte: <strong><?php echo $oppervalakte;?></strong>
 									</li>
 									
 									<li>
@@ -65,30 +72,85 @@
 								<h2 class="hentry__title clear font20">Onze diensten</h2>
 								<div class="choose-projecttype">
 									<ul>
-										<li>
-											<img src="images/s-question.png"/>
-											<div class="desc"><a href="<?php echo bloginfo('home')?>/services/#Haalbaarheid">HAALBAARHEID</a></div>
-										</li>
-										<li>
-											<img src="images/s-pen.png"/>
-											<div class="desc d02"><a href="<?php echo bloginfo('home')?>/services/#Ontwerp">ONTWERP</a></div>
-										</li>
-										<li>
-											<img src="images/s-book.png"/>
-											<div class="desc d03"><a href="<?php echo bloginfo('home')?>/services/#Prijsaanvragen">PRIJSAANVRAGEN</a></div>
-										</li>
-										<li>
-											<img src="images/s-note.png"/>
-											<div class="desc d04"><a href="<?php echo bloginfo('home')?>/services/#Bestelling">BESTELLING</a></div>
-										</li>
-										<li>
-											<img src="images/s-hat.png"/>
-											<div class="desc d05"><a href="<?php echo bloginfo('home')?>/services/#Uitvoering">UITVOERING</a></div>
-										</li>
-										<li>
-											<img src="images/s-euro.png"/>
-											<div class="desc d06"><a href="<?php echo bloginfo('home')?>/services/#Verkoop-marketing">VERKOOP EN MARKETING</a></div>
-										</li>
+                                        <!--service 1-->
+                                        <?PHP
+                                            if($radio_services_01){
+                                        ?>
+                                        <li>
+                                            <img src="images/s-question.png"/>
+
+                                                    <div class="desc"><a href="<?php echo bloginfo('home')?>/services/#Haalbaarheid">HAALBAARHEID</a></div>
+                                        </li>
+                                        <?PHP
+                                            }
+                                        ?>
+
+                                        <!--service 2-->
+                                        <?PHP
+                                        if($radio_services_02){
+                                            ?>
+                                            <li>
+                                                <img src="images/s-pen.png"/>
+                                                <div class="desc d02"><a href="<?php echo bloginfo('home')?>/services/#Ontwerp">ONTWERP</a></div>
+                                            </li>
+                                        <?PHP
+                                        }
+                                        ?>
+
+                                        <!--service 3-->
+                                        <?PHP
+                                        if($radio_services_03){
+                                            ?>
+                                            <li>
+                                                <img src="images/s-book.png"/>
+                                                <div class="desc d03"><a href="<?php echo bloginfo('home')?>/services/#Prijsaanvragen">PRIJSAANVRAGEN</a></div>
+                                            </li>
+                                        <?PHP
+                                        }
+                                        ?>
+
+                                        <!--service 4-->
+                                        <?PHP
+                                        if($radio_services_04){
+                                            ?>
+                                            <li>
+                                                <img src="images/s-note.png"/>
+                                                <div class="desc d04"><a href="<?php echo bloginfo('home')?>/services/#Bestelling">BESTELLING</a></div>
+                                            </li>
+                                        <?PHP
+                                        }
+                                        ?>
+
+                                        <!--service 5-->
+                                        <?PHP
+                                        if($radio_services_05){
+                                            ?>
+                                            <li>
+                                                <img src="images/s-hat.png"/>
+                                                <div class="desc d05"><a href="<?php echo bloginfo('home')?>/services/#Uitvoering">UITVOERING</a></div>
+                                            </li>
+                                        <?PHP
+                                        }
+                                        ?>
+
+                                        <!--service 6-->
+                                        <?PHP
+                                        if($radio_services_06){
+                                            ?>
+                                            <li>
+                                                <img src="images/s-euro.png"/>
+                                                <div class="desc d06"><a href="<?php echo bloginfo('home')?>/services/#Verkoop-marketing">VERKOOP EN MARKETING</a></div>
+                                            </li>
+                                        <?PHP
+                                        }
+                                        ?>
+
+
+
+
+
+
+
 									</ul>
 									<div class="clear"></div>
 								</div>
@@ -119,7 +181,7 @@
 				           		$img_thumb=wp_get_attachment_image_src($img ,'full');
 								if($img_thumb!=''){		 
 							?>
-							<a href="https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/project_03.jpg" data-slb-group="225" data-slb-active="1" data-slb-internal="0">
+							<a data-slb-group="225" data-slb-active="1" data-slb-internal="0">
 								<img width="100%" src="<?php echo $img_thumb[0];?>">
 							</a>
 							<?php }};?>
