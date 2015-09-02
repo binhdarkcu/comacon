@@ -1,3 +1,6 @@
+<?php
+	$curlang = pll_current_language();
+?>
 <div class="jumbotron  jumbotron--with-captions">
 	<div class="carousel  slide  js-jumbotron-slider" id="headerCarousel" data-interval="5000">
 	<!-- Wrapper for slides -->
@@ -29,7 +32,16 @@
                             </div>
                             <div class="jumbotron__content">
                                 <p><?php echo $slider->post_content;?></p>
-                                <a class="btn  btn-primary" href="<?php echo bloginfo('home').'/'.$linkTo;?>">MEER INFO</a>
+                                <?php
+									if($curlang == "en") {
+										$moreinfo = get_field('more_info_en','option');
+									}elseif($curlang == "es") {
+										$moreinfo = get_field('more_info_es','option');
+									}else{
+										$moreinfo = get_field('more_info_nl','option');
+									}
+								?>
+                                <a class="btn  btn-primary" href="<?php echo bloginfo('home').'/'.$linkTo.'-'.$curlang;?>"><?php echo $moreinfo;?></a>
                             </div>
                         </div>
                     </div>

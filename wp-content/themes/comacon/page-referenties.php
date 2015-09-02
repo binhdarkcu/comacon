@@ -1,10 +1,31 @@
-
+<?php
+/**
+ * Template Name: Reference page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+?>
 <?php
 	get_header();
 ?>
+<?php
+	$curlang = pll_current_language();
+?>
 <div class="main-title" style="background-color: #f2f2f2; ">
 	<div class="container">
-		<h1 class="main-title__primary">Referenties</h1>
+		<h1 class="main-title__primary">
+			<?php
+				if($curlang == "en") {
+					echo get_field('reference_title_en','option');
+				}elseif($curlang == "es") {
+					echo get_field('reference_title_es','option');
+				}else{
+					echo get_field('reference_title_nl','option');
+				}
+			?>
+		</h1>
 		<h3 class="main-title__secondary">BEKIJK HIER AL ONZE Referenties voor de verschillende doelgroepen</h3>
 	</div>
 </div>

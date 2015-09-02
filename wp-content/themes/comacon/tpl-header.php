@@ -1,9 +1,21 @@
+<?php
+	$curlang = pll_current_language();
+?>
 <div class="top">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12  col-md-6">
 				<div class="top__left">
-				CONSTRUCTION MANAGEMENT AND CONSULTANCY	</div>
+				<?php
+					if($curlang == "en") {
+						echo get_field('header_title_english','option');
+					}elseif($curlang == "es") {
+						echo get_field('header_title_spanish','option');
+					}else{
+						echo get_field('header_title_nl','option');
+					}
+				?>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -11,8 +23,8 @@
 <header class="header">
 	<div class="container">
 		<div class="logo">
-			<a href="<?php echo site_url(); ?>">
-				<img src="images/logo.png" class="img-responsive"/>
+			<a href="<?php echo site_url().'/'.$curlang; ?>">
+				<img src="<?php echo get_field('header_logo', 'option')?>" class="img-responsive"/>
 			</a>
 		</div>
 		<div class="header-widgets  header-widgets-desktop">
@@ -20,9 +32,9 @@
 			<div class="icon-box">
 				<i class="fa  fa-phone  fa-3x"></i>
 				<div class="icon-box__text">
-				<h4 class="icon-box__title"><?php echo get_option('url_phone');?></h4>
+				<h4 class="icon-box__title"><?php echo get_field('website_phone','option');?></h4>
 				<span class="icon-box__subtitle">
-					<a class="__cf_email__" href="mailto:<?php echo get_option('url_email');?>" ><?php echo get_option('url_email');?></a>
+					<a class="__cf_email__" href="mailto:<?php echo get_field('website_email','option');?>" ><?php echo get_field('website_email','option');?></a>
 				</span>
 				</div>
 			</div>
@@ -31,8 +43,17 @@
 			<div class="icon-box">
 				<i class="fa  fa-home  fa-3x"></i>
 				<div class="icon-box__text">
+					<?php
+						if($curlang == "en") {
+							$add = explode('<br/>',get_field('website_address_en','option'));
+						}elseif($curlang == "es") {
+							$add = explode('<br/>',get_field('website_address_es','option'));
+						}else{
+							$add = explode('<br/>',get_field('website_address_nl','option'));
+						}
+					?>
 					<?php 
-						$add = explode('<br/>',get_option('url_address'));
+						
 					?>
 					<h4 class="icon-box__title"><?php echo $add[0];?></h4>
 					<span class="icon-box__subtitle"><?php echo $add[1];?></span>

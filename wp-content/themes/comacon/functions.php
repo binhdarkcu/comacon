@@ -1,4 +1,5 @@
 <?php
+	
 	//register menu
 	function register_menu() {
 	  register_nav_menu('menu_top',__( 'menu_top' ));
@@ -51,6 +52,14 @@
 			wp_redirect( home_url( "/services/bouwpromotoren-investeerders/")  );
 			exit();
 		}	
+		if(is_page('services-en')){
+			wp_redirect( home_url( "/services-en/building-promoters-investors/")  );
+			exit();
+		}	
+		if(is_page('servicios-es')){
+			wp_redirect( home_url( "/servicios-es/edificios-promotores-inversores/")  );
+			exit();
+		}
 	}
 	add_action( 'template_redirect', 'change_services_url_rewrite' );
 	//remove p tag
