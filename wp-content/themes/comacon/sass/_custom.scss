@@ -1,3 +1,8 @@
+.divstyleSelect{
+  select.styleSelect {
+         margin-top: 8px;
+  }
+}
 body {
 	@include RobotoCondensed(14px, 1.6);
 	color: #666;

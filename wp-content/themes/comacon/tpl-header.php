@@ -1,6 +1,9 @@
 <?php
 	$curlang = pll_current_language();
 ?>
+<script type="text/javascript">
+	var HOMEURL = "<?php echo home_url();?>";
+</script>
 <div class="top">
 	<div class="container">
 		<div class="row">
@@ -15,6 +18,23 @@
 						echo get_field('header_title_nl','option');
 					}
 				?>
+				</div>
+			</div>
+			<script type="text/javascript">
+				jQuery(document).ready(function(){
+					jQuery('.selectLanguage').change(function(){
+						var lang = jQuery(this).val();
+						window.location.href = HOMEURL+"/"+lang;
+					});
+				});
+			</script>
+			<div class="col-xs-12  col-md-6">
+				<div class="pull-right divstyleSelect">
+					<select class="selectLanguage styleSelect">
+						<option value="nl" <?php echo ($curlang == 'nl') ? "selected=selected": "";?> >Netherland</option>
+						<option value="en" <?php echo ($curlang == 'en') ? "selected=selected": "";?> >English</option>
+						<option value="es" <?php echo ($curlang == 'es') ? "selected=selected": "";?> >Spanish</option>
+					</select>
 				</div>
 			</div>
 		</div>
