@@ -3,6 +3,8 @@
 ?>
 <script type="text/javascript">
 	var HOMEURL = "<?php echo home_url();?>";
+	var BLOGHOME = "<?php echo site_url();?>";
+	var LANG = "<?php echo $curlang;?>";
 </script>
 <div class="top">
 	<div class="container">
@@ -22,19 +24,40 @@
 			</div>
 			<script type="text/javascript">
 				jQuery(document).ready(function(){
-					jQuery('.selectLanguage').change(function(){
-						var lang = jQuery(this).val();
-						window.location.href = HOMEURL+"/"+lang;
+					var langAttr = {
+					    "nl":"Dutch",
+					    "en":"English",
+					    "es":"Spanish"
+					};
+					jQuery('.ulSelect li.selected a.aselected').attr({'href':BLOGHOME,'data-lang':LANG}).text(langAttr[LANG]);
+					jQuery('.ulLanguage li').each(function(){
+						var datalang =jQuery(this).find('a').attr('data-lang');
+						if(LANG == 'nl'){
+							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/en','data-lang':'en'}).text(langAttr['en']);
+							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'es'}).text(langAttr['es']);
+						}
+						if(LANG == 'en'){
+							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/nl','data-lang':'nl'}).text(langAttr['nl']);
+							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'es'}).text(langAttr['es']);
+						}
+						if(LANG == 'es'){
+							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/en','data-lang':'nl'}).text(langAttr['nl']);
+							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'en'}).text(langAttr['en']);
+						}
 					});
 				});
 			</script>
 			<div class="col-xs-12  col-md-6">
 				<div class="pull-right divstyleSelect">
-					<select class="selectLanguage styleSelect">
-						<option value="nl" <?php echo ($curlang == 'nl') ? "selected=selected": "";?> >Netherland</option>
-						<option value="en" <?php echo ($curlang == 'en') ? "selected=selected": "";?> >English</option>
-						<option value="es" <?php echo ($curlang == 'es') ? "selected=selected": "";?> >Spanish</option>
-					</select>
+					<ul class="ulSelect">
+						<li class="selected">
+							<a class="aselected" data-lang="<?php echo $curlang;?>" href="">Dutch</a>
+							<ul class="ulLanguage">
+								<li class="li1"><a data-lang="" href="">English</a></li>
+								<li class="li2"><a data-lang="" href="">Spanish</a></li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
