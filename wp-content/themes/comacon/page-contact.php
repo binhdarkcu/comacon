@@ -1,32 +1,10 @@
 <?php
-/**
- * Template Name: Contact page
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
-?>
-<?php
 	get_header();
-?>
-<?php
-    $curlang = pll_current_language();
 ?>
 <div class="main-title" style="background-color: #f2f2f2; ">
 	<div class="container">
-		<h1 class="main-title__primary"><?php echo get_the_title();?></h1>
-		<h3 class="main-title__secondary">
-			<?php
-				if($curlang == "en") {
-					echo get_field('contact_description_en');
-				}elseif($curlang == "es") {
-					echo get_field('contact_description_es');
-				}else{
-					echo get_field('contact_description_nl');
-				}
-			?>
-		</h3>
+		<h1 class="main-title__primary">Contacteer ons</h1>
+		<h3 class="main-title__secondary">we beantwoorden graag al uw vragen</h3>
 	</div>
 </div>
 <div class="breadcrumbs  breadcrumbs--page-builder">
@@ -52,22 +30,11 @@
 						<div class="textwidget"></div>
 					</div>
 					<div class="panel widget widget_text panel-last-child" id="panel-29-1-0-1">
-						<h3 class="widget-title">
-							<?php
-								if($curlang == "en") {
-									echo get_field('form_contact_title_en');
-								}elseif($curlang == "es") {
-									echo get_field('form_contact_title_es');
-								}else{
-									echo get_field('form_contact_title_nl');
-								}
-							?>
-						</h3>	
+						<h3 class="widget-title">Stuur ons een bericht</h3>	
 						<div class="textwidget"></div>
 					</div>
 				</div>
 			</div>
-			
 			<div class="panel-grid" id="pg-29-2">
 				<div class="panel-grid-cell col-md-3 pad-left-0" id="pgc-29-2-0">
 					<div class="panel widget widget_text panel-first-child" id="panel-29-2-0-0">	
@@ -100,16 +67,7 @@
 				<div class="panel-grid-cell col-md-9" id="pgc-29-2-1">
 					<div class="panel widget widget_text panel-first-child panel-last-child" id="panel-29-2-1-0">	<div class="textwidget"><div class="wpcf7" id="wpcf7-f5-o1" lang="en-US" dir="ltr">
 						<div class="screen-reader-response"></div>
-						<?php
-							if($curlang == "en") {
-								echo do_shortcode( '[contact-form-7 id="364" title="Contact form english"]' );
-							}elseif($curlang == "es") {
-								echo do_shortcode( '[contact-form-7 id="365" title="Contact form spanish"]' );
-							}else{
-								echo do_shortcode( '[contact-form-7 id="26" title="Contact form"]' );
-							}
-						?>
-						
+						<?php echo do_shortcode( '[contact-form-7 id="26" title="Contact form"]' ); ?>
 					</div>
 				</div>
 			   </div>

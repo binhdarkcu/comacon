@@ -1,64 +1,9 @@
-<?php
-	$curlang = pll_current_language();
-?>
-<script type="text/javascript">
-	var HOMEURL = "<?php echo home_url();?>";
-	var BLOGHOME = "<?php echo site_url();?>";
-	var LANG = "<?php echo $curlang;?>";
-</script>
 <div class="top">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12  col-md-6">
 				<div class="top__left">
-				<?php
-					if($curlang == "en") {
-						echo get_field('header_title_english','option');
-					}elseif($curlang == "es") {
-						echo get_field('header_title_spanish','option');
-					}else{
-						echo get_field('header_title_nl','option');
-					}
-				?>
-				</div>
-			</div>
-			<script type="text/javascript">
-				jQuery(document).ready(function(){
-					var langAttr = {
-					    "nl":"Dutch",
-					    "en":"English",
-					    "es":"Spanish"
-					};
-					jQuery('.ulSelect li.selected a.aselected').attr({'href':BLOGHOME,'data-lang':LANG}).text(langAttr[LANG]);
-					jQuery('.ulLanguage li').each(function(){
-						var datalang =jQuery(this).find('a').attr('data-lang');
-						if(LANG == 'nl'){
-							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/en','data-lang':'en'}).text(langAttr['en']);
-							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'es'}).text(langAttr['es']);
-						}
-						if(LANG == 'en'){
-							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/nl','data-lang':'nl'}).text(langAttr['nl']);
-							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'es'}).text(langAttr['es']);
-						}
-						if(LANG == 'es'){
-							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/en','data-lang':'nl'}).text(langAttr['nl']);
-							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'en'}).text(langAttr['en']);
-						}
-					});
-				});
-			</script>
-			<div class="col-xs-12  col-md-6">
-				<div class="pull-right divstyleSelect">
-					<ul class="ulSelect">
-						<li class="selected">
-							<a class="aselected" data-lang="<?php echo $curlang;?>" href="">Dutch</a>
-							<ul class="ulLanguage">
-								<li class="li1"><a data-lang="" href="">English</a></li>
-								<li class="li2"><a data-lang="" href="">Spanish</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+				CONSTRUCTION MANAGEMENT AND CONSULTANCY	</div>
 			</div>
 		</div>
 	</div>
@@ -66,8 +11,8 @@
 <header class="header">
 	<div class="container">
 		<div class="logo">
-			<a href="<?php echo site_url().'/'.$curlang; ?>">
-				<img src="<?php echo get_field('header_logo', 'option')?>" class="img-responsive"/>
+			<a href="<?php echo site_url(); ?>">
+				<img src="images/logo.png" class="img-responsive"/>
 			</a>
 		</div>
 		<div class="header-widgets  header-widgets-desktop">
@@ -75,9 +20,9 @@
 			<div class="icon-box">
 				<i class="fa  fa-phone  fa-3x"></i>
 				<div class="icon-box__text">
-				<h4 class="icon-box__title"><?php echo get_field('website_phone','option');?></h4>
+				<h4 class="icon-box__title"><?php echo get_option('url_phone');?></h4>
 				<span class="icon-box__subtitle">
-					<a class="__cf_email__" href="mailto:<?php echo get_field('website_email','option');?>" ><?php echo get_field('website_email','option');?></a>
+					<a class="__cf_email__" href="mailto:<?php echo get_option('url_email');?>" ><?php echo get_option('url_email');?></a>
 				</span>
 				</div>
 			</div>
@@ -86,17 +31,8 @@
 			<div class="icon-box">
 				<i class="fa  fa-home  fa-3x"></i>
 				<div class="icon-box__text">
-					<?php
-						if($curlang == "en") {
-							$add = explode('<br/>',get_field('website_address_en','option'));
-						}elseif($curlang == "es") {
-							$add = explode('<br/>',get_field('website_address_es','option'));
-						}else{
-							$add = explode('<br/>',get_field('website_address_nl','option'));
-						}
-					?>
 					<?php 
-						
+						$add = explode('<br/>',get_option('url_address'));
 					?>
 					<h4 class="icon-box__title"><?php echo $add[0];?></h4>
 					<span class="icon-box__subtitle"><?php echo $add[1];?></span>

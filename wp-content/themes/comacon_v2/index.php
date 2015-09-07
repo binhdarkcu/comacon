@@ -1,7 +1,9 @@
 <?php
 get_header();
 ?>
-
+<?php
+    $curlang = pll_current_language();
+?>
 <?php
 get_template_part('tpl','slider');
 ?>
@@ -13,7 +15,17 @@ get_template_part('tpl','slider');
             </div>
             <div class="panel-grid">
                 <div class="panel-grid-cell" id="pgc-7-3-0">
-                    <h3 class="widget-title">Selecteer hier uw doelgroep</h3>
+                    <h3 class="widget-title">
+                        <?php
+                            if($curlang == "en") {
+                                echo get_field('news_title_en','option');
+                            }elseif($curlang == "es") {
+                                echo get_field('news_title_es','option');
+                            }else{
+                                echo get_field('news_title_nl','option');
+                            }
+                        ?>
+                    </h3>
                 </div>
             </div>
             <?php get_template_part('tpl','news');?>

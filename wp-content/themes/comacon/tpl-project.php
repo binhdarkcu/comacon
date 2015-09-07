@@ -1,9 +1,7 @@
 <?php
 	$refer = !empty($_REQUEST['refer']) ? $_REQUEST['refer']:0;
 ?>
-<?php
-	$curlang = pll_current_language();
-?>
+
 <div class="panel-grid" id="pg-7-2">
 	<div class="siteorigin-panels-stretch panel-row-style projects" data-stretch-type="full">
 		<div class="panel-grid-cell" id="pgc-7-2-0">
@@ -19,26 +17,10 @@
 						<article class="esg-filters esg-singlefilters" style="margin-bottom: 30px; text-align: left; "><!-- THE FILTERING, SORTING AND WOOCOMMERCE BUTTONS --><!-- THE FILTER BUTTONS -->
 							<div class="esg-filter-wrapper  esg-fgc-33" style="margin-left: 0px; margin-right: 0px;">
 								<div class="esg-filterbutton  <?php if($refer == '' ) echo 'selected';?> esg-allfilter" data-filter="filterall" data-fid="-1">
-									<span>
-										<?php
-											if($curlang == "en") {
-												echo 'ALL REFERENCES';
-											}elseif($curlang == "es") {
-												echo 'TODAS LAS REFERENCIAS';
-											}else{
-												echo 'ALLE REFERENTIES';
-											}
-										?>
-										
-									</span>
+									<span>ALLE REFERENTIES</span>
 								</div>
 								<?php
-									$args_category = array(
-										'type'                     => 'post',
-										'exclude'                  => array('1','14','18')
-
-									); 
-									$categories = get_categories($args_category); 
+									$categories = get_categories(); 
 									//print_r($categories);
 									$i = 0;
 									  foreach ($categories as $category) {
@@ -89,17 +71,7 @@
 											<div class="esg-overlay esg-fade eg-buildpress-item-skin-container" data-delay="0"></div>
 											<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0"><?php echo get_the_title($projects->ID);?></div>
 											<div class="esg-center eg-buildpress-item-skin-element-9 esg-none esg-clear" style="height: 5px; visibility: hidden;"></div>
-											<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-<?php echo $projects->ID; ?>" href="<?php echo get_the_permalink($projects->ID); ?>" target="_self">
-												<?php
-													if($curlang == "en") {
-														echo get_field('check_project_en','option');
-													}elseif($curlang == "es") {
-														echo get_field('check_project_es','option');
-													}else{
-														echo get_field('check_project_nl','option');
-													}
-												?>
-											</a></div>
+											<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0"><a class="eg-buildpress-item-skin-element-0 eg-post-<?php echo $projects->ID; ?>" href="<?php echo get_the_permalink($projects->ID); ?>" target="_self">BEKIJK PROJECT</a></div>
 										</div><!-- END OF THE CONTENT IN THE ENTRY -->
 									</div><!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
 								</li><!-- END OF PORTFOLIO ITEM -->

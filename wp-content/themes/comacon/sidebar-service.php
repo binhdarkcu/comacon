@@ -1,19 +1,5 @@
-<?php
-	$curlang = pll_current_language();
-?>
 <div class="col-md-4 reference-sidebar">
-	<h4>
-		<?php
-			if($curlang == "en") {
-				echo get_field('reference_title_en','option');
-			}elseif($curlang == "es") {
-				echo get_field('reference_title_es','option');
-			}else{
-				echo get_field('reference_title_nl','option');
-			}
-		?>
-
-	</h4>
+	<h4>Referenties</h4>
 	<ul style="list-style-type: none;padding-left: 0;">
 		<?php
 			$args_projects = array(
@@ -41,17 +27,7 @@
 					<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-1 esg-flipdown" data-delay="0" style=""><?php echo get_the_title($projects->ID);?></div>
 					<div class="esg-center eg-buildpress-item-skin-element-9 esg-none esg-clear" style="height: 5px; visibility: inherit; opacity: 1; transform-style: flat; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00083, 0, 0, 1, 0.999166666666667);"></div>
 					<div class="esg-center eg-post-<?php echo $projects->ID; ?> eg-buildpress-item-skin-element-0-a esg-slideup" data-delay="0" style="">
-						<a class="eg-buildpress-item-skin-element-0 eg-post-<?php echo $projects->ID; ?>" href="<?php echo get_the_permalink($projects->ID); ?>" target="_self">
-						<?php
-							if($curlang == "en") {
-								echo get_field('check_project_en','option');
-							}elseif($curlang == "es") {
-								echo get_field('check_project_es','option');
-							}else{
-								echo get_field('check_project_nl','option');
-							}
-						?>
-						</a>
+						<a class="eg-buildpress-item-skin-element-0 eg-post-<?php echo $projects->ID; ?>" href="<?php echo get_the_permalink($projects->ID); ?>" target="_self">BEKIJK PROJECT</a>
 					</div>
 					<div>
 						

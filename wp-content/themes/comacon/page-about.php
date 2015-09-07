@@ -1,30 +1,11 @@
-<?php
-/**
- * Template Name: About page
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
-?>
-<?php
-	$curlang = pll_current_language();
-?>
+
 <?php
 	get_header();
 ?>
 <div class="main-title" style="background-color: #f2f2f2; ">
 	<div class="container">
-		<h1 class="main-title__primary"><?php echo get_the_title()?></h1>
-		<h3 class="main-title__secondary">
-			<?php
-				if($curlang == "nl") {
-					echo get_field('introduce_title');
-				}else{
-					echo get_field('introduce_title_'.$curlang);
-				}
-			?>
-		</h3>
+		<h1 class="main-title__primary">Over Comacon</h1>
+		<h3 class="main-title__secondary">Uw ervaren aanspreekpunt</h3>
 	</div>
 </div>
 <div class="breadcrumbs">
@@ -41,15 +22,7 @@
 					<div class="col-md-4">
 						<div class="sidebar">
 							<div class="push-down-30">
-								<h4 class="sidebar__headings">
-									<?php
-										if($curlang == "nl") {
-											echo get_field('why_title');
-										}else{
-											echo get_field('why_title_'.$curlang);
-										}
-									?>
-								</h4>
+								<h4 class="sidebar__headings">Waarom Comacon</h4>
                                 <?php
                                 $args_clients = array(
                                     'post_type' 	 => 'ta_about',
@@ -92,29 +65,14 @@
 					</div>
 					
 					<div class="col-md-8">
-						<h4 class="sidebar__headings">
-							<?php
-								if($curlang == "nl") {
-									echo get_field('who_title');
-								}else{
-									echo get_field('who_title_'.$curlang);
-								}
-							?>
-							</h4>
+						<h4 class="sidebar__headings">Wie is Comacon</h4>
 						<article class="post-171 page type-page status-publish hentry">
 							<div class="panel-grid" id="pg-171-0">
 								<div class="panel-grid-cell" id="pgc-171-0-0">
 									<div class="panel widget widget_black-studio-tinymce panel-first-child panel-last-child" id="panel-171-0-0-0">
 										<div class="textwidget post_content">
 											<?php
-											if($curlang == "nl") {
 												$aboutid = get_page_id_by_slug('about');
-											}else if($curlang == "en") {
-												$aboutid = get_page_id_by_slug('about-comacon');
-											}else{
-												$aboutid = get_page_id_by_slug('acerca-comacon');
-											}
-												
 												$about = get_post($aboutid);
 												$aboutContent = $about->post_content;
 											?>
