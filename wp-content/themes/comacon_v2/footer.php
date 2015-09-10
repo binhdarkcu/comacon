@@ -24,7 +24,19 @@
 						<?php echo get_option('text_for_footer')?>
 						<br><br>
 						<strong>
-							<a href="<?php echo bloginfo('home')?>/about" class="read-more">MEER OVER COMACON</a>
+							<?php
+								if($curlang == "en") {
+									$moreinfo = get_field('more_info_en','option');
+									$about = 'en/about-comacon/';
+								}elseif($curlang == "es") {
+									$moreinfo = get_field('more_info_es','option');
+									$about = 'es/acerca-comacon/';
+								}else{
+									$moreinfo = get_field('more_info_nl','option');
+									$about = 'about';
+								}
+							?>
+							<a href="<?php echo site_url()?>/<?php echo $about;?>" class="read-more"><?php echo $moreinfo;?> COMACON</a>
 						</strong>
 					</div>
 				</div>

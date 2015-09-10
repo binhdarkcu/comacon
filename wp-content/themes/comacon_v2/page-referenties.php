@@ -19,14 +19,19 @@
 			<?php
 				if($curlang == "en") {
 					echo get_field('reference_title_en','option');
+					$introref= get_field('reference_title_page_en',get_page_id_by_slug('references'));
 				}elseif($curlang == "es") {
 					echo get_field('reference_title_es','option');
+					$introref= get_field('reference_title_page_es',get_page_id_by_slug('referencias'));
 				}else{
 					echo get_field('reference_title_nl','option');
+					$introref= get_field('reference_title_page_nl',get_page_id_by_slug('referenties'));
 				}
+				$ref = get_post($introref);
+				$refContent = $ref->post_content;
 			?>
 		</h1>
-		<h3 class="main-title__secondary">BEKIJK HIER AL ONZE Referenties voor de verschillende doelgroepen</h3>
+		<h3 class="main-title__secondary"><?php echo $introref;?></h3>
 	</div>
 </div>
 <div class="breadcrumbs">

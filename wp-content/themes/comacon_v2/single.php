@@ -2,12 +2,7 @@
 <?php
 	get_header();
 ?>
-<div class="main-title" style="background-color: #f2f2f2; ">
-	<div class="container">
-		<h1 class="main-title__primary">Referenties</h1>
-		<h3 class="main-title__secondary">BEKIJK HIER AL ONZE Referenties voor de verschillende doelgroepen</h3>
-	</div>
-</div>
+
 <?php
 	while ( have_posts() ) : the_post();
 	$post = get_post(get_the_ID());
@@ -23,12 +18,31 @@
         $radio_services_05 = get_post_meta($post->ID,'tt_radio_services_05',true);
         $radio_services_06 = get_post_meta($post->ID,'tt_radio_services_06',true);
 ?>
+<?php
+	$curlang = pll_current_language();
+	if($curlang == "en") {
+		$reftitl = get_field('reference_title_en','option');
+		$introref= get_field('reference_title_page_en',get_page_id_by_slug('references'));
+	}elseif($curlang == "es") {
+		$reftitl = get_field('reference_title_es','option');
+		$introref= get_field('reference_title_page_es',get_page_id_by_slug('referencias'));
+	}else{
+		$reftitl = get_field('reference_title_nl','option');
+		$introref= get_field('reference_title_page_nl',get_page_id_by_slug('referenties'));
+	}
+?>
+<div class="main-title" style="background-color: #f2f2f2; ">
+	<div class="container">
+		<h1 class="main-title__primary"><?php echo $reftitl;?></h1>
+		<h3 class="main-title__secondary"><?php echo $introref;?></h3>
+	</div>
+</div>
 <div class="breadcrumbs">
 	<div class="breadcrumbs">
 		<div class="container">
 			<!-- Breadcrumb NavXT 5.2.0 -->
 				<a rel="nofollow" href="<?php echo bloginfo('home');?>">Home</a>
-				<a rel="nofollow" href="<?php echo bloginfo('home')?>/referenties">Referenties</a>  
+				<a rel="nofollow" href="<?php echo bloginfo('home')?>/referenties"><?php echo $reftitl;?></a>  
 				<strong class="current"><?php echo get_the_title($post->ID);?></strong>
 		</div>
 	</div>

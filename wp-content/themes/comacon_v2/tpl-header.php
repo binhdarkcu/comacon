@@ -13,9 +13,9 @@
 				<div class="top__left">
 				<?php
 					if($curlang == "en") {
-						echo get_field('header_title_english','option');
+						echo get_field('header_title_en','option');
 					}elseif($curlang == "es") {
-						echo get_field('header_title_spanish','option');
+						echo get_field('header_title_es','option');
 					}else{
 						echo get_field('header_title_nl','option');
 					}
@@ -32,6 +32,7 @@
 					jQuery('.ulSelect li.selected a.aselected').attr({'href':BLOGHOME,'data-lang':LANG}).text(langAttr[LANG]);
 					jQuery('.ulLanguage li').each(function(){
 						var datalang =jQuery(this).find('a').attr('data-lang');
+						console.log(LANG);
 						if(LANG == 'nl'){
 							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/en','data-lang':'en'}).text(langAttr['en']);
 							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'es'}).text(langAttr['es']);
@@ -41,8 +42,8 @@
 							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'es'}).text(langAttr['es']);
 						}
 						if(LANG == 'es'){
-							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/en','data-lang':'nl'}).text(langAttr['nl']);
-							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'en'}).text(langAttr['en']);
+							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/nl','data-lang':'nl'}).text(langAttr['nl']);
+							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/en','data-lang':'en'}).text(langAttr['en']);
 						}
 					});
 				});

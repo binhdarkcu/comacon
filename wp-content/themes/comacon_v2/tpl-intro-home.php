@@ -12,16 +12,13 @@
 						}elseif($curlang == "es") {
 							$idintro = get_page_id_by_slug('intro-homepage-es');
 						}else{
-							$idintro = get_page_id_by_slug('intro-homepage');
+							$idintro = get_page_id_by_slug('intro-homepage-nl');
 						}
 						
 						$intro = get_post($idintro);
 						$introContent = $intro->post_content;
 					?>
 					<div class="page-box__content">
-						<h5 class="page-box__title  text-uppercase">
-							<?php echo $intro->post_title;?>
-						</h5>
 							<?php echo apply_filters('the_content', $introContent);?>
 					</div>
 				</div>            

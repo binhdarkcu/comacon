@@ -21,7 +21,7 @@
 						<?php 
 							$args_clients = array(
 								'post_type' 	 => 'clients',
-								'posts_per_page' => 5 ,
+								'posts_per_page' => 6 ,
 								'order'			 => 'asc'
 							);
 							$queryClients = get_posts($args_clients);
