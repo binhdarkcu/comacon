@@ -41,7 +41,7 @@
 										$moreinfo = get_field('more_info_nl','option');
 									}
 								?>
-                                <a class="btn  btn-primary" href="<?php echo bloginfo('home').'/'.$linkTo.'-'.$curlang;?>"><?php echo $moreinfo;?></a>
+                                <a class="btn  btn-primary" href="<?php echo bloginfo('home').'/'.$linkTo?>"><?php echo $moreinfo;?></a>
                             </div>
                         </div>
                     </div>
