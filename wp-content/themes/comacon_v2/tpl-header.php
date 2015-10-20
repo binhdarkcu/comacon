@@ -54,7 +54,7 @@
 							<a class="aselected" data-lang="<?php echo $curlang;?>" href="javascript:void(0)">Dutch</a>
 							<ul class="ulLanguage">
 								<li class="li1"><a data-lang="" href="">English</a></li>
-								<li class="li2"><a data-lang="" href="">Spanish</a></li>
+								<!--li class="li2"><a data-lang="" href="">Spanish</a></li-->
 							</ul>
 						</li>
 					</ul>
