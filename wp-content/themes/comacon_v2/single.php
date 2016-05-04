@@ -23,12 +23,61 @@
 	if($curlang == "en") {
 		$reftitl = get_field('reference_title_en','option');
 		$introref= get_field('reference_title_page_en',get_page_id_by_slug('references'));
+
+		$servicelink = 'services-en';
+		$startedwork = 'Started work';
+		$constructionsite = 'Construction site';
+		$surface = 'Surface';
+		$customer = 'Customer';
+		$ourservice = 'Our services';
+		$aboutproject = 'About this project';
+		$feasibility = 'FEASIBILITY';
+		$design = 'DESIGN';
+		$pricerequest = 'PRICE REQUEST';
+		$order = 'ORDER';
+		$execution = 'EXECUTION';
+		$salemarketing = 'SALES AND MARKETING';
+		$nextproject = 'NEXT PROJECT';
+		$prevproject = 'PREVIOUS PROJECT';
+
 	}elseif($curlang == "es") {
 		$reftitl = get_field('reference_title_es','option');
 		$introref= get_field('reference_title_page_es',get_page_id_by_slug('referencias'));
+
+		$servicelink = 'services-es';
+		$startedwork = 'Startdatum werkzaamheden';
+		$constructionsite = 'Bouwplaats';
+		$surface = 'Oppervlakte';
+		$customer = 'Klant';
+		$ourservice = 'Onze diensten';
+		$aboutproject = 'Over dit project';
+		$feasibility = 'HAALBAARHEID';
+		$design = 'ONTWERP';
+		$pricerequest = 'PRIJSAANVRAGEN';
+		$order = 'BESTELLING';
+		$execution = 'UITVOERING';
+		$salemarketing = 'VERKOOP EN MARKETING';
+		$nextproject = 'VOLGEND PROJECT ';
+		$prevproject = 'VORIG PROJECT';
 	}else{
 		$reftitl = get_field('reference_title_nl','option');
 		$introref= get_field('reference_title_page_nl',get_page_id_by_slug('referenties'));
+
+		$servicelink = 'services';
+		$startedwork = 'Startdatum werkzaamheden';
+		$constructionsite = 'Bouwplaats';
+		$surface = 'Oppervlakte';
+		$customer = 'Klant';
+		$ourservice = 'Onze diensten';
+		$aboutproject = 'Over dit project';
+		$feasibility = 'HAALBAARHEID';
+		$design = 'ONTWERP';
+		$pricerequest = 'PRIJSAANVRAGEN';
+		$order = 'BESTELLING';
+		$execution = 'UITVOERING';
+		$salemarketing = 'VERKOOP EN MARKETING';
+		$nextproject = 'VOLGEND PROJECT ';
+		$prevproject = 'VORIG PROJECT';
 	}
 ?>
 <div class="main-title" style="background-color: #f2f2f2; ">
@@ -61,20 +110,20 @@
 								<ul class="list-unstyled">
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-calendar"></i></span> 
-										Startdatum werkzaamheden: <strong><?php echo get_the_time('F Y',$post->ID)?></strong>
+										<?php echo $startedwork;?>: <strong><?php echo get_the_time('F Y',$post->ID)?></strong>
 									</li>
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-map-marker"></i></span> 
-										Bouwplaats: <strong><?php echo $location;?></strong>
+										<?php echo $constructionsite;?>: <strong><?php echo $location;?></strong>
 									</li>
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-arrows-alt"></i></span>
-                                        Oppervlakte: <strong><?php echo $oppervalakte;?></strong>
+                                        <?php echo $surface;?>: <strong><?php echo $oppervalakte;?></strong>
 									</li>
 									
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-user"></i></span> 
-										Klant: <strong><?php echo $investeeerder;?></strong>
+										<?php echo $customer;?>: <strong><?php echo $investeeerder;?></strong>
 									</li>
 									<li>
 										<span class="project__meta-icon"><i class="fa  fa-th-list"></i></span> 
@@ -83,7 +132,7 @@
 								</ul>
 							</div>
 							<div class="hentry__content  project__content">
-								<h2 class="hentry__title clear font20">Onze diensten</h2>
+								<h2 class="hentry__title clear font20"><?php echo $ourservice;?></h2>
 								<div class="choose-projecttype">
 									<ul>
                                         <!--service 1-->
@@ -93,7 +142,7 @@
                                         <li>
                                             <img src="images/s-question.png"/>
 
-                                                    <div class="desc"><a href="<?php echo bloginfo('home')?>/services/#Haalbaarheid">HAALBAARHEID</a></div>
+                                                    <div class="desc"><a href="<?php echo bloginfo('home')?>/<?php echo $servicelink;?>/#Haalbaarheid"><?php echo $feasibility;?></a></div>
                                         </li>
                                         <?PHP
                                             }
@@ -105,7 +154,7 @@
                                             ?>
                                             <li>
                                                 <img src="images/s-pen.png"/>
-                                                <div class="desc d02"><a href="<?php echo bloginfo('home')?>/services/#Ontwerp">ONTWERP</a></div>
+                                                <div class="desc d02"><a href="<?php echo bloginfo('home')?>/<?php echo $servicelink;?>/#Ontwerp"><?php echo $design;?></a></div>
                                             </li>
                                         <?PHP
                                         }
@@ -117,7 +166,7 @@
                                             ?>
                                             <li>
                                                 <img src="images/s-book.png"/>
-                                                <div class="desc d03"><a href="<?php echo bloginfo('home')?>/services/#Prijsaanvragen">PRIJSAANVRAGEN</a></div>
+                                                <div class="desc d03"><a href="<?php echo bloginfo('home')?>/<?php echo $servicelink;?>/#Prijsaanvragen"><?php echo $pricerequest;?></a></div>
                                             </li>
                                         <?PHP
                                         }
@@ -129,7 +178,7 @@
                                             ?>
                                             <li>
                                                 <img src="images/s-note.png"/>
-                                                <div class="desc d04"><a href="<?php echo bloginfo('home')?>/services/#Bestelling">BESTELLING</a></div>
+                                                <div class="desc d04"><a href="<?php echo bloginfo('home')?>/<?php echo $servicelink;?>/#Bestelling"><?php echo $order;?></a></div>
                                             </li>
                                         <?PHP
                                         }
@@ -141,7 +190,7 @@
                                             ?>
                                             <li>
                                                 <img src="images/s-hat.png"/>
-                                                <div class="desc d05"><a href="<?php echo bloginfo('home')?>/services/#Uitvoering">UITVOERING</a></div>
+                                                <div class="desc d05"><a href="<?php echo bloginfo('home')?>/<?php echo $servicelink;?>/#Uitvoering"><?php echo $execution;?></a></div>
                                             </li>
                                         <?PHP
                                         }
@@ -153,7 +202,7 @@
                                             ?>
                                             <li>
                                                 <img src="images/s-euro.png"/>
-                                                <div class="desc d06"><a href="<?php echo bloginfo('home')?>/services/#Verkoop-marketing">VERKOOP EN MARKETING</a></div>
+                                                <div class="desc d06"><a href="<?php echo bloginfo('home')?>/<?php echo $servicelink;?>/#Verkoop-marketing"><?php echo $salemarketing;?></a></div>
                                             </li>
                                         <?PHP
                                         }
@@ -168,20 +217,20 @@
 									</ul>
 									<div class="clear"></div>
 								</div>
-								<h2 class="hentry__title clear font20">Over dit project</h2>
+								<h2 class="hentry__title clear font20"><?php echo $aboutproject;?></h2>
 								<?php the_content();?>
 							</div>
 							<nav class="project__navigation">
 								<ul class="list-unstyled">
 									<li>
 										<?php 
-											previous_post('%', '<i class="fa fa-caret-left"></i> VORIG project', '');
+											previous_post('%', '<i class="fa fa-caret-left"></i> '.$prevproject, '');
 										?>
 									</li>
 									<li>
 										
 										<?php 
-											next_post('% ','VOLGEND PROJECT <i class="fa fa-caret-right"></i>', '');
+											next_post('% ',$nextproject.' <i class="fa fa-caret-right"></i>', '');
 										?>
 									</li>
 								</ul>

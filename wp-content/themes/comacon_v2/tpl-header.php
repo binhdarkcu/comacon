@@ -29,21 +29,20 @@
 					    "en":"English",
 					    "es":"Spanish"
 					};
-					jQuery('.ulSelect li.selected a.aselected').attr({'href':BLOGHOME,'data-lang':LANG}).text(langAttr[LANG]);
+					jQuery('.ulSelect li.selected a.aselected').attr({'data-lang':LANG}).text(langAttr[LANG]);
 					jQuery('.ulLanguage li').each(function(){
 						var datalang =jQuery(this).find('a').attr('data-lang');
-						console.log(LANG);
 						if(LANG == 'nl'){
-							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/en','data-lang':'en'}).text(langAttr['en']);
-							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'es'}).text(langAttr['es']);
+							jQuery('.ulLanguage li.li1 a').attr({'href':'http://comacon.be/en','data-lang':'en'}).text(langAttr['en']);
+							jQuery('.ulLanguage li.li2 a').attr({'href':'http://comacon.be/es','data-lang':'es'}).text(langAttr['es']);
 						}
 						if(LANG == 'en'){
-							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/nl','data-lang':'nl'}).text(langAttr['nl']);
-							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/es','data-lang':'es'}).text(langAttr['es']);
+							jQuery('.ulLanguage li.li1 a').attr({'href':'http://comacon.be/nl','data-lang':'nl'}).text(langAttr['nl']);
+							jQuery('.ulLanguage li.li2 a').attr({'href':'http://comacon.be/es','data-lang':'es'}).text(langAttr['es']);
 						}
 						if(LANG == 'es'){
-							jQuery('.ulLanguage li.li1 a').attr({'href':BLOGHOME+'/nl','data-lang':'nl'}).text(langAttr['nl']);
-							jQuery('.ulLanguage li.li2 a').attr({'href':BLOGHOME+'/en','data-lang':'en'}).text(langAttr['en']);
+							jQuery('.ulLanguage li.li1 a').attr({'href':'http://comacon.be/nl','data-lang':'nl'}).text(langAttr['nl']);
+							jQuery('.ulLanguage li.li2 a').attr({'href':'http://comacon.be/en','data-lang':'en'}).text(langAttr['en']);
 						}
 					});
 				});
@@ -52,10 +51,10 @@
 				<div class="pull-right divstyleSelect">
 					<ul class="ulSelect">
 						<li class="selected">
-							<a class="aselected" data-lang="<?php echo $curlang;?>" href="">Dutch</a>
+							<a class="aselected" data-lang="<?php echo $curlang;?>" href="javascript:void(0)">Dutch</a>
 							<ul class="ulLanguage">
 								<li class="li1"><a data-lang="" href="">English</a></li>
-								<li class="li2"><a data-lang="" href="">Spanish</a></li>
+								<!--li class="li2"><a data-lang="" href="">Spanish</a></li-->
 							</ul>
 						</li>
 					</ul>
